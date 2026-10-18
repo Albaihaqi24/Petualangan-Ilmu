@@ -4,6 +4,7 @@ import { Button, Field, Notice, PageHeading } from '../../components/ui/Primitiv
 import { useLearning } from '../../context/LearningContext'
 import { avatars } from '../../lib/catalog'
 import { Link } from 'react-router-dom'
+import CharacterAvatar from '../../components/adventure/CharacterAvatar'
 
 export default function ProfilePage() {
   const { profile, updateProfile, mode } = useLearning()
@@ -75,7 +76,13 @@ export default function ProfilePage() {
                     setSaved(false)
                   }}
                 />
-                <span aria-hidden="true">{item.emoji}</span>
+                <span aria-hidden="true">
+                  {item.character ? (
+                    <CharacterAvatar character={item.character} size={68} decorative idle={false} />
+                  ) : (
+                    item.emoji
+                  )}
+                </span>
                 <span className="sr-only">{item.label}</span>
               </label>
             ))}

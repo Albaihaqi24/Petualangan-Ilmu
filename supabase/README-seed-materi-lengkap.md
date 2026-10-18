@@ -13,6 +13,8 @@ Isi: tiga mata pelajaran (`matematika`, `bahasa-indonesia`, `ipa`), kelas 1–6,
 
 Script ini **belum dijalankan pada Supabase pengguna**. Pengujian dilakukan pada database lokal PGlite yang terisolasi.
 
+Frontend visual terbaru menambahkan pilihan avatar Kiki/Momo/Piko. Untuk menyimpannya pada akun Supabase, jalankan juga [migration 005](migrations/202610180005_adventure_avatars.sql) sesudah migration 001–004. Seed materi tetap kompatibel dengan skema dasar 001–004; migration avatar tidak menambah salinan materi atau soal.
+
 ## Penyimpanan ringan
 
 Isi komik disimpan sekali pada `scenes`. `blocks` tetap berupa array kosong untuk memenuhi skema/validator lama; aplikasi membentuk tampilan baca saat diperlukan. Metadata rujukan dipangkas menjadi judul dan URL, sedangkan informasi penting tentang pengayaan dan review tetap ada. Gambar/video tidak disimpan sebagai binary atau base64 di database.
@@ -56,7 +58,7 @@ Menjalankan ulang akan memperbarui judul, konten, status dan enam soal pada name
 
 ## Cakupan frontend dan pedagogi
 
-Path panel mengikuti permintaan: `/images/lessons/default-illustration.webp`. Aset tersebut perlu disediakan untuk penayangan gambar komik. Pembaca aplikasi terbaru menampilkan dialog dan caption sebagai teks, serta mini-check dengan pembahasan tertutup yang dapat dibuka. Pembaca tidak mengunduh gambar placeholder. Animasi komik dan pemeriksaan pilihan secara otomatis belum ditambahkan.
+Path panel mengikuti permintaan: `/images/lessons/default-illustration.webp`. Pembaca terbaru memakai karakter dan ilustrasi konsep SVG, dialog berganti adegan, serta mini-check dengan umpan balik langsung tanpa tambahan XP. Caption tetap menjelaskan visual materi. Tombol bacaan lengkap membuka seluruh teks sekaligus. Pembaca tidak mengunduh gambar placeholder; aset gambar khusus dapat dikembangkan terpisah dari seed.
 
 Bank disiapkan dengan tingkat seimbang. RPC kuis lama masih memilih soal secara acak; mesin pemilihan adaptif berdasarkan performa siswa tidak diimplementasikan oleh seed data. Mini-check memakai butir tersendiri, bukan salah satu dari enam pertanyaan bank bab tersebut.
 

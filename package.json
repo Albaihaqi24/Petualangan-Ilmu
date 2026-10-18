@@ -26,6 +26,7 @@
   "dependencies": {
     "@supabase/supabase-js": "latest",
     "clsx": "latest",
+    "framer-motion": "^14.3.0",
     "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",

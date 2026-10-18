@@ -148,7 +148,7 @@ export function DemoProvider({ children }) {
           String(profile.display_name || previous.profile.display_name)
             .trim()
             .slice(0, 24) || 'Nara',
-        avatar: ['fox', 'panda', 'rabbit', 'tiger'].includes(profile.avatar)
+        avatar: ['fox', 'panda', 'rabbit', 'tiger', 'kiki', 'momo', 'piko'].includes(profile.avatar)
           ? profile.avatar
           : previous.profile.avatar,
       },

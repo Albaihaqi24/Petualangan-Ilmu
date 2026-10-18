@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom'
 import { Flag, Sparkles } from 'lucide-react'
+import { m } from 'framer-motion'
 import { useLearning } from '../../context/LearningContext'
 import { SubjectIcon } from '../ui/Primitives'
+import CharacterAvatar from './CharacterAvatar'
+import FloatingDecorations from '../ui/FloatingDecorations'
+import { useAdventureMotion } from './AdventureMotion'
+import { islandTheme, characterNames } from '../../lib/islandThemes'
 
 function IslandArt({ type, color }) {
   return (
@@ -89,8 +94,10 @@ function IslandArt({ type, color }) {
 
 export function AdventureMap({ grade = 3, completed = [], compact = false, publicMode = false }) {
   const { subjects, lessons } = useLearning()
+  const { enabled } = useAdventureMotion()
   return (
     <div className={`adventure-map ${compact ? 'map-compact' : ''}`}>
+      <FloatingDecorations clouds />
       <div className="map-label">
         <span className="row gap-sm">
           <Flag size={14} /> PETA PETUALANGANMU
@@ -115,20 +122,48 @@ export function AdventureMap({ grade = 3, completed = [], compact = false, publi
       </svg>
       <div className="map-islands">
         {subjects.map((subject, index) => {
+          const theme = islandTheme(subject.slug)
           const done = lessons.some(
             (l) => l.subject_id === subject.id && l.grade === grade && completed.includes(l.id),
           )
           return (
             <Link
               key={subject.id}
-              className={`island-node node-${index} ${done ? 'island-done' : ''}`}
+              className={`island-node node-${index} island-clay-${theme.id} ${done ? 'island-done' : ''}`}
               to={publicMode ? `/jelajah/${subject.slug}` : `/student?subject=${subject.id}#materi`}
             >
-              <IslandArt type={subject.icon} color={subject.color} />
+              <m.div
+                className="island-floating-art"
+                initial={false}
+                animate={enabled ? { y: [0, -8, 0] } : { y: 0 }}
+                transition={{
+                  duration: 3.2 + index * 0.15,
+                  delay: index * 0.13,
+                  repeat: Infinity,
+                  ease: 'easeInOut',
+                }}
+              >
+                <span className={`island-halo bg-linear-to-br ${theme.gradient}`} />
+                <IslandArt type={subject.icon} color={subject.color} />
+                {theme.id !== 'adventure' && (
+                  <CharacterAvatar
+                    character={theme.character}
+                    size={72}
+                    className="island-mentor"
+                    decorative
+                    idle={false}
+                  />
+                )}
+              </m.div>
               <span className="island-name">
-                {subject.island}
+                {theme.name || subject.island}
                 {done && <span aria-label="Materi selesai"> ✓</span>}
               </span>
+              {theme.id !== 'adventure' && (
+                <span className="island-mentor-label">
+                  Bersama {characterNames[theme.character]}
+                </span>
+              )}
               <span className="island-subject">
                 <SubjectIcon name={subject.icon} size={13} />
                 {subject.name}
@@ -137,12 +172,37 @@ export function AdventureMap({ grade = 3, completed = [], compact = false, publi
           )
         })}
       </div>
+      <m.div
+        className="map-boat"
+        aria-hidden="true"
+        initial={false}
+        animate={
+          enabled
+            ? { x: [0, 26, 0], y: [0, -5, 0], rotate: [-3, 3, -3] }
+            : { x: 0, y: 0, rotate: 0 }
+        }
+        transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+      >
+        <svg viewBox="0 0 65 55" width="54">
+          <path d="M8 37H57L48 49H19Z" fill="#d8b1fb" stroke="#75618f" strokeWidth="2.5" />
+          <path
+            d="M31 6V36M35 8L52 29H35ZM27 14L13 30H27Z"
+            fill="#fff8df"
+            stroke="#75618f"
+            strokeWidth="2.5"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </m.div>
       <span className="map-sparkle sparkle-a">
         <Sparkles size={20} />
       </span>
       <span className="map-sparkle sparkle-b">✦</span>
       <div className="map-key">
-        <span /> Pilih pulau untuk mulai belajar
+        <CharacterAvatar character="piko" size={48} decorative idle={false} />
+        <span className="map-key-copy">
+          <strong>Piko siap memandu!</strong>Pilih pulau untuk mulai belajar
+        </span>
       </div>
     </div>
   )

@@ -3,6 +3,7 @@ import { ArrowRight, BookOpen, Check, Compass, HeartHandshake, Sparkles, Star } 
 import { AdventureMap } from '../components/adventure/AdventureMap'
 import { Brand, LinkButton, SubjectIcon, Tag, TextLink } from '../components/ui/Primitives'
 import { useLearning } from '../context/LearningContext'
+import CharacterAvatar from '../components/adventure/CharacterAvatar'
 
 export default function LandingPage() {
   const { subjects, mode } = useLearning()
@@ -18,6 +19,7 @@ export default function LandingPage() {
           <a href="#pulau">Pulau pengetahuan</a>
           <Link to="/sumber-belajar">Buku & sumber belajar</Link>
         </nav>
+        <div id="adventure-controls-slot" />
         <LinkButton to="/login" variant="secondary">
           Masuk <ArrowRight size={16} />
         </LinkButton>
@@ -70,9 +72,11 @@ export default function LandingPage() {
           </div>
           <div className="hero-map">
             <div className="map-sticker">
-              <span>🦊</span>
+              <span>
+                <CharacterAvatar character="rubi" size={68} decorative />
+              </span>
               <div>
-                Hei, aku Nara!<small>Ayo temukan hal baru.</small>
+                Hei, aku Rubi!<small>Ayo temukan hal baru.</small>
               </div>
             </div>
             <AdventureMap compact publicMode />
@@ -98,7 +102,7 @@ export default function LandingPage() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">DUNIA PENUH PENEMUAN</p>
-              <h2>Enam pulau, banyak cerita baru.</h2>
+              <h2>{subjects.length} pulau, banyak cerita baru.</h2>
             </div>
             <p className="muted">
               Mulai dari angka hingga karya.
@@ -112,6 +116,7 @@ export default function LandingPage() {
                 to={`/jelajah/${subject.slug}`}
                 key={subject.id}
                 className={`subject-card tone-${subject.color}`}
+                data-island={subject.theme}
               >
                 <span className="subject-icon">
                   <SubjectIcon name={subject.icon} size={27} />

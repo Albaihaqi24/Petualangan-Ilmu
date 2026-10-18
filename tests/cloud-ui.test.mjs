@@ -16,10 +16,15 @@ const dom = new Window({
     disableIframePageLoading: true,
   },
 })
+// Driver JS untuk tes DOM; QA browser menguji Web Animations API native.
+delete dom.Element.prototype.animate
 for (const key of [
   'window',
   'document',
   'HTMLElement',
+  'Element',
+  'SVGElement',
+  'SVGSVGElement',
   'HTMLInputElement',
   'HTMLTextAreaElement',
   'Event',
@@ -45,6 +50,10 @@ const server = await createServer({
 const { default: Provider } = await server.ssrLoadModule('/src/context/SupabaseProvider.jsx')
 const { useLearning } = await server.ssrLoadModule('/src/context/LearningContext.jsx')
 const { default: App } = await server.ssrLoadModule('/src/App.jsx')
+const { preloadAdventureMotion } = await server.ssrLoadModule(
+  '/src/components/adventure/AdventureMotion.jsx',
+)
+await preloadAdventureMotion()
 let root, context
 function Probe() {
   context = useLearning()

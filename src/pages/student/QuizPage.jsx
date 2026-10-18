@@ -3,6 +3,11 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, ArrowRight, Check, CheckCircle2, RotateCcw, Sparkles } from 'lucide-react'
 import { Button, EmptyState, LinkButton, Notice, Tag } from '../../components/ui/Primitives'
 import { useLearning } from '../../context/LearningContext'
+import { m } from 'framer-motion'
+import CharacterAvatar from '../../components/adventure/CharacterAvatar'
+import { useAdventureMotion } from '../../components/adventure/AdventureMotion'
+import { QuizCelebration, AnswerReaction } from '../../components/adventure/QuizFeedback'
+import { islandTheme } from '../../lib/islandThemes'
 
 export default function QuizRoute() {
   const { lessonId } = useParams()
@@ -10,8 +15,10 @@ export default function QuizRoute() {
 }
 
 function QuizPage({ lessonId }) {
-  const { getLesson, startQuiz, submitQuiz, mode } = useLearning()
+  const { getLesson, getSubject, startQuiz, submitQuiz, mode } = useLearning()
+  const { enabled } = useAdventureMotion()
   const lesson = getLesson(lessonId)
+  const theme = islandTheme(lesson ? getSubject(lesson.subject_id)?.slug : '')
   const [quiz, setQuiz] = useState([])
   const [attemptId, setAttemptId] = useState('')
   const [loading, setLoading] = useState(true)
@@ -92,12 +99,20 @@ function QuizPage({ lessonId }) {
     }
   }
   return (
-    <div className="quiz-layout">
+    <div className="quiz-layout" data-island={theme.id}>
       <Link to={`/student/lesson/${lesson.slug}`} className="back-link">
         <ArrowLeft size={17} />
         Kembali ke materi
       </Link>
       <div className="quiz-header">
+        <div className="quiz-mentor">
+          <CharacterAvatar
+            character={theme.character}
+            emotion={answers[quiz[index]?.id] !== undefined ? 'semangat' : 'berpikir'}
+            size={100}
+            decorative
+          />
+        </div>
         <Tag color="peach">
           <Sparkles size={14} /> TANTANGAN KECIL
         </Tag>
@@ -112,17 +127,28 @@ function QuizPage({ lessonId }) {
           <span>{answered} terjawab</span>
         </div>
         <div className="xp-track">
-          <span style={{ width: `${(answered / quiz.length) * 100}%` }} />
+          <m.span
+            style={{ width: '100%', transformOrigin: 'left' }}
+            initial={false}
+            animate={{ scaleX: answered / quiz.length }}
+            transition={{ duration: enabled ? 0.25 : 0 }}
+          />
         </div>
       </div>
-      <article className="quiz-question">
+      <m.article
+        className="quiz-question rounded-3xl border-2"
+        key={question.id}
+        initial={enabled ? { opacity: 0, y: 10 } : false}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
+      >
         <span className="question-number">{String(index + 1).padStart(2, '0')}</span>
         <fieldset>
           <legend>{question.prompt}</legend>
           <div className="quiz-options">
             {question.options.map((option, optionIndex) => (
               <label
-                className={`quiz-option ${answers[question.id] === optionIndex ? 'selected' : ''}`}
+                className={`quiz-option rounded-2xl border-b-4 active:translate-y-1 transition-transform duration-150 ${answers[question.id] === optionIndex ? 'selected' : ''}`}
                 key={optionIndex}
               >
                 <input
@@ -161,7 +187,7 @@ function QuizPage({ lessonId }) {
             </Button>
           )}
         </div>
-      </article>
+      </m.article>
       <div className="question-dots" aria-label="Pindah soal">
         {quiz.map((item, itemIndex) => (
           <button
@@ -186,7 +212,8 @@ function QuizPage({ lessonId }) {
 
 export function QuizResultPage() {
   const { lessonId, attemptId } = useParams()
-  const { attempts, getLesson, fetchQuizResult, mode } = useLearning()
+  const { attempts, getLesson, getSubject, fetchQuizResult, mode } = useLearning()
+  const { enabled } = useAdventureMotion()
   const cached = attempts.find(
     (entry) => entry.id === attemptId && entry.lesson_id === lessonId && entry.details,
   )
@@ -240,11 +267,12 @@ export function QuizResultPage() {
       </EmptyState>
     )
   return (
-    <div className="result-layout">
+    <div
+      className="result-layout"
+      data-island={islandTheme(getSubject(lesson.subject_id)?.slug).id}
+    >
       <section className="result-hero">
-        <span className="result-celebration" aria-hidden="true">
-          🌟
-        </span>
+        <QuizCelebration attempt={attempt} />
         <Tag color="mint">SATU LANGKAH LAGI BERTUMBUH</Tag>
         <h1>{attempt.score >= 60 ? 'Usahamu membuahkan hasil!' : 'Terima kasih sudah mencoba!'}</h1>
         <p>
@@ -298,9 +326,12 @@ export function QuizResultPage() {
           <span className="small muted">{lesson.title}</span>
         </div>
         {attempt.details.map((detail, index) => (
-          <article
+          <m.article
             className={`review-card ${detail.is_correct ? 'review-correct' : 'review-learn'}`}
             key={detail.question_id}
+            initial={false}
+            animate={enabled && !detail.is_correct ? { x: [-6, 6, -4, 4, 0] } : { x: 0 }}
+            transition={{ duration: 0.4, delay: Math.min(index * 0.05, 0.3) }}
           >
             <div className="row between">
               <Tag color={detail.is_correct ? 'mint' : 'peach'}>
@@ -309,6 +340,12 @@ export function QuizResultPage() {
               <span className="small muted">Soal {index + 1}</span>
             </div>
             <h3>{detail.prompt}</h3>
+            <AnswerReaction
+              detail={detail}
+              rewarded={
+                attempt.correct_count > 0 && attempt.xp_earned >= attempt.correct_count * 10
+              }
+            />
             <p className="answer-line">
               Jawabanmu:{' '}
               <strong>
@@ -327,7 +364,7 @@ export function QuizResultPage() {
               <BookIcon />
               {detail.explanation}
             </div>
-          </article>
+          </m.article>
         ))}
       </section>
     </div>

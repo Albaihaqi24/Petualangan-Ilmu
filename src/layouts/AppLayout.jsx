@@ -15,6 +15,7 @@ import {
 import { useLearning } from '../context/LearningContext'
 import { avatars } from '../lib/catalog'
 import { Brand, Notice, XPBar } from '../components/ui/Primitives'
+import CharacterAvatar from '../components/adventure/CharacterAvatar'
 
 const studentLinks = [
   { to: '/student', end: true, label: 'Peta belajar', icon: Compass },
@@ -124,6 +125,7 @@ export default function AppLayout() {
               : 'Setiap anak punya langkahnya sendiri.'}
           </span>
           <div className="row gap-sm">
+            <div id="adventure-controls-slot" />
             <Link to={mode === 'demo' ? '/login' : '/account'} className="demo-pill">
               {mode === 'demo' ? 'Mode demo' : 'Akun belajar'} <ArrowUpRight size={13} />
             </Link>
@@ -135,7 +137,15 @@ export default function AppLayout() {
               }
             >
               <span className="avatar-small">
-                {student ? avatar.emoji : session.role === 'tutor' ? '🌱' : '🎨'}
+                {student && avatar.character ? (
+                  <CharacterAvatar character={avatar.character} size={38} decorative idle={false} />
+                ) : student ? (
+                  avatar.emoji
+                ) : session.role === 'tutor' ? (
+                  '🌱'
+                ) : (
+                  '🎨'
+                )}
               </span>
               <span>
                 {student ? profile.display_name : session.display_name}
@@ -153,6 +163,11 @@ export default function AppLayout() {
             </Link>
           </div>
         </header>
+        {student && (
+          <div className="mobile-xp">
+            <XPBar xp={total_xp} compact />
+          </div>
+        )}
         <main id="konten" className="page-content">
           {storageNotice && <Notice error>{storageNotice}</Notice>}
           <Outlet />

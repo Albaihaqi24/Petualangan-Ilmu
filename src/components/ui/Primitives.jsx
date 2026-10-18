@@ -9,9 +9,8 @@ import {
   Leaf,
   Palette,
   Sparkles,
-  Star,
 } from 'lucide-react'
-import { levelFromXp } from '../../lib/learning'
+export { default as XPBar } from './XPBar'
 
 const icons = {
   calculator: Calculator,
@@ -50,7 +49,10 @@ export function Button({
   ...props
 }) {
   return (
-    <Component className={`button button-${variant} ${className}`} {...props}>
+    <Component
+      className={`button button-${variant} rounded-2xl border-b-4 active:translate-y-1 transition-transform duration-150 ${className}`}
+      {...props}
+    >
       {children}
     </Component>
   )
@@ -93,35 +95,6 @@ export function PageHeading({ eyebrow, title, children, action }) {
         {children && <p className="muted">{children}</p>}
       </div>
       {action}
-    </div>
-  )
-}
-export function XPBar({ xp = 0 }) {
-  const { level, progress } = levelFromXp(xp)
-  return (
-    <div className="xp-card">
-      <div className="row between">
-        <span className="row gap-sm">
-          <span className="star-icon">
-            <Star size={17} fill="currentColor" />
-          </span>
-          <strong>Level {level}</strong>
-        </span>
-        <span className="muted small">{xp} XP</span>
-      </div>
-      <div
-        className="xp-track"
-        role="progressbar"
-        aria-label={`Progres menuju level ${level + 1}`}
-        aria-valuenow={progress}
-        aria-valuemin={0}
-        aria-valuemax={100}
-      >
-        <span style={{ width: `${progress}%` }} />
-      </div>
-      <p className="small muted">
-        {100 - progress} XP lagi ke level {level + 1}. Pelan-pelan, kamu bisa!
-      </p>
     </div>
   )
 }

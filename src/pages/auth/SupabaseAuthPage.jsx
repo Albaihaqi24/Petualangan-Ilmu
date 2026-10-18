@@ -3,6 +3,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { Brand, Button, Field, Notice, LinkButton } from '../../components/ui/Primitives'
 import { useLearning } from '../../context/LearningContext'
 import { avatars } from '../../lib/catalog'
+import CharacterAvatar from '../../components/adventure/CharacterAvatar'
 
 export default function SupabaseAuthPage({ register = false }) {
   const { session, signIn, signUp } = useLearning()
@@ -88,7 +89,18 @@ export default function SupabaseAuthPage({ register = false }) {
                       checked={avatar === a.id}
                       onChange={() => setAvatar(a.id)}
                     />
-                    <span aria-hidden="true">{a.emoji}</span>
+                    <span aria-hidden="true">
+                      {a.character ? (
+                        <CharacterAvatar
+                          character={a.character}
+                          size={60}
+                          decorative
+                          idle={false}
+                        />
+                      ) : (
+                        a.emoji
+                      )}
+                    </span>
                     <span className="sr-only">{a.label}</span>
                   </label>
                 ))}

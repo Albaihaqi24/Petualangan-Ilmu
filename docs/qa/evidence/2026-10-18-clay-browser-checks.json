@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-18",
+  "browser": "Microsoft Edge headless on Windows",
+  "base": "http://127.0.0.1:4173",
+  "androidHardwareTested": false,
+  "checks": [
+    {
+      "check": "avatar-piko",
+      "pass": true
+    },
+    {
+      "check": "responsive",
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "check": "responsive",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "check": "responsive",
+      "width": 412,
+      "overflow": false
+    },
+    {
+      "check": "responsive",
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "check": "pause",
+      "states": ["off", "off"]
+    },
+    {
+      "check": "audio-opt-in",
+      "contextsBefore": 0,
+      "contextsAfter": 1
+    },
+    {
+      "check": "comic-next-scene",
+      "character": "kiki"
+    },
+    {
+      "check": "graded-feedback",
+      "correct": 3,
+      "learning": 2,
+      "character": "momo"
+    },
+    {
+      "check": "controls-in-header",
+      "pass": true
+    },
+    {
+      "check": "reduced-motion",
+      "confetti": 0,
+      "toggleDisabled": true
+    }
+  ],
+  "pageErrors": [],
+  "passed": true
+}

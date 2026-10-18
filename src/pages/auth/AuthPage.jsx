@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ArrowRight, GraduationCap, ShieldCheck, Sparkles } from 'lucide-react'
 import { useLearning } from '../../context/LearningContext'
 import { avatars } from '../../lib/catalog'
+import CharacterAvatar from '../../components/adventure/CharacterAvatar'
 import SupabaseAuthPage from './SupabaseAuthPage'
 import { Brand, Button, Field, Notice } from '../../components/ui/Primitives'
 
@@ -35,7 +36,9 @@ function DemoAuthPage({ register }) {
       <div className="auth-art">
         <Brand />
         <div>
-          <span className="auth-fox">🦊</span>
+          <span className="auth-fox">
+            <CharacterAvatar character="rubi" size={180} decorative />
+          </span>
           <p className="eyebrow">SELAMAT DATANG, PETUALANG</p>
           <h1>
             Setiap pertanyaan
@@ -121,7 +124,18 @@ function DemoAuthPage({ register }) {
                       checked={avatar === item.id}
                       onChange={() => setAvatar(item.id)}
                     />
-                    <span aria-hidden="true">{item.emoji}</span>
+                    <span aria-hidden="true">
+                      {item.character ? (
+                        <CharacterAvatar
+                          character={item.character}
+                          size={60}
+                          decorative
+                          idle={false}
+                        />
+                      ) : (
+                        item.emoji
+                      )}
+                    </span>
                     <span className="sr-only">{item.label}</span>
                   </label>
                 ))}

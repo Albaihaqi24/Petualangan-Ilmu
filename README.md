@@ -1,4 +1,4 @@
-# Petualangan Ilmu
+﻿# Petualangan Ilmu
 
 Aplikasi belajar interaktif untuk siswa SD kelas 1–6. Anak dapat membaca materi, mengerjakan kuis, mengumpulkan XP, dan mengikuti kelas bersama tutor.
 
@@ -27,6 +27,12 @@ Aplikasi belajar interaktif untuk siswa SD kelas 1–6. Anak dapat membaca mater
 Materi mendukung teks, dialog komik, caption ilustrasi, mini-check, dan video opsional. Pada mode Supabase, penilaian kuis dan pemberian XP dilakukan oleh server.
 
 Teknologi: **React, Vite, Tailwind CSS, React Router, dan Supabase**. Pengujian memakai Node.js Test Runner, Happy DOM, dan PGlite.
+
+### Tampilan petualangan
+
+Gaya claymorphism memakai Fredoka dan Nunito, tombol tekan 3D, serta tema coral/amber untuk Numeria, sky/lavender untuk Kata, dan emerald/mint untuk Eksplora. Enam karakter SVG—Rubi, Bobo, Tobi, Kiki, Momo dan Piko—memiliki ekspresi dan animasi kecil.
+
+Framer Motion menangani pulau mengapung, perpindahan adegan komik, confetti dan XP bar. Animasi menghormati pengaturan kurangi gerakan, dapat dijeda, dan berhenti saat tab tersembunyi. Suara Web Audio bersifat opt-in dan tidak mengunduh MP3. Pada kuis Supabase, reaksi benar/salah ditampilkan setelah penilaian server; mini-check materi bersifat latihan tanpa tambahan XP.
 
 ## Jalankan di komputer
 
@@ -90,10 +96,13 @@ Jalankan melalui SQL Editor sebagai pemilik database:
 2. [Migration 002 — fitur platform](supabase/migrations/202610160002_platform_features.sql).
 3. [Migration 003 — penyimpanan privat](supabase/migrations/202610160003_private_storage.sql).
 4. [Migration 004 — editor soal](supabase/migrations/202610160004_editor_questions.sql).
-5. [Seed materi lengkap](supabase/seed_materi_lengkap.sql).
-6. [Verifikasi skema](supabase/verify-setup.sql) dan [fitur platform](supabase/verify-platform.sql).
+5. [Migration 005 — avatar Kiki, Momo dan Piko](supabase/migrations/202610180005_adventure_avatars.sql).
+6. [Seed materi lengkap](supabase/seed_materi_lengkap.sql).
+7. [Verifikasi skema](supabase/verify-setup.sql) dan [fitur platform](supabase/verify-platform.sql).
 
 Jika migration sudah terpasang, lanjutkan dengan seed; migration awal ditujukan untuk database baru. Untuk pemasangan ringan, paket ini sudah cukup. `seed.sql`, `paket-72-bab.sql`, `curriculum-draft.sql`, dan seed buku adalah pilihan paket lain yang tidak perlu dijalankan bersamaan.
+
+Jika proyek sudah memakai migration 001–004, cukup tambahkan migration 005 untuk menyimpan avatar baru; tidak perlu memasang ulang skema atau seed. Profil/progres lama tetap digunakan.
 
 ### Cara menghemat penyimpanan
 
@@ -163,19 +172,19 @@ Petualangan-Ilmu/
 
 ## Status dan dokumentasi
 
-Hasil pemeriksaan lokal **18 Oktober 2026: 105 tes lulus**, termasuk kompatibilitas seed, rerun tanpa duplikat atau perubahan row identik, pembaca/editor scenes, penilaian kuis, akses kunci dan audit bundle produksi.
+Hasil pemeriksaan lokal **18 Oktober 2026: 112 tes lulus**, termasuk kompatibilitas seed, rerun tanpa duplikat atau perubahan row identik, pembaca/editor scenes, penilaian kuis, akses kunci dan audit bundle produksi.
 
 Pemasangan dan pengujian Supabase cloud serta QA visual perangkat nyata belum dinyatakan selesai. Isi materi masih memerlukan review guru; paket ini tidak diklaim mencakup seluruh kurikulum nasional. Sains kelas 1–2 diperlakukan sebagai pengayaan.
 
-| Panduan                                                                              | Isi                                                       |
-| ------------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| [Database ringan](supabase/README-seed-materi-lengkap.md)                            | Instalasi, penghematan dan kompatibilitas seed            |
-| [QA black-box dan white-box](docs/qa/README.md)                                      | Skenario, pengujian, bug dan laporan                      |
-| [Hasil regresi terbaru](docs/qa/evidence/2026-10-18-seed-lightweight-regression.txt) | Bukti 105 tes lulus                                       |
-| [Operasional](docs/OPERASIONAL.md)                                                   | Auth, admin pertama, pengujian cloud dan pengelolaan data |
-| [Paket tambahan 72 bab](docs/materi/paket-72-bab/README.md)                          | Materi dan kuis tambahan untuk review                     |
-| [Roadmap pendidikan](docs/ROADMAP-PENDIDIKAN.md)                                     | Rencana pengembangan bahan ajar                           |
-| [Arsip panduan teknis](PANDUAN-TEKNIS-ARSIP.md)                                      | PRD dan catatan implementasi terdahulu                    |
+| Panduan                                                                     | Isi                                                       |
+| --------------------------------------------------------------------------- | --------------------------------------------------------- |
+| [Database ringan](supabase/README-seed-materi-lengkap.md)                   | Instalasi, penghematan dan kompatibilitas seed            |
+| [QA black-box dan white-box](docs/qa/README.md)                             | Skenario, pengujian, bug dan laporan                      |
+| [Hasil regresi terbaru](docs/qa/evidence/2026-10-18-clay-ui-regression.txt) | Bukti 112 tes lulus                                       |
+| [Operasional](docs/OPERASIONAL.md)                                          | Auth, admin pertama, pengujian cloud dan pengelolaan data |
+| [Paket tambahan 72 bab](docs/materi/paket-72-bab/README.md)                 | Materi dan kuis tambahan untuk review                     |
+| [Roadmap pendidikan](docs/ROADMAP-PENDIDIKAN.md)                            | Rencana pengembangan bahan ajar                           |
+| [Arsip panduan teknis](PANDUAN-TEKNIS-ARSIP.md)                             | PRD dan catatan implementasi terdahulu                    |
 
 Arsip mencatat kondisi versi sebelumnya. Untuk instalasi saat ini, ikuti README ini dan panduan database ringan.
 

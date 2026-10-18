@@ -17,10 +17,16 @@ const dom = new Window({
     disableIframePageLoading: true,
   },
 })
+// Happy DOM belum meniru cancellation promise WAAPI seperti browser.
+// Tes interaksi memakai driver JS; animasi native diperiksa terpisah di Edge.
+delete dom.Element.prototype.animate
 for (const key of [
   'window',
   'document',
   'HTMLElement',
+  'Element',
+  'SVGElement',
+  'SVGSVGElement',
   'HTMLInputElement',
   'HTMLTextAreaElement',
   'Event',
@@ -45,6 +51,10 @@ const server = await createServer({
   appType: 'custom',
 })
 const { default: App } = await server.ssrLoadModule('/src/App.jsx')
+const { preloadAdventureMotion } = await server.ssrLoadModule(
+  '/src/components/adventure/AdventureMotion.jsx',
+)
+await preloadAdventureMotion()
 const { DemoProvider, useDemo } = await server.ssrLoadModule('/src/context/DemoContext.jsx')
 let root
 let context
@@ -107,7 +117,7 @@ after(async () => {
 })
 test('Publik mendapat katalog dan halaman 404 memiliki jalan kembali', async () => {
   await mount('/jelajah/matematika')
-  assert.match(document.body.textContent, /Pulau Angka/)
+  assert.match(document.body.textContent, /Pulau Numeria/)
   assert.equal(document.querySelectorAll('.catalog-list article').length, 74)
   assert.equal(document.querySelectorAll('.quiz-options').length, 0)
   await mount('/tidak-ada')
@@ -289,6 +299,106 @@ test('Materi ringan menampilkan semua scenes tanpa salinan blocks; pembahasan mi
     })
     assert.match(feedback.textContent, /Jawaban:/)
   }
+})
+
+test('Enam karakter SVG mendukung empat ekspresi dan label yang dapat dibaca pembaca layar', async () => {
+  await mount('/')
+  const { default: CharacterAvatar } = await server.ssrLoadModule(
+    '/src/components/adventure/CharacterAvatar.jsx',
+  )
+  for (const character of ['rubi', 'bobo', 'tobi', 'kiki', 'momo', 'piko'])
+    for (const emotion of ['senang', 'berpikir', 'kaget', 'semangat']) {
+      await act(async () =>
+        root.render(React.createElement(CharacterAvatar, { character, emotion, idle: false })),
+      )
+      const svg = document.querySelector('svg[data-character]')
+      assert.equal(svg.dataset.character, character)
+      assert.equal(svg.dataset.emotion, emotion)
+      assert.equal(svg.getAttribute('role'), 'img')
+      assert.ok(svg.getAttribute('aria-label').includes(emotion))
+      assert.equal(document.querySelector('img'), null)
+    }
+})
+
+test('Komik berpindah adegan, mini-check memberi umpan balik tanpa mengubah XP atau data belajar', async () => {
+  await mount('/', 'student')
+  const before = localStorage.getItem('petualangan-ilmu:demo:v2')
+  const { default: Reader } = await server.ssrLoadModule(
+    '/src/components/adventure/ComicStoryReader.jsx',
+  )
+  const scenes = [
+    {
+      type: 'dialog',
+      speaker: 'Rubi',
+      emotion: 'kaget',
+      text: 'Rubi membawa dua keranjang apel untuk teman-temannya.',
+    },
+    { type: 'comic_panel', caption: 'Dua keranjang, masing-masing berisi satu buah apel.' },
+    {
+      type: 'mini_check',
+      question: 'Berapa jumlah seluruh apel?',
+      options: ['Satu', 'Dua', 'Tiga'],
+      correct_index: 1,
+      feedback: 'Satu ditambah satu sama dengan dua buah apel.',
+    },
+  ]
+  await act(async () => root.render(React.createElement(Reader, { scenes, character: 'rubi' })))
+  const next = () =>
+    act(async () => document.querySelector('[aria-label="Adegan berikutnya"]').click())
+  assert.match(document.body.textContent, /Rubi membawa dua keranjang/)
+  await next()
+  assert.match(document.body.textContent, /masing-masing berisi satu/)
+  await next()
+  assert.equal(document.querySelector('[aria-label="Adegan berikutnya"]').disabled, true)
+  await act(async () => document.querySelectorAll('.comic-choice')[0].click())
+  assert.match(document.querySelector('.comic-feedback').textContent, /Hampir tepat/)
+  assert.equal(document.querySelector('[data-character]').dataset.emotion, 'semangat')
+  await act(async () => document.querySelectorAll('.comic-choice')[1].click())
+  assert.match(document.querySelector('.comic-feedback').textContent, /Tepat!/)
+  assert.equal(document.querySelectorAll('.comic-choice')[1].getAttribute('aria-pressed'), 'true')
+  assert.equal(localStorage.getItem('petualangan-ilmu:demo:v2'), before)
+})
+
+test('Avatar Piko dapat dipilih, disimpan dan dipulihkan setelah profil dimuat ulang', async () => {
+  await mount('/student/profile', 'student')
+  const option = [...document.querySelectorAll('.avatar-options label')].find((label) =>
+    label.textContent.includes('Piko'),
+  )
+  assert.ok(option)
+  await act(async () => option.querySelector('input').click())
+  await clickText('Simpan profil demo')
+  assert.equal(context.profile.avatar, 'piko')
+  await mount('/student/profile', null, true)
+  assert.equal(context.profile.avatar, 'piko')
+  assert.equal(document.querySelector('.profile-chip [data-character]').dataset.character, 'piko')
+})
+
+test('XPBar menampilkan progres aktual dan memperbarui level pada batas 100 XP', async () => {
+  await mount('/')
+  const { default: XPBar } = await server.ssrLoadModule('/src/components/ui/XPBar.jsx')
+  await act(async () => root.render(React.createElement(XPBar, { xp: 95 })))
+  assert.equal(document.querySelector('[role=progressbar]').getAttribute('aria-valuenow'), '95')
+  await act(async () => root.render(React.createElement(XPBar, { xp: 110 })))
+  assert.match(document.body.textContent, /Level 2/)
+  assert.equal(document.querySelector('[role=progressbar]').getAttribute('aria-valuenow'), '10')
+  assert.match(document.querySelector('.xp-gain').textContent, /\+15 XP/)
+})
+
+test('Perayaan jawaban tidak mengklaim +10 XP jika hasil tidak memberi hadiah sebesar itu', async () => {
+  await mount('/', 'student')
+  const { AnswerReaction } = await server.ssrLoadModule(
+    '/src/components/adventure/QuizFeedback.jsx',
+  )
+  const before = context.total_xp
+  await act(async () =>
+    root.render(
+      React.createElement(AnswerReaction, { detail: { is_correct: true }, rewarded: false }),
+    ),
+  )
+  await clickText('Tos dengan Momo! ✋')
+  assert.match(document.body.textContent, /Hebat! ✦/)
+  assert.doesNotMatch(document.body.textContent, /\+10 XP/)
+  assert.equal(context.total_xp, before)
 })
 
 test('Tamu diarahkan ke form demo; siswa ditolak dari ruang tutor', async () => {

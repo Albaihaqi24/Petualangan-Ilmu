@@ -15,11 +15,14 @@ import TutorPage from './pages/tutor/TutorPage'
 import AdminPage from './pages/admin/AdminPage'
 import ProtectedRoute from './components/ui/ProtectedRoute'
 import { Brand, EmptyState, LinkButton } from './components/ui/Primitives'
+import { AdventureMotion } from './components/adventure/AdventureMotion'
+import SoundToggle from './components/ui/SoundToggle'
 
 export default function App() {
   return (
-    <>
+    <AdventureMotion>
       <ScrollManager />
+      <SoundToggle />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/sumber-belajar" element={<ResourceLibraryPage />} />
@@ -70,6 +73,6 @@ export default function App() {
           }
         />
       </Routes>
-    </>
+    </AdventureMotion>
   )
 }

@@ -7,6 +7,7 @@ import { useLearning } from '../../context/LearningContext'
 import { findTextbook } from '../../lib/textbooks'
 import CpReferencePanel from '../../components/ui/CpReferencePanel'
 import { findAdventureCourse } from '../../lib/adventureCourseCatalog'
+import { islandTheme } from '../../lib/islandThemes'
 
 export default function LessonPage() {
   const { slug } = useParams()
@@ -123,7 +124,11 @@ export default function LessonPage() {
           <BookOpen size={20} />
           <span>Baca perlahan. Kamu boleh mengulang kapan saja.</span>
         </div>
-        <MaterialRenderer key={lesson.id} content={lesson.content} />
+        <MaterialRenderer
+          key={lesson.id}
+          content={lesson.content}
+          character={islandTheme(subject.slug).character}
+        />
         {lesson.content.cp_reference && (
           <CpReferencePanel
             key={`cp-${lesson.id}`}

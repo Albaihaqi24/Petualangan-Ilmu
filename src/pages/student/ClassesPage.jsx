@@ -12,6 +12,7 @@ import {
 } from '../../components/ui/Primitives'
 import SubmissionFile from '../../components/ui/SubmissionFile'
 import { useLearning } from '../../context/LearningContext'
+import CharacterAvatar from '../../components/adventure/CharacterAvatar'
 
 export default function ClassesPage() {
   const { classes, memberships, assignments, submissions, joinClass, submitAssignment, mode } =
@@ -42,6 +43,15 @@ export default function ClassesPage() {
       <PageHeading eyebrow="TUMBUH BERSAMA" title="Kelas kecil, semangat besar.">
         Ada kakak tutor yang menemani langkah belajarmu.
       </PageHeading>
+      <div className="buddy-tip">
+        <CharacterAvatar character="piko" emotion="semangat" size={76} decorative />
+        <p>
+          <strong>Pesan kecil dari Piko</strong>
+          <br />
+          Buka tugas kelasmu dan periksa tanggalnya. Kamu boleh meminta bantuan kakak tutor jika ada
+          yang belum jelas.
+        </p>
+      </div>
       <section className="join-panel">
         <div className="join-copy">
           <span className="stat-icon tone-peach">

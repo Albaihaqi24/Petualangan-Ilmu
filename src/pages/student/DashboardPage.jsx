@@ -12,6 +12,8 @@ import {
   Users,
 } from 'lucide-react'
 import { AdventureMap } from '../../components/adventure/AdventureMap'
+import CharacterAvatar from '../../components/adventure/CharacterAvatar'
+import FloatingDecorations from '../../components/ui/FloatingDecorations'
 import {
   EmptyState,
   Field,
@@ -91,6 +93,7 @@ export default function DashboardPage() {
         Siap menemukan satu hal menarik hari ini? <span aria-hidden="true">🌿</span>
       </PageHeading>
       <section className="welcome-banner">
+        <FloatingDecorations theme="numeria" />
         <div>
           <Tag color="cream">
             <Sparkles size={13} /> LANGKAH KECIL HARI INI
@@ -113,7 +116,9 @@ export default function DashboardPage() {
           <span className="orbit orbit-one" />
           <span className="orbit orbit-two" />
           <span className="banner-star">✦</span>
-          <span className="fox-character">🦊</span>
+          <span className="fox-character">
+            <CharacterAvatar character="rubi" emotion="semangat" size={170} decorative />
+          </span>
           <span className="leaf-character">🌱</span>
           <span className="banner-label">Aku menemanimu!</span>
         </div>
@@ -157,7 +162,7 @@ export default function DashboardPage() {
         <div className="section-heading">
           <div>
             <h2>Ke mana kita hari ini?</h2>
-            <p className="muted">Enam pulau pengetahuan menunggu untuk dijelajahi.</p>
+            <p className="muted">{subjects.length} pulau pengetahuan menunggu untuk dijelajahi.</p>
           </div>
           <Tag color="cream">
             <span className="status-dot" /> Semua pulau terbuka
