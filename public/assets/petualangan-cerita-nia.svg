@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-labelledby="title desc">
+<title id="title">Tiga panel Nia menanam</title><desc id="desc">Panel pertama biji dimasukkan ke pot, kedua pot disiram, ketiga muncul tunas setelah beberapa hari.</desc>
+<rect width="900" height="330" rx="18" fill="#f3f8ef"/>
+<g fill="#fff" stroke="#b8d3b3" stroke-width="2"><rect x="15" y="15" width="280" height="300" rx="16"/><rect x="310" y="15" width="280" height="300" rx="16"/><rect x="605" y="15" width="280" height="300" rx="16"/></g>
+<g fill="#bd744b" stroke="#75432e" stroke-width="3"><path d="M85 170h140l-20 95H105z"/><path d="M380 170h140l-20 95H400z"/><path d="M675 170h140l-20 95H695z"/></g>
+<g fill="#51372d"><ellipse cx="155" cy="170" rx="70" ry="12"/><ellipse cx="450" cy="170" rx="70" ry="12"/><ellipse cx="745" cy="170" rx="70" ry="12"/></g>
+<ellipse cx="155" cy="125" rx="10" ry="16" fill="#b99a40" transform="rotate(20 155 125)"/>
+<path d="M155 148v12m-5-5 5 5 5-5" fill="none" stroke="#344d3e" stroke-width="3"/>
+<path d="M465 95h55v40h-55z M465 110l-40 18 10 15 30-16" fill="#66aabd" stroke="#316476" stroke-width="3"/>
+<g fill="#4a9ac8"><circle cx="420" cy="146" r="4"/><circle cx="431" cy="155" r="4"/><circle cx="409" cy="157" r="4"/></g>
+<path d="M745 172v-55" stroke="#3a8050" stroke-width="7"/><path d="M745 142q-55-44-44-8 14 23 44 8 M746 130q49-45 44-13-8 22-44 13" fill="#6aa65b"/>
+<g font-family="sans-serif" text-anchor="middle" fill="#203c2b"><text x="155" y="54" font-size="22">1. Menanam biji</text><text x="450" y="54" font-size="22">2. Merawat</text><text x="745" y="54" font-size="22">3. Muncul tunas</text><text x="155" y="292" font-size="16">Nia menaruh biji di pot.</text><text x="450" y="292" font-size="16">Air diberikan secukupnya.</text><text x="745" y="292" font-size="16">Beberapa hari kemudian.</text></g>
+</svg>

@@ -1,0 +1,639 @@
+{
+  "version": "2026-10-17",
+  "scope": "Satu bahan ajar kelas/pelajaran ditulis per bab; kelompok lain masih berupa ringkasan awal.",
+  "books": [
+    {
+      "id": "matematika-1-2022",
+      "title": "Matematika kelas 1 — bahan ajar per bab",
+      "subject": "matematika",
+      "grade": 1,
+      "phase": "A",
+      "source_year": 2022,
+      "source_authors": "Dara Retno Wulan dan Rasfaniwaty",
+      "source_title": "Matematika untuk SD/MI Kelas I",
+      "source_url": "https://repositori.kemendikdasmen.go.id/35868/",
+      "student_pdf_url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf",
+      "teacher_url": "https://repositori.kemendikdasmen.go.id/35861/",
+      "teacher_pdf_url": "https://repositori.kemendikdasmen.go.id/35861/1/Matematika-BG-KLS-I.pdf",
+      "checked_at": "2026-10-17",
+      "structure_verification": "Identitas dan daftar isi buku siswa halaman PDF 2, 5–7 diperiksa; panduan guru sebagai acuan pendamping.",
+      "content_status": "authored_full_chapters_draft",
+      "review_status": "needs_teacher_review",
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Bilangan 0–10",
+          "id": "buku-matematika-1-2022-bab-1",
+          "slug": "buku-matematika-kelas-1-bab-1",
+          "source_print_pages": [
+            1,
+            40
+          ],
+          "source_pdf_start": 13,
+          "subchapters": [
+            "Menghitung dan menulis",
+            "Membandingkan banyak benda",
+            "Urutan maju dan mundur",
+            "Menyusun dan mengurai bilangan"
+          ],
+          "cp_element_ids": [
+            "cp2025-matematika-a-1"
+          ],
+          "cp_mapping_status": "proposed_mapping",
+          "cp_phase_coverage": "partial"
+        },
+        {
+          "order": 2,
+          "title": "Penjumlahan hingga 10",
+          "id": "buku-matematika-1-2022-bab-2",
+          "slug": "buku-matematika-kelas-1-bab-2",
+          "source_print_pages": [
+            41,
+            74
+          ],
+          "source_pdf_start": 53,
+          "subchapters": [
+            "Cerita menggabungkan",
+            "Strategi menjumlahkan",
+            "Menyelesaikan soal cerita"
+          ],
+          "cp_element_ids": [
+            "cp2025-matematika-a-1",
+            "cp2025-matematika-a-2"
+          ],
+          "cp_mapping_status": "proposed_mapping",
+          "cp_phase_coverage": "partial"
+        },
+        {
+          "order": 3,
+          "title": "Pengurangan hingga 10",
+          "id": "buku-matematika-1-2022-bab-3",
+          "slug": "buku-matematika-kelas-1-bab-3",
+          "source_print_pages": [
+            75,
+            114
+          ],
+          "source_pdf_start": 87,
+          "subchapters": [
+            "Cerita mengambil dan mencari sisa",
+            "Strategi mengurangkan",
+            "Hubungan dengan penjumlahan",
+            "Soal cerita pengurangan"
+          ],
+          "cp_element_ids": [
+            "cp2025-matematika-a-1",
+            "cp2025-matematika-a-2"
+          ],
+          "cp_mapping_status": "proposed_mapping",
+          "cp_phase_coverage": "partial"
+        },
+        {
+          "order": 4,
+          "title": "Bentuk di sekitar kita",
+          "id": "buku-matematika-1-2022-bab-4",
+          "slug": "buku-matematika-kelas-1-bab-4",
+          "source_print_pages": [
+            115,
+            144
+          ],
+          "source_pdf_start": 127,
+          "subchapters": [
+            "Mendeskripsikan bentuk",
+            "Mengelompokkan benda",
+            "Menyusun dan mengurai bentuk"
+          ],
+          "cp_element_ids": [
+            "cp2025-matematika-a-4"
+          ],
+          "cp_mapping_status": "proposed_mapping",
+          "cp_phase_coverage": "partial"
+        },
+        {
+          "order": 5,
+          "title": "Bilangan 11–20",
+          "id": "buku-matematika-1-2022-bab-5",
+          "slug": "buku-matematika-kelas-1-bab-5",
+          "source_print_pages": [
+            145,
+            174
+          ],
+          "source_pdf_start": 157,
+          "subchapters": [
+            "Menghitung dan menulis 11–20",
+            "Urutan maju dan mundur",
+            "Puluhan dan satuan",
+            "Membandingkan bilangan"
+          ],
+          "cp_element_ids": [
+            "cp2025-matematika-a-1"
+          ],
+          "cp_mapping_status": "proposed_mapping",
+          "cp_phase_coverage": "partial"
+        },
+        {
+          "order": 6,
+          "title": "Tambah dan kurang hingga 20",
+          "id": "buku-matematika-1-2022-bab-6",
+          "slug": "buku-matematika-kelas-1-bab-6",
+          "source_print_pages": [
+            175,
+            196
+          ],
+          "source_pdf_start": 187,
+          "subchapters": [
+            "Lebih banyak, lebih sedikit, dan selisih",
+            "Penjumlahan hingga 20",
+            "Pengurangan hingga 20"
+          ],
+          "cp_element_ids": [
+            "cp2025-matematika-a-1",
+            "cp2025-matematika-a-2"
+          ],
+          "cp_mapping_status": "proposed_mapping",
+          "cp_phase_coverage": "partial"
+        },
+        {
+          "order": 7,
+          "title": "Mengukur panjang",
+          "id": "buku-matematika-1-2022-bab-7",
+          "slug": "buku-matematika-kelas-1-bab-7",
+          "source_print_pages": [
+            197,
+            218
+          ],
+          "source_pdf_start": 209,
+          "subchapters": [
+            "Membandingkan dan mengurutkan panjang",
+            "Mengukur dengan satuan tidak baku"
+          ],
+          "cp_element_ids": [
+            "cp2025-matematika-a-3"
+          ],
+          "cp_mapping_status": "proposed_mapping",
+          "cp_phase_coverage": "partial"
+        },
+        {
+          "order": 8,
+          "title": "Mengelompokkan data dan diagram gambar",
+          "id": "buku-matematika-1-2022-bab-8",
+          "slug": "buku-matematika-kelas-1-bab-8",
+          "source_print_pages": [
+            219,
+            242
+          ],
+          "source_pdf_start": 231,
+          "subchapters": [
+            "Mengelompokkan data",
+            "Membaca dan membuat diagram gambar"
+          ],
+          "cp_element_ids": [
+            "cp2025-matematika-a-5"
+          ],
+          "cp_mapping_status": "proposed_mapping",
+          "cp_phase_coverage": "partial"
+        }
+      ]
+    }
+  ],
+  "lesson_count": 8,
+  "question_count": 40,
+  "lessons": [
+    {
+      "id": "buku-matematika-1-2022-bab-1",
+      "database_id": "28107994-79b6-55fc-979a-3a50a8a1ee44",
+      "slug": "buku-matematika-kelas-1-bab-1",
+      "title": "Bilangan 0–10",
+      "grade": 1,
+      "chapter": "Buku · Bab 1",
+      "content_kind": "full_chapter",
+      "cp_reference": {
+        "document": "046/H/KR/2025",
+        "phase": "A",
+        "element_ids": [
+          "cp2025-matematika-a-1"
+        ],
+        "mapping_status": "proposed_mapping",
+        "phase_coverage": "partial",
+        "reviewed_by": null
+      },
+      "objectives": [
+        "Menghubungkan banyak benda dengan lambang bilangan 0–10.",
+        "Membandingkan dua kelompok dengan memasangkan benda.",
+        "Melanjutkan urutan maju/mundur dan menemukan dua bagian suatu bilangan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Menghitung dan menulis",
+        "Contoh bertahap 1",
+        "B. Membandingkan banyak benda",
+        "Contoh bertahap 2",
+        "C. Urutan maju dan mundur",
+        "Contoh bertahap 3",
+        "D. Menyusun dan mengurai bilangan",
+        "Contoh bertahap 4",
+        "Kegiatan penerapan",
+        "Rangkuman bab",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I — Dara Retno Wulan dan Rasfaniwaty, 2022; hlm. cetak 1–40",
+          "url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf#page=13",
+          "audience": "student"
+        },
+        {
+          "title": "Buku panduan guru Matematika kelas I, 2022",
+          "url": "https://repositori.kemendikdasmen.go.id/35861/",
+          "audience": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "buku-matematika-1-2022-bab-2",
+      "database_id": "e97b4ce9-0120-5892-b16d-b1b36fbda91c",
+      "slug": "buku-matematika-kelas-1-bab-2",
+      "title": "Penjumlahan hingga 10",
+      "grade": 1,
+      "chapter": "Buku · Bab 2",
+      "content_kind": "full_chapter",
+      "cp_reference": {
+        "document": "046/H/KR/2025",
+        "phase": "A",
+        "element_ids": [
+          "cp2025-matematika-a-1",
+          "cp2025-matematika-a-2"
+        ],
+        "mapping_status": "proposed_mapping",
+        "phase_coverage": "partial",
+        "reviewed_by": null
+      },
+      "objectives": [
+        "Menceritakan penjumlahan sebagai menggabungkan atau menambah.",
+        "Menjumlahkan dengan benda, gambar, dan hitung maju hingga 10.",
+        "Menuliskan kalimat matematika dan menjawab soal cerita."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Cerita menggabungkan",
+        "Contoh bertahap 1",
+        "B. Strategi menjumlahkan",
+        "Contoh bertahap 2",
+        "C. Menyelesaikan soal cerita",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Rangkuman bab",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I — Dara Retno Wulan dan Rasfaniwaty, 2022; hlm. cetak 41–74",
+          "url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf#page=53",
+          "audience": "student"
+        },
+        {
+          "title": "Buku panduan guru Matematika kelas I, 2022",
+          "url": "https://repositori.kemendikdasmen.go.id/35861/",
+          "audience": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "buku-matematika-1-2022-bab-3",
+      "database_id": "8660d718-8a1b-5d40-9bbb-1b3433b70f78",
+      "slug": "buku-matematika-kelas-1-bab-3",
+      "title": "Pengurangan hingga 10",
+      "grade": 1,
+      "chapter": "Buku · Bab 3",
+      "content_kind": "full_chapter",
+      "cp_reference": {
+        "document": "046/H/KR/2025",
+        "phase": "A",
+        "element_ids": [
+          "cp2025-matematika-a-1",
+          "cp2025-matematika-a-2"
+        ],
+        "mapping_status": "proposed_mapping",
+        "phase_coverage": "partial",
+        "reviewed_by": null
+      },
+      "objectives": [
+        "Menjelaskan sisa sebagai hasil pengurangan.",
+        "Mengurangkan dengan benda, gambar dan hitung mundur hingga 10.",
+        "Memakai hubungan penjumlahan/pengurangan untuk memeriksa jawaban."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Cerita mengambil dan mencari sisa",
+        "Contoh bertahap 1",
+        "B. Strategi mengurangkan",
+        "Contoh bertahap 2",
+        "C. Hubungan dengan penjumlahan",
+        "Contoh bertahap 3",
+        "D. Soal cerita pengurangan",
+        "Contoh bertahap 4",
+        "Kegiatan penerapan",
+        "Rangkuman bab",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I — Dara Retno Wulan dan Rasfaniwaty, 2022; hlm. cetak 75–114",
+          "url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf#page=87",
+          "audience": "student"
+        },
+        {
+          "title": "Buku panduan guru Matematika kelas I, 2022",
+          "url": "https://repositori.kemendikdasmen.go.id/35861/",
+          "audience": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "buku-matematika-1-2022-bab-4",
+      "database_id": "611d0560-6645-5c9c-b15f-2869c35c3b7a",
+      "slug": "buku-matematika-kelas-1-bab-4",
+      "title": "Bentuk di sekitar kita",
+      "grade": 1,
+      "chapter": "Buku · Bab 4",
+      "content_kind": "full_chapter",
+      "cp_reference": {
+        "document": "046/H/KR/2025",
+        "phase": "A",
+        "element_ids": [
+          "cp2025-matematika-a-4"
+        ],
+        "mapping_status": "proposed_mapping",
+        "phase_coverage": "partial",
+        "reviewed_by": null
+      },
+      "objectives": [
+        "Mengenali ciri bentuk datar pada benda sekitar.",
+        "Mengelompokkan benda dengan satu aturan yang jelas.",
+        "Menyusun dan mengurai bentuk sederhana."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mendeskripsikan bentuk",
+        "Contoh bertahap 1",
+        "B. Mengelompokkan benda",
+        "Contoh bertahap 2",
+        "C. Menyusun dan mengurai bentuk",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Rangkuman bab",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I — Dara Retno Wulan dan Rasfaniwaty, 2022; hlm. cetak 115–144",
+          "url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf#page=127",
+          "audience": "student"
+        },
+        {
+          "title": "Buku panduan guru Matematika kelas I, 2022",
+          "url": "https://repositori.kemendikdasmen.go.id/35861/",
+          "audience": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "buku-matematika-1-2022-bab-5",
+      "database_id": "2461d450-1057-5a1e-86ce-84abc95edcf0",
+      "slug": "buku-matematika-kelas-1-bab-5",
+      "title": "Bilangan 11–20",
+      "grade": 1,
+      "chapter": "Buku · Bab 5",
+      "content_kind": "full_chapter",
+      "cp_reference": {
+        "document": "046/H/KR/2025",
+        "phase": "A",
+        "element_ids": [
+          "cp2025-matematika-a-1"
+        ],
+        "mapping_status": "proposed_mapping",
+        "phase_coverage": "partial",
+        "reviewed_by": null
+      },
+      "objectives": [
+        "Menghitung dan menulis bilangan 11–20.",
+        "Menggunakan satu kelompok sepuluh untuk menjelaskan puluhan dan satuan.",
+        "Mengurutkan serta membandingkan bilangan hingga 20."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Menghitung dan menulis 11–20",
+        "Contoh bertahap 1",
+        "B. Urutan maju dan mundur",
+        "Contoh bertahap 2",
+        "C. Puluhan dan satuan",
+        "Contoh bertahap 3",
+        "D. Membandingkan bilangan",
+        "Contoh bertahap 4",
+        "Kegiatan penerapan",
+        "Rangkuman bab",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I — Dara Retno Wulan dan Rasfaniwaty, 2022; hlm. cetak 145–174",
+          "url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf#page=157",
+          "audience": "student"
+        },
+        {
+          "title": "Buku panduan guru Matematika kelas I, 2022",
+          "url": "https://repositori.kemendikdasmen.go.id/35861/",
+          "audience": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "buku-matematika-1-2022-bab-6",
+      "database_id": "1cdbfb73-85a6-570a-aa0e-c49cfc5098d1",
+      "slug": "buku-matematika-kelas-1-bab-6",
+      "title": "Tambah dan kurang hingga 20",
+      "grade": 1,
+      "chapter": "Buku · Bab 6",
+      "content_kind": "full_chapter",
+      "cp_reference": {
+        "document": "046/H/KR/2025",
+        "phase": "A",
+        "element_ids": [
+          "cp2025-matematika-a-1",
+          "cp2025-matematika-a-2"
+        ],
+        "mapping_status": "proposed_mapping",
+        "phase_coverage": "partial",
+        "reviewed_by": null
+      },
+      "objectives": [
+        "Menjelaskan lebih banyak, lebih sedikit dan selisih.",
+        "Menjumlahkan serta mengurangkan bilangan dengan hasil hingga 20.",
+        "Memilih strategi dan memeriksa jawaban menggunakan model atau operasi kebalikan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Lebih banyak, lebih sedikit, dan selisih",
+        "Contoh bertahap 1",
+        "B. Penjumlahan hingga 20",
+        "Contoh bertahap 2",
+        "C. Pengurangan hingga 20",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Rangkuman bab",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I — Dara Retno Wulan dan Rasfaniwaty, 2022; hlm. cetak 175–196",
+          "url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf#page=187",
+          "audience": "student"
+        },
+        {
+          "title": "Buku panduan guru Matematika kelas I, 2022",
+          "url": "https://repositori.kemendikdasmen.go.id/35861/",
+          "audience": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "buku-matematika-1-2022-bab-7",
+      "database_id": "6d1231c4-4a19-5cd0-930b-a491d4ac0d43",
+      "slug": "buku-matematika-kelas-1-bab-7",
+      "title": "Mengukur panjang",
+      "grade": 1,
+      "chapter": "Buku · Bab 7",
+      "content_kind": "full_chapter",
+      "cp_reference": {
+        "document": "046/H/KR/2025",
+        "phase": "A",
+        "element_ids": [
+          "cp2025-matematika-a-3"
+        ],
+        "mapping_status": "proposed_mapping",
+        "phase_coverage": "partial",
+        "reviewed_by": null
+      },
+      "objectives": [
+        "Membandingkan dan mengurutkan panjang dengan titik awal sejajar.",
+        "Mengukur panjang menggunakan satuan tidak baku yang sama.",
+        "Menjelaskan mengapa hasil ukur dapat berbeda jika satuannya berubah."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Membandingkan dan mengurutkan panjang",
+        "Contoh bertahap 1",
+        "B. Mengukur dengan satuan tidak baku",
+        "Contoh bertahap 2",
+        "Kegiatan penerapan",
+        "Rangkuman bab",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I — Dara Retno Wulan dan Rasfaniwaty, 2022; hlm. cetak 197–218",
+          "url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf#page=209",
+          "audience": "student"
+        },
+        {
+          "title": "Buku panduan guru Matematika kelas I, 2022",
+          "url": "https://repositori.kemendikdasmen.go.id/35861/",
+          "audience": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "buku-matematika-1-2022-bab-8",
+      "database_id": "185ff5ec-bd40-533b-be3a-33dae9542064",
+      "slug": "buku-matematika-kelas-1-bab-8",
+      "title": "Mengelompokkan data dan diagram gambar",
+      "grade": 1,
+      "chapter": "Buku · Bab 8",
+      "content_kind": "full_chapter",
+      "cp_reference": {
+        "document": "046/H/KR/2025",
+        "phase": "A",
+        "element_ids": [
+          "cp2025-matematika-a-5"
+        ],
+        "mapping_status": "proposed_mapping",
+        "phase_coverage": "partial",
+        "reviewed_by": null
+      },
+      "objectives": [
+        "Mengelompokkan dan mencatat data sederhana.",
+        "Membaca diagram gambar dengan satu gambar mewakili satu benda atau satu pilihan.",
+        "Membandingkan kategori dan menjawab pertanyaan berdasarkan data."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mengelompokkan data",
+        "Contoh bertahap 1",
+        "B. Membaca dan membuat diagram gambar",
+        "Contoh bertahap 2",
+        "Kegiatan penerapan",
+        "Rangkuman bab",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I — Dara Retno Wulan dan Rasfaniwaty, 2022; hlm. cetak 219–242",
+          "url": "https://repositori.kemendikdasmen.go.id/35868/1/Matematika-BS-KLS-I.pdf#page=231",
+          "audience": "student"
+        },
+        {
+          "title": "Buku panduan guru Matematika kelas I, 2022",
+          "url": "https://repositori.kemendikdasmen.go.id/35861/",
+          "audience": "teacher"
+        }
+      ]
+    }
+  ]
+}

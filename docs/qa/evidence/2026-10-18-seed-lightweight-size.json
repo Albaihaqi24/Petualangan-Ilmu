@@ -1,0 +1,22 @@
+{
+  "before": {
+    "sqlBytes": 580497,
+    "contentJsonBytes": 313653,
+    "contentJsonbValueBytes": 330353,
+    "lessons": 36,
+    "questions": 216
+  },
+  "after": {
+    "sqlBytes": 285009,
+    "contentJsonBytes": 140602,
+    "contentJsonbValueBytes": 149154,
+    "lessons": 36,
+    "questions": 216
+  },
+  "reductionPercent": {
+    "sqlBytes": 50.9,
+    "contentJsonBytes": 55.17,
+    "contentJsonbValueBytes": 54.85
+  },
+  "measurement": "SQL=UTF-8 file bytes; contentJson=UTF-8 serialized content; contentJsonbValue=pg_column_size on JSONB values in PGlite (logical value size, not total database disk/TOAST/index/WAL size)."
+}

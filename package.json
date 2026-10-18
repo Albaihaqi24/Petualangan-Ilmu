@@ -1,0 +1,47 @@
+{
+  "name": "petualangan-ilmu",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "build": "vite build",
+    "build:production": "node scripts/build-production.mjs",
+    "verify:production": "node scripts/verify-production.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4173 --strictPort",
+    "verify:stage1": "node scripts/verify-stage1.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "test:db": "node --test --test-concurrency=1 tests/database.test.mjs tests/platform-database.test.mjs",
+    "db:seed:generate": "node scripts/generate-database-seed.mjs",
+    "db:seed:complete": "node scripts/generate-seed-materi-lengkap.mjs",
+    "content:export": "node scripts/export-learning-resources.mjs",
+    "content:roadmap": "node scripts/export-government-curriculum.mjs",
+    "content:books": "node scripts/export-textbooks.mjs",
+    "content:adventure": "node scripts/export-adventure-package.mjs",
+    "content:cp": "node scripts/refresh-cp-reference.mjs",
+    "content:generate": "node scripts/generate-curriculum-draft.mjs",
+    "format": "prettier --write src tests scripts index.html package.json vite.config.js vercel.json",
+    "format:check": "prettier --check src tests scripts index.html package.json vite.config.js vercel.json"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "latest",
+    "clsx": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "tailwind-merge": "latest"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
+    "@tailwindcss/vite": "latest",
+    "@vitejs/plugin-react": "latest",
+    "happy-dom": "^21.0.3",
+    "prettier": "^3.9.10",
+    "tailwindcss": "latest",
+    "vite": "latest"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

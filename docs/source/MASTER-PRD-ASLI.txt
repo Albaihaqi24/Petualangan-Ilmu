@@ -1,0 +1,239 @@
+Dokumen ini adalah Master PRD (Product Requirements Document) sekaligus Panduan Eksekusi Teknis Step-by-Step dari Nol Sampai Rilis untuk proyek Petualangan Ilmu. Kamu bisa menyimpannya sebagai file PRD_DAN_PANDUAN.md di dalam folder proyekmu sebagai acuan utama saat ngoding bersama OpenCode.BAGIAN 1: Product Requirements Document (PRD)1.1 Identitas & Visi ProdukNama Produk: Petualangan Ilmu (Bimbel Digital & Game Edukasi SD Gratis)Target Pengguna Utama: Siswa SD Kelas 1–6 di Indonesia (usia 6–12 tahun), Tutor/Relawan Pengajar, Orang Tua, dan Admin.Masalah yang Diselesaikan:Bimbel konvensional berbayar mahal dan belum tentu terjangkau semua keluarga.Website latihan soal biasa membosankan bagi anak SD dan tidak memberikan pendampingan guru.Solusi: Platform web interaktif bergaya peta petualangan 2D tempat siswa membaca materi bergambar/video, mengerjakan kuis berhadiah XP & Level, serta bergabung ke kelas virtual yang dibimbing langsung oleh tutor.Target Perangkat: Mobile-First (90% siswa SD di Indonesia mengakses lewat layar HP Android dengan koneksi internet beragam).1.2 Peran Pengguna & Hak Akses (Role-Based Access)Peran (role)Deskripsi PenggunaHak Akses Utama di SistemBatasan Keamanan (Dilarang)Tamu (guest)Pengunjung belum loginMelihat Landing Page & katalog contoh materi publik.Tidak bisa mengerjakan kuis, simpan XP, atau masuk kelas.Siswa (student)Anak SD Kelas 1–6Memilih kelas (1–6), membuka peta belajar, membaca materi published, mengerjakan kuis, mendapat XP/Level, gabung kelas tutor via kode, dan mengumpulkan tugas.Tidak bisa melihat kunci jawaban sebelum kuis selesai, tidak bisa mengubah XP sendiri, tidak bisa melihat nilai teman lain.Tutor (tutor)Guru / Kakak PembimbingMembuat kelas bimbel, membagikan kode kelas (join_code), membuat tugas, melihat progres & nilai siswa di kelasnya, memberi nilai & komentar tugas, serta membuat draf materi/soal.Tidak bisa melihat atau mengubah kelas milik tutor lain; tidak bisa mengubah role pengguna menjadi admin.Admin (admin)Pengelola PlatformMemverifikasi dan memublikasikan materi/soal (draft → published), melakukan bulk import ribuan soal (CSV/JSON), mengelola katalog mata pelajaran, dan mengangkat akun Tutor.Hanya boleh diakses oleh akun yang di-set langsung dari database Supabase.1.3 Spesifikasi Fitur & Kriteria Selesai (Acceptance Criteria)KodeModul FiturPrioritasDetail Kebutuhan FungsionalKriteria Selesai (Definition of Done)F-01Autentikasi & Profil AnakP0 (Wajib)Daftar & Login dengan Email/Password, pilih kelas (1–6), dan pilih avatar hewan kartun.Akun baru otomatis tercatat di tabel profiles dengan role student, level 1, dan XP 0.F-02Peta Petualangan & Katalog MateriP0 (Wajib)Daftar mata pelajaran tampil sebagai "Pulau Pengetahuan". Materi dapat difilter per Kelas (1–6) dan Bab.Siswa kelas 3 otomatis melihat daftar pulau mata pelajaran kelas 3 yang berstatus published.F-03Pembaca Materi Multi-FormatP0 (Wajib)Menampilkan teks cerita, kotak tips, gambar ilustrasi (dari Cloud Storage), dan video embed YouTube.Halaman materi merender blok JSONB dengan rapi di layar HP tanpa perlu scroll menyamping.F-04Pertarungan Kuis & PembahasanP0 (Wajib)Kuis pilihan ganda (A/B/C/D) sebanyak 5–10 soal acak per sesi. Penilaian di sisi server.Kunci jawaban tidak muncul di tab Network browser sebelum dikumpulkan; pembahasan muncul setelah dijawab.F-05Mesin Gamifikasi (XP & Level)P0 (Wajib)Pemberian XP otomatis dari server setelah baca materi, selesai kuis, dan kumpul tugas.Bar XP bertambah otomatis; setiap kelipatan 100 XP menaikkan 1 Level; anti-spam XP aktif.F-06Ruang Kelas & Tugas TutorP0 (Wajib)Tutor membuat kelas dengan kode unik 6 karakter, memberi tugas, dan menilai kiriman siswa.Siswa bisa gabung dengan kode kelas, mengirim jawaban teks/link, dan membaca umpan balik tutor.F-07Studio Konten & Import MassalP0 (Wajib)Halaman khusus Admin/Tutor untuk menambah materi dan mengimpor ratusan soal via CSV/JSON.Admin bisa mengunggah file CSV/JSON berisi puluhan soal dan langsung tersimpan di tabel questions.F-08Ringkasan Progres Orang TuaP1 (Tahap 2)Halaman laporan belajar anak (jumlah materi selesai, rata-rata nilai kuis, catatan dari tutor).Orang tua dapat memantau perkembangan anak tanpa perlu mengutak-atik fitur belajar siswa.1.4 Aturan Bisnis Gamifikasi & Anti-CheatTabel Perolehan XP:Menyelesaikan baca 1 bab materi baru: +5 XP (Maksimal 1 kali per bab per siswa).Menjawab 1 soal kuis dengan benar: +10 XP (Dihitung pada percobaan pertama yang lulus atau dibatasi per bab).Bonus menuntaskan 1 sesi kuis sampai akhir: +5 XP.Mengumpulkan tugas yang dinilai tutor: +15 XP.Mengulang materi/kuis yang belum lulus (remedial): +3 XP (Maksimal 1 kali sehari untuk mencegah farming XP).Rumus Kenaikan Level:Setiap 100 XP menaikkan 1 level:$$\text{Level Siswa} = \lfloor \frac{\text{Total XP}}{100} \rfloor + 1$$Contoh: 0–99 XP = Level 1; 100–199 XP = Level 2; 250 XP = Level 3 (progres bar 50%).Pemisahan XP dan Nilai Akademik:XP hanya mengukur kerajinan/konsistensi belajar, sedangkan score (0–100) di tabel quiz_attempts dan submissions mengukur pemahaman akademik yang dipantau tutor.1.5 Arsitektur Penyimpanan Gratis Kapasitas BesarAgar aplikasi 100% gratis namun sanggup menampung puluhan ribu soal dan ribuan siswa:Komponen DataLayanan PenyimpananKuota GratisFormat Data yang DisimpanKode Website & Aset GameVercel + Repo GitHubUnlimited DeployKode React, ikon UI, gambar peta pulau, dan gambar avatar hewan (.svg / .webp).Teks Materi, Bank Soal, & AkunSupabase PostgreSQL500 MB (~250.000 soal)Tabel relasional + kolom JSONB untuk isi materi dan pilihan jawaban kuis.Gambar Materi, Gambar Soal, & PDFCloudinary / Cloudflare R210 GB – 25 GBFile gambar .webp (di bawah 150 KB) dan modul .pdf. Hanya URL-nya yang disimpan di Supabase.File Tugas Siswa (Privat)Supabase Storage1 GBFoto/dokumen jawaban tugas siswa di bucket privat student-submissions.Video PembelajaranYouTube (Mode Unlisted)UnlimitedVideo diunggah ke YouTube Tidak Publik, dipanggil via URL [youtube.com/embed/ID_VIDEO](https://youtube.com/embed/ID_VIDEO).BAGIAN 2: Blueprint Step-by-Step Pengerjaan (Tahap 1 s/d Tahap 8)Ikuti 8 tahap ini secara berurutan. Jangan melompat ke tahap berikutnya sebelum semua kotak checklist di tahap saat ini berhasil diuji.TAHAP 1: Persiapan Alat & Inisialisasi Proyek React (Estimasi: 2 Jam)Tujuan: Membuat pondasi aplikasi React + Vite + Tailwind CSS di komputer lokal sampai bisa dibuka di browser.Langkah Demi Langkah:Pastikan Node.js (versi 18 atau lebih baru) dan Git sudah terinstal di laptopmu. Cek di terminal dengan mengetik node -v.Buat folder proyek baru dan instal semua pustaka utama dengan menjalankan perintah ini satu per satu di terminal:Bashnpm create vite@latest petualangan-ilmu -- --template react
+cd petualangan-ilmu
+npm install
+npm install @supabase/supabase-js react-router-dom lucide-react clsx tailwind-merge
+npm install tailwindcss @tailwindcss/vite
+Buka file vite.config.js dan pastikan plugin @tailwindcss/vite sudah terdaftar:JavaScriptimport { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+Buka file src/index.css dan ganti isinya menjadi satu baris ini:CSS@import "tailwindcss";
+Buat struktur folder kosong di dalam folder src/ agar OpenCode bekerja dengan rapi:Plaintextsrc/
+├── components/
+│   ├── ui/
+│   ├── adventure/
+│   └── quiz/
+├── context/
+├── layouts/
+├── lib/
+├── pages/
+│   ├── auth/
+│   ├── student/
+│   ├── tutor/
+│   └── admin/
+└── services/
+Jalankan npm run dev di terminal dan buka http://localhost:5173.Checklist Selesai Tahap 1:[ ] Server lokal berjalan di http://localhost:5173 tanpa pesan error merah.[ ] Tailwind CSS berfungsi (uji dengan memberi class bg-sky-100 text-sky-900 pada teks di App.jsx).[ ] Struktur folder di dalam src/ sudah lengkap.TAHAP 2: Membangun UI/UX Ramah Anak & Navigasi Dummy (Estimasi: 6–8 Jam)Tujuan: Membuat seluruh halaman dan tampilan peta petualangan menggunakan data contoh (dummyData.js) sebelum menyentuh database.Langkah Demi Langkah:Buka OpenCode di folder proyek petualangan-ilmu.Salin dan jalankan Prompt Tahap 1 (yang ada di rencana awalmu) ke OpenCode, lalu tambahkan instruksi spesifik ini agar struktur datanya langsung cocok dengan database nanti:PlaintextTambahan penting untuk Tahap 1:
+Buat file src/lib/dummyData.js yang memiliki struktur data persis seperti tabel database kita nanti:
+- subjects: [{ id, name, slug, description }]
+- lessons: [{ id, subject_id, title, slug, grade, phase, difficulty, status, content: { summary, video_url, blocks: [{ type: 'text'|'image'|'tip', body, url, caption }] } }]
+- questions: [{ id, lesson_id, prompt, options: ["A", "B", "C", "D"], correct_option: 1, explanation, difficulty }]
+Pastikan semua halaman (Landing, Login/Register, Dashboard Peta Siswa, Baca Materi, Kuis, Dashboard Tutor, dan Dashboard Admin) terhubung dengan React Router di App.jsx.
+Periksa setiap halaman yang dibuat oleh OpenCode di browser menggunakan mode layar HP (Inspect Element → pilih ukuran layar iPhone SE / Galaxy S20 lebar 375px–412px).Pastikan tombol pilihan ganda di halaman kuis berukuran besar, berwarna kontras, dan tidak ada teks yang terlalu kecil bagi anak SD (minimal ukuran font text-base atau text-lg).Checklist Selesai Tahap 2:[ ] Semua rute URL berfungsi (/, /login, /register, /student, /student/lesson/:slug, /student/quiz/:lessonId, /tutor, /admin).[ ] Halaman baca materi mampu menampilkan teks, kotak tips, gambar, dan embed video dari dummyData.js.[ ] Halaman kuis bisa diklik dari soal nomor 1 sampai selesai dan menampilkan halaman ringkasan nilai + pembahasan.[ ] npm run build berjalan sukses tanpa error.TAHAP 3: Setup Proyek Supabase, Skema Database, & Fungsi RPC Aman (Estimasi: 3–4 Jam)Tujuan: Menyiapkan database PostgreSQL untuk puluhan ribu soal, pemicu profil otomatis, dan fungsi penilaian kuis di server.Langkah Demi Langkah:Buka supabase.com, buat akun, dan klik New Project (beri nama petualangan-ilmu, simpan password database-nya baik-baik).Setelah proyek aktif, buka menu SQL Editor → New Query.Bagian A (Tabel Utama): Jalankan script SQL pembuatan 10 tabel utama yang sudah kamu miliki di rancangan awal (profiles, subjects, lessons, questions, quiz_attempts, xp_events, classes, class_members, assignments, submissions).Bagian B (Index Kecepatan Puluhan Ribu Soal, Trigger Profil, & RPC Kuis Anti-Cheat): Buat query baru di SQL Editor, lalu tempel dan jalankan script pelengkap yang sangat penting ini:SQL-- 1. Tambah kolom total_xp di profiles agar perhitungan level super cepat
+alter table public.profiles
+  add column if not exists total_xp integer not null default 0;
+
+-- 2. Index khusus agar pencarian dari puluhan ribu soal selesai dalam 1 milidetik
+create index if not exists questions_lesson_id_idx
+  on public.questions (lesson_id, difficulty);
+
+-- 3. Trigger Otomatis: Saat user daftar di Supabase Auth, otomatis buat baris di public.profiles
+create or replace function public.handle_new_user()
+returns trigger
+language plpgsql
+security definer set search_path = public
+as $$
+begin
+  insert into public.profiles (id, display_name, role, grade, avatar)
+  values (
+    new.id,
+    coalesce(new.raw_user_meta_data->>'display_name', 'Petualang Cilik'),
+    'student', -- Paksa selalu student saat daftar dari web demi keamanan
+    coalesce((new.raw_user_meta_data->>'grade')::smallint, 1),
+    coalesce(new.raw_user_meta_data->>'avatar', 'fox')
+  );
+  return new;
+end;
+$$;
+
+drop trigger if exists on_auth_user_created on auth.users;
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row execute procedure public.handle_new_user();
+
+-- 4. Fungsi RPC untuk mengambil soal TANPA mengirim kunci jawaban (correct_option) ke browser
+create or replace function public.get_lesson_quiz(p_lesson_id uuid, p_limit integer default 10)
+returns table (
+  id uuid,
+  lesson_id uuid,
+  prompt text,
+  options jsonb,
+  difficulty text
+)
+language sql
+security definer set search_path = public
+as $$
+  select q.id, q.lesson_id, q.prompt, q.options, q.difficulty
+  from public.questions q
+  join public.lessons l on l.id = q.lesson_id
+  where q.lesson_id = p_lesson_id
+    and l.status = 'published'
+  order by random()
+  limit least(p_limit, 20);
+$$;
+
+-- 5. Fungsi RPC untuk menilai kuis di server, memberi XP anti-cheat, & mengembalikan pembahasan
+create or replace function public.submit_quiz_answers(
+  p_lesson_id uuid,
+  p_answers jsonb -- Format dari React: [{"question_id": "uuid", "selected_option": 1}, ...]
+)
+returns jsonb
+language plpgsql
+security definer set search_path = public
+as $$
+declare
+  v_user_id uuid := auth.uid();
+  v_total integer := 0;
+  v_correct integer := 0;
+  v_score integer := 0;
+  v_xp_earned integer := 0;
+  v_already_completed boolean := false;
+  v_results jsonb := '[]'::jsonb;
+  v_item jsonb;
+  v_question record;
+  v_is_correct boolean;
+begin
+  if v_user_id is null then
+    raise exception 'Harus login terlebih dahulu untuk mengumpulkan kuis';
+  end if;
+
+  -- Cek apakah siswa sudah pernah menuntaskan kuis di bab ini sebelumnya
+  select exists (
+    select 1 from public.quiz_attempts
+    where student_id = v_user_id and lesson_id = p_lesson_id
+  ) into v_already_completed;
+
+  -- Periksa setiap jawaban siswa terhadap kunci jawaban di tabel questions
+  for v_item in select * from jsonb_array_elements(p_answers)
+  loop
+    select * into v_question
+    from public.questions
+    where id = (v_item->>'question_id')::uuid
+      and lesson_id = p_lesson_id;
+
+    if found then
+      v_total := v_total + 1;
+      v_is_correct := (v_question.correct_option = (v_item->>'selected_option')::integer);
+      if v_is_correct then
+        v_correct := v_correct + 1;
+      end if;
+
+      v_results := v_results || jsonb_build_object(
+        'question_id', v_question.id,
+        'selected_option', (v_item->>'selected_option')::integer,
+        'correct_option', v_question.correct_option,
+        'is_correct', v_is_correct,
+        'explanation', v_question.explanation
+      );
+    end if;
+  end loop;
+
+  if v_total = 0 then
+    raise exception 'Tidak ada jawaban valid yang dikirim';
+  end if;
+
+  v_score := round((v_correct::numeric / v_total::numeric) * 100);
+
+  -- Hitung XP: Percobaan pertama dapat (10 XP x benar) + 5 bonus; pengulangan dapat 3 XP latihan
+  if not v_already_completed then
+    v_xp_earned := (v_correct * 10) + 5;
+  else
+    v_xp_earned := 3;
+  end if;
+
+  -- Simpan riwayat kuis
+  insert into public.quiz_attempts (student_id, lesson_id, score, correct_count, total_questions, xp_earned)
+  values (v_user_id, p_lesson_id, v_score, v_correct, v_total, v_xp_earned);
+
+  -- Catat XP dan perbarui total_xp di profil siswa
+  insert into public.xp_events (student_id, event_type, reference_id, amount)
+  values (v_user_id, 'quiz_attempt', gen_random_uuid(), v_xp_earned);
+
+  update public.profiles
+  set total_xp = total_xp + v_xp_earned
+  where id = v_user_id;
+
+  return jsonb_build_object(
+    'score', v_score,
+    'correct_count', v_correct,
+    'total_questions', v_total,
+    'xp_earned', v_xp_earned,
+    'details', v_results
+  );
+end;
+$$;
+Buka menu Project Settings → API di Supabase, salin Project URL dan anon / publishable key, lalu buat file .env.local di folder proyekmu:Cuplikan kodeVITE_SUPABASE_URL=https://xxxx.supabase.co
+VITE_SUPABASE_PUBLISHABLE_KEY=eyJhbGciOi...
+Checklist Selesai Tahap 3:[ ] Semua 10 tabel muncul di menu Table Editor Supabase.[ ] Fungsi handle_new_user, get_lesson_quiz, dan submit_quiz_answers berhasil dibuat tanpa error di SQL Editor.[ ] File .env.local sudah dibuat dan namanya sudah tercatat di dalam .gitignore.TAHAP 4: Integrasi Autentikasi, RLS Dasar, & Proteksi Role (Estimasi: 4–5 Jam)Tujuan: Menghubungkan form Daftar/Masuk di React ke Supabase Auth dan mengunci halaman berdasarkan role (student, tutor, admin).Langkah Demi Langkah:Di dashboard Supabase, buka Authentication → Providers → Email, lalu matikan sementara opsi Confirm email saat tahap development agar kamu bisa mudah mencoba daftar banyak akun siswa/tutor tanpa harus cek inbox email terus-menerus (nyalakan kembali saat mau rilis).Jalankan SQL kebijakan keamanan dasar (RLS) untuk tabel profiles, subjects, dan lessons di SQL Editor:SQLalter table public.profiles enable row level security;
+alter table public.subjects enable row level security;
+alter table public.lessons enable row level security;
+alter table public.questions enable row level security;
+
+-- Semua orang bisa baca daftar mata pelajaran aktif & materi yang sudah published
+create policy "Subjects publik" on public.subjects for select using (is_active = true);
+create policy "Lessons published publik" on public.lessons for select using (status = 'published');
+
+-- Pengguna bisa membaca profilnya sendiri
+create policy "Baca profil sendiri" on public.profiles for select using (auth.uid() = id);
+
+-- Pengguna hanya boleh mengubah nama, kelas, dan avatar miliknya (tidak boleh ubah role/total_xp)
+create policy "Update profil sendiri" on public.profiles for update
+  using (auth.uid() = id)
+  with check (
+    auth.uid() = id
+    and role = (select role from public.profiles where id = auth.uid())
+    and total_xp = (select total_xp from public.profiles where id = auth.uid())
+  );
+Jalankan Prompt Tahap 2 di OpenCode untuk membuat src/lib/supabaseClient.js, AuthContext.jsx, dan ProtectedRoute.jsx.Uji daftar 2 akun baru lewat halaman /register di webmu:Akun 1: siswa1@test.com (biarkan sebagai student).Akun 2: tutor1@test.com (buka menu Table Editor → profiles di Supabase, ubah kolom role milik tutor1 secara manual menjadi tutor).Checklist Selesai Tahap 4:[ ] Daftar akun baru di /register otomatis membuat baris baru di tabel profiles dengan role student.[ ] Login dengan siswa1@test.com mengarahkan pengguna ke /student dan menolak akses jika URL diganti ke /tutor atau /admin.[ ] Login dengan tutor1@test.com berhasil membuka halaman /tutor.TAHAP 5: Menghubungkan Materi, Bank Soal, & Kuis Server-Side (Estimasi: 6–8 Jam)Tujuan: Mengganti data dummy dengan data asli dari database Supabase serta menjalankan kuis aman menggunakan RPC get_lesson_quiz dan submit_quiz_answers.Langkah Demi Langkah:Masukkan minimal 6 mata pelajaran (matematika, bahasa-indonesia, ipas, pancasila, bahasa-inggris, seni-budaya) ke tabel subjects, serta 1 materi contoh beserta 10 soal menggunakan SQL (seperti contoh SQL materi di pembahasan kita sebelumnya).Jalankan Prompt Tahap 3 di OpenCode dengan catatan teknis berikut:PlaintextSaat mengambil daftar soal di halaman kuis, JANGAN memanggil supabase.from('questions').select('*').
+Gunakan supabase.rpc('get_lesson_quiz', { p_lesson_id: lessonId, p_limit: 10 }).
+Saat siswa menekan tombol Kumpulkan Kuis, kirim jawaban ke supabase.rpc('submit_quiz_answers', { p_lesson_id: lessonId, p_answers: formattedAnswers }) dan tampilkan skor, XP yang didapat, serta pembahasan tiap soal dari respons RPC tersebut.
+Uji coba mengerjakan kuis dari akun siswa1@test.com.Checklist Selesai Tahap 5:[ ] Daftar pulau mata pelajaran dan bab materi di web sudah diambil langsung dari database Supabase.[ ] Saat membuka tab Network di Inspect Element browser ketika kuis berlangsung, tidak ada kolom correct_option yang bocor.[ ] Setelah klik "Selesai Kuis", nilai (0–100), jumlah benar, tambahan XP, dan pembahasan tiap soal tampil dengan benar.TAHAP 6: Gamifikasi Lengkap (XP Materi, Level Bar, & Anti-Exploit) (Estimasi: 4–5 Jam)Tujuan: Menghubungkan total_xp dari database ke XPBar dan LevelBadge di layar siswa, serta memberi +5 XP saat siswa selesai membaca materi.Langkah Demi Langkah:Tambahkan fungsi RPC singkat di SQL Editor Supabase untuk klaim +5 XP saat siswa menuntaskan baca materi (otomatis menolak klaim ganda berkat constraint unique (student_id, event_type, reference_id) di tabel xp_events):SQLcreate or replace function public.complete_lesson_reading(p_lesson_id uuid)
+returns integer
+language plpgsql
+security definer set search_path = public
+as $$
+declare
+  v_user_id uuid := auth.uid();
+  v_inserted_id uuid;
+begin
+  if v_user_id is null then
+    raise exception 'Harus login';
+  end if;
+
+  insert into public.xp_events (student_id, event_type, reference_id, amount)
+  values (v_user_id, 'read_lesson', p_lesson_id, 5)
+  on conflict (student_id, event_type, reference_id) do nothing
+  returning id into v_inserted_id;
+
+  if v_inserted_id is not null then
+    update public.profiles set total_xp = total_xp + 5 where id = v_user_id;
+    return 5;
+  end if;
+
+  return 0; -- Sudah pernah klaim XP untuk bab ini
+end;
+$$;
+Jalankan Prompt Tahap 4 di OpenCode agar tombol "Selesai Membaca & Lanjut Kuis" memanggil supabase.rpc('complete_lesson_reading', { p_lesson_id }) dan memperbarui tampilan XPBar serta LevelBadge di Navbar.Checklist Selesai Tahap 6:[ ] Selesai membaca materi pertama kali menambah +5 XP; jika materi yang sama dibuka lagi, XP tidak bertambah ganda.[ ] Selesai kuis pertama kali memberi 10 XP per jawaban benar + 5 XP bonus; jika kuis yang sama diulang terus-menerus, hanya memberi 3 XP latihan.[ ] Level siswa di pojok layar otomatis naik setiap kelipatan 100 XP.TAHAP 7: Fitur Kelas Bimbel Tutor, Kode Gabung, & Tugas (Estimasi: 6–8 Jam)Tujuan: Menghidupkan interaksi antara Tutor dan Siswa (membuat kelas, bagi kode kelas, memberi tugas, mengumpulkan tugas, dan memberi nilai + komentar).Langkah Demi Langkah:Aktifkan RLS untuk tabel classes, class_members, assignments, dan submissions di SQL Editor Supabase.Jalankan Prompt Tahap 5 di OpenCode.Pastikan fitur yang dibuat mencakup:Di halaman Tutor (/tutor): Tombol "Buat Kelas Baru" (otomatis membuat join_code 6 karakter seperti BIM-3A), daftar siswa yang tergabung, tombol "Buat Tugas" (memilih bab materi + instruksi + tenggat waktu), dan daftar kiriman tugas siswa untuk diberi skor (0–100) serta komentar semangat.Di halaman Siswa (/student): Kotak "Gabung Kelas Kakak Tutor" (masukkan join_code), daftar tugas dari kelas yang diikuti, form pengumpulan jawaban, dan tampilan nilai/komentar dari tutor.Checklist Selesai Tahap 7:[ ] Akun tutor1@test.com berhasil membuat kelas dan mendapatkan kode gabung.[ ] Akun siswa1@test.com berhasil masuk ke kelas tersebut menggunakan kode gabung.[ ] Tutor membuat tugas → muncul di dashboard Siswa → Siswa mengirim jawaban → muncul di dashboard Tutor → Tutor memberi nilai & komentar → tampil di layar Siswa.TAHAP 8: Fitur Import Soal Admin, Audit Keamanan, & Rilis ke Vercel (Estimasi: 4–5 Jam)Tujuan: Memudahkan pengisian ribuan soal lewat halaman Admin, memastikan keamanan privasi anak SD, dan meng-online-kan website agar bisa diakses dari HP siapa saja.Langkah Demi Langkah:Minta OpenCode menambahkan fitur "Import Soal JSON/CSV" di halaman /admin sehingga kamu bisa menempelkan hasil olahan soal dari internet (format JSON/CSV) langsung lewat browser tanpa perlu membuka SQL Editor lagi.Jalankan Prompt Tahap 6 di OpenCode untuk melakukan audit keamanan, menghapus console.log yang tidak perlu, dan mengecek npm run build.Buat repositori baru di GitHub (set sebagai Private atau Public), lalu unggah kodinganmu:Bashgit init
+git add .
+git commit -m "MVP Petualangan Ilmu siap rilis"
+git branch -M main
+git remote add origin https://github.com/USERNAME_KAMU/petualangan-ilmu.git
+git push -u origin main
+(Pastikan file .env.local tidak ikut ter-upload ke GitHub).Buka vercel.com, login dengan akun GitHub-mu, lalu klik Add New Project → pilih repositori petualangan-ilmu.Pada bagian Environment Variables di Vercel, masukkan VITE_SUPABASE_URL dan VITE_SUPABASE_PUBLISHABLE_KEY sesuai isi .env.local milikmu.Tambahkan file vercel.json kecil di root proyekmu agar ketika halaman di-refresh pada rute seperti /student/map tidak muncul error 404:JSON{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+Klik Deploy dan tunggu sekitar 1 menit hingga link publik websitemu aktif!Checklist Selesai Tahap 8 (Siap Dipakai Siswa):[ ] npm run build berjalan 100% bersih tanpa error.[ ] Semua tabel di Supabase memiliki status RLS Enabled.[ ] Website sudah online di domain .vercel.app, dibuka dari HP berjalan lancar, dan saat halaman di-refresh tidak terjadi 404 Not Found.Ringkasan Urutan Eksekusi Harianmu Mulai SekarangSupaya kamu tidak pusing melihat panjangnya dokumen ini, fokuskan pikiranmu hanya pada satu kotak terdekat:Hari 1–2: Kerjakan Tahap 1 & Tahap 2 (Setup Vite + jalankan Prompt Tahap 1 di OpenCode sampai tampilan web jalan pakai data dummy).Hari 3–4: Kerjakan Tahap 3 & Tahap 4 (Buat proyek Supabase, jalankan SQL di atas, dan sambungkan fitur Login/Register).Hari 5–7: Kerjakan Tahap 5 & Tahap 6 (Sambungkan materi, kuis RPC aman, dan XP/Level).Hari 8–10: Kerjakan Tahap 7 & Tahap 8 (Buat fitur Kelas Tutor, halaman Admin, dan Deploy ke Vercel).

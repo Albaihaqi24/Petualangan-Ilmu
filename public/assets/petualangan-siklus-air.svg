@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+<title id="title">Model sederhana jalur air</title><desc id="desc">Matahari memberi energi penguapan dari perairan. Uap mengembun menjadi tetes di awan, hujan turun ke daratan, lalu air mengalir atau meresap. Jalur lain juga mungkin terjadi.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0l6 3-6 3" fill="#305b88"/></marker></defs>
+<rect width="900" height="420" rx="18" fill="#edf6fb"/><circle cx="80" cy="70" r="35" fill="#f2c34f"/>
+<path d="M480 110c-40-70 20-100 65-55 35-45 95-20 95 20 70-10 95 60 35 75H505c-35 0-45-25-25-40" fill="#fff" stroke="#93afc1" stroke-width="3"/>
+<path d="M0 315q180-30 360 0v105H0z" fill="#72b4d7"/><path d="M360 315l170-100 370 100v105H360z" fill="#8dbb7b"/>
+<g fill="none" stroke="#305b88" stroke-width="4" marker-end="url(#arrow)"><path d="M210 295V120h215"/><path d="M645 160v100"/><path d="M600 315l-210 40"/><path d="M750 305v80"/></g>
+<g font-family="sans-serif" fill="#203c52" font-size="22"><text x="20" y="140">Energi matahari</text><text x="225" y="215">Menguap</text><text x="315" y="95">Mengembun</text><text x="665" y="220">Hujan</text><text x="420" y="375">Mengalir</text><text x="760" y="360">Meresap</text><text x="25" y="405" font-size="17">Model beberapa jalur; air dapat tersimpan, diserap tumbuhan, atau menguap kembali.</text></g>
+</svg>

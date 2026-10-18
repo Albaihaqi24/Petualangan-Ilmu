@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" fill="none">
+  <rect width="960" height="440" rx="28" fill="#edf3e8"/>
+  <circle cx="779" cy="90" r="44" fill="#f3d481"/>
+  <path d="M0 282Q182 178 358 266T681 252T960 254V440H0Z" fill="#c4d9ba"/>
+  <path d="M0 339Q205 244 447 326T960 310V440H0Z" fill="#a3c3a0"/>
+  <path d="M360 440Q390 340 562 308Q670 283 691 245" stroke="#efe1b8" stroke-width="45"/>
+  <g stroke-linecap="round"><path d="M180 308V159" stroke="#8d805f" stroke-width="17"/><path d="M179 221Q116 223 116 149Q179 114 186 193" fill="#6f9e75"/><path d="M184 207Q249 195 242 132Q179 119 183 187" fill="#83af79"/><path d="M797 322V219" stroke="#8d805f" stroke-width="13"/><circle cx="795" cy="196" r="52" fill="#78a47c"/></g>
+  <g fill="#6b9870"><path d="M267 337Q244 305 272 289Q282 311 277 336Z"/><path d="M281 338Q282 298 310 304Q306 331 281 338Z"/><path d="M347 361Q325 322 353 312Q366 340 357 361Z"/><path d="M361 362Q366 321 391 334Q386 357 361 362Z"/></g>
+  <g fill="#f4b477"><circle cx="647" cy="339" r="13"/><circle cx="679" cy="354" r="11"/><circle cx="714" cy="339" r="13"/></g>
+  <path d="M648 325V306M678 342V324M715 326V308" stroke="#668f65" stroke-width="6" stroke-linecap="round"/>
+  <g transform="translate(431 167)"><path d="M-32 8L-44-27L-10-5M32 8L44-27L10-5" fill="#ce8d58" stroke="#ce8d58" stroke-width="9" stroke-linejoin="round"/><ellipse cy="35" rx="47" ry="51" fill="#d99b64"/><path d="M-44 31Q-20 28 0 54Q20 28 44 31Q47 79 0 85Q-47 79-44 31Z" fill="#fcf0d8"/><circle cx="-16" cy="33" r="4" fill="#364f43"/><circle cx="16" cy="33" r="4" fill="#364f43"/><path d="M-6 54H6L0 60Z" fill="#364f43"/><path d="M0 61Q-7 70-14 63M0 61Q7 70 14 63" stroke="#364f43" stroke-width="3" stroke-linecap="round"/></g>
+  <g stroke="#688e6d" stroke-width="4"><path d="M83 362L92 348L101 362M864 367L873 352L882 367M574 258L581 246L588 258"/></g>
+  <g fill="#f6f4e7"><ellipse cx="327" cy="91" rx="57" ry="13"/><ellipse cx="350" cy="80" rx="31" ry="23"/><ellipse cx="617" cy="120" rx="53" ry="12"/><ellipse cx="603" cy="109" rx="27" ry="21"/></g>
+  <text x="48" y="61" fill="#4c705b" font-family="sans-serif" font-size="17" letter-spacing="3">KEBUN PENEMUAN NARA</text>
+</svg>

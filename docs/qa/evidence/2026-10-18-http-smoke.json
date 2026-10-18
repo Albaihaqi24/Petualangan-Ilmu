@@ -1,0 +1,32 @@
+﻿[
+    {
+        "route":  "/",
+        "status":  200,
+        "hasRoot":  true,
+        "note":  "HTTP shell only; UI and client authorization not verified"
+    },
+    {
+        "route":  "/login",
+        "status":  200,
+        "hasRoot":  true,
+        "note":  "HTTP shell only; UI and client authorization not verified"
+    },
+    {
+        "route":  "/sumber-belajar?grade=1\u0026subject=matematika",
+        "status":  200,
+        "hasRoot":  true,
+        "note":  "HTTP shell only; UI and client authorization not verified"
+    },
+    {
+        "route":  "/student",
+        "status":  200,
+        "hasRoot":  true,
+        "note":  "HTTP shell only; UI and client authorization not verified"
+    },
+    {
+        "route":  "/halaman-tidak-ada-qa",
+        "status":  200,
+        "hasRoot":  true,
+        "note":  "HTTP shell only; UI and client authorization not verified"
+    }
+]

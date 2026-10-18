@@ -1,0 +1,9 @@
+QA browser attempt — 18 October 2026
+Tool: mcp__cua_repl.js
+Action: cua.createBrowserTab("iab", "http://127.0.0.1:5173/", {visible:true})
+Tool result: Browser is not available: iab
+Follow-up action: cua.getState()
+Tool result: {"apps":[],"browsers":[]}
+Conclusion: Real-browser UI QA is BLOCKED by unavailable browser connection.
+No screenshot, viewport, keyboard, screen-reader, or real-browser E2E case was marked PASS.
+The automated DOM harness and HTTP checks are reported separately.

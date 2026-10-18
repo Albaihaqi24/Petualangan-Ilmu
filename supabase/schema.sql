@@ -1,0 +1,8 @@
+-- Berkas penunjuk, bukan installer database.
+-- Jalankan migrations/202610160001_initial_schema.sql, lalu 002, 003, 004 sesuai urutan.
+-- Data contoh DRAFT: seed.sql
+-- Paket tambahan opsional DRAFT: curriculum-draft.sql (setelah migration dan seed.sql)
+-- Bahan ajar per bab opsional DRAFT: books/matematika-kelas-1-2022.sql
+-- Pemeriksaan: verify-setup.sql dan verify-platform.sql
+-- Arsip skema terdahulu: legacy/schema-before-stage3.sql
+-- Baca README utama bagian Tahap 3 sebelum menjalankan SQL pada Supabase baru.

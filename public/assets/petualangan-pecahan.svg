@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="title desc">
+<title id="title">Pecahan dari pita sama panjang</title><desc id="desc">Dua pita sama panjang: setengah diwarnai pada pita atas, seperempat pada pita bawah. Satu setengah menutupi dua seperempat.</desc>
+<rect width="800" height="330" rx="18" fill="#f3f8ef"/>
+<g font-family="sans-serif" fill="#203c2b"><text x="40" y="48" font-size="24">Keseluruhan kedua pita sama besar</text><text x="40" y="119" font-size="22">1/2</text><text x="40" y="219" font-size="22">1/4</text><text x="120" y="295" font-size="20">Satu bagian setengah = dua bagian seperempat.</text></g>
+<rect x="120" y="78" width="600" height="65" fill="#fff" stroke="#28513d" stroke-width="3"/><rect x="120" y="78" width="300" height="65" fill="#71b79b"/>
+<rect x="120" y="178" width="600" height="65" fill="#fff" stroke="#28513d" stroke-width="3"/><rect x="120" y="178" width="150" height="65" fill="#edb27b"/>
+<g stroke="#28513d" stroke-width="3"><path d="M420 78v65 M270 178v65 M420 178v65 M570 178v65"/></g>
+</svg>

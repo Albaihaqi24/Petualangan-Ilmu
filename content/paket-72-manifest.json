@@ -1,0 +1,3736 @@
+{
+  "version": "2026-10-18",
+  "package_id": "petualangan-72-2026",
+  "notice": "Bahan ajar orisinal berdasarkan pilihan topik aplikasi. Draf menunggu review guru; bukan daftar bab resmi nasional.",
+  "lesson_count": 72,
+  "question_count": 360,
+  "courses": [
+    {
+      "id": "petualangan-72-2026-matematika-1",
+      "subject": "matematika",
+      "name": "Matematika",
+      "island": "Pulau Numeria",
+      "mentor": "Kapten Rubi",
+      "grade": 1,
+      "phase": "A",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Mengenal Angka 1–20",
+          "id": "petualangan-matematika-1-1",
+          "slug": "petualangan-matematika-kelas-1-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Penjumlahan & Pengurangan Benda",
+          "id": "petualangan-matematika-1-2",
+          "slug": "petualangan-matematika-kelas-1-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Mengenal Bangun Datar Sederhana",
+          "id": "petualangan-matematika-1-3",
+          "slug": "petualangan-matematika-kelas-1-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Membandingkan Berat & Panjang",
+          "id": "petualangan-matematika-1-4",
+          "slug": "petualangan-matematika-kelas-1-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-matematika-2",
+      "subject": "matematika",
+      "name": "Matematika",
+      "island": "Pulau Numeria",
+      "mentor": "Kapten Rubi",
+      "grade": 2,
+      "phase": "A",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Nilai Tempat Ratusan, Puluhan, Satuan",
+          "id": "petualangan-matematika-2-1",
+          "slug": "petualangan-matematika-kelas-2-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Penjumlahan & Pengurangan Bersusun",
+          "id": "petualangan-matematika-2-2",
+          "slug": "petualangan-matematika-kelas-2-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Membaca Jam & Waktu",
+          "id": "petualangan-matematika-2-3",
+          "slug": "petualangan-matematika-kelas-2-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Mengenal Diagram Gambar (Piktogram)",
+          "id": "petualangan-matematika-2-4",
+          "slug": "petualangan-matematika-kelas-2-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-matematika-3",
+      "subject": "matematika",
+      "name": "Matematika",
+      "island": "Pulau Numeria",
+      "mentor": "Kapten Rubi",
+      "grade": 3,
+      "phase": "B",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Operasi Hitung Bilangan sampai 1.000",
+          "id": "petualangan-matematika-3-1",
+          "slug": "petualangan-matematika-kelas-3-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Konsep Perkalian Dasar",
+          "id": "petualangan-matematika-3-2",
+          "slug": "petualangan-matematika-kelas-3-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Konsep Pembagian Sama Rata",
+          "id": "petualangan-matematika-3-3",
+          "slug": "petualangan-matematika-kelas-3-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Mengenal Pecahan Sederhana",
+          "id": "petualangan-matematika-3-4",
+          "slug": "petualangan-matematika-kelas-3-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-matematika-4",
+      "subject": "matematika",
+      "name": "Matematika",
+      "island": "Pulau Numeria",
+      "mentor": "Kapten Rubi",
+      "grade": 4,
+      "phase": "B",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Faktor & Kelipatan Bilangan (FPB & KPK Dasar)",
+          "id": "petualangan-matematika-4-1",
+          "slug": "petualangan-matematika-kelas-4-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Pecahan Senilai, Desimal, & Persen",
+          "id": "petualangan-matematika-4-2",
+          "slug": "petualangan-matematika-kelas-4-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Keliling & Luas Bangun Datar",
+          "id": "petualangan-matematika-4-3",
+          "slug": "petualangan-matematika-kelas-4-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Membaca Diagram Batang",
+          "id": "petualangan-matematika-4-4",
+          "slug": "petualangan-matematika-kelas-4-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-matematika-5",
+      "subject": "matematika",
+      "name": "Matematika",
+      "island": "Pulau Numeria",
+      "mentor": "Kapten Rubi",
+      "grade": 5,
+      "phase": "C",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Penjumlahan & Pengurangan Pecahan Beda Penyebut",
+          "id": "petualangan-matematika-5-1",
+          "slug": "petualangan-matematika-kelas-5-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Perkalian & Pembagian Pecahan",
+          "id": "petualangan-matematika-5-2",
+          "slug": "petualangan-matematika-kelas-5-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Kecepatan, Jarak, dan Waktu",
+          "id": "petualangan-matematika-5-3",
+          "slug": "petualangan-matematika-kelas-5-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Volume Kubus dan Balok",
+          "id": "petualangan-matematika-5-4",
+          "slug": "petualangan-matematika-kelas-5-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-matematika-6",
+      "subject": "matematika",
+      "name": "Matematika",
+      "island": "Pulau Numeria",
+      "mentor": "Kapten Rubi",
+      "grade": 6,
+      "phase": "C",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Operasi Hitung Bilangan Bulat (Positif & Negatif)",
+          "id": "petualangan-matematika-6-1",
+          "slug": "petualangan-matematika-kelas-6-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Unsur, Keliling, & Luas Lingkaran",
+          "id": "petualangan-matematika-6-2",
+          "slug": "petualangan-matematika-kelas-6-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Gabungan Bangun Ruang",
+          "id": "petualangan-matematika-6-3",
+          "slug": "petualangan-matematika-kelas-6-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Statistika Dasar: Mean, Median, Modus",
+          "id": "petualangan-matematika-6-4",
+          "slug": "petualangan-matematika-kelas-6-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-bahasa-indonesia-1",
+      "subject": "bahasa-indonesia",
+      "name": "Bahasa Indonesia",
+      "island": "Pulau Kata",
+      "mentor": "Bobo",
+      "grade": 1,
+      "phase": "A",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Bunyi Huruf & Suku Kata",
+          "id": "petualangan-bahasa-indonesia-1-1",
+          "slug": "petualangan-bahasa-indonesia-kelas-1-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Kosakata Anggota Tubuh & Keluarga",
+          "id": "petualangan-bahasa-indonesia-1-2",
+          "slug": "petualangan-bahasa-indonesia-kelas-1-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Membaca Cerita Bergambar",
+          "id": "petualangan-bahasa-indonesia-1-3",
+          "slug": "petualangan-bahasa-indonesia-kelas-1-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Kalimat Tanya & Tanda Baca Dasar",
+          "id": "petualangan-bahasa-indonesia-1-4",
+          "slug": "petualangan-bahasa-indonesia-kelas-1-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-bahasa-indonesia-2",
+      "subject": "bahasa-indonesia",
+      "name": "Bahasa Indonesia",
+      "island": "Pulau Kata",
+      "mentor": "Bobo",
+      "grade": 2,
+      "phase": "A",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Kata Ajaib: Tolong, Maaf, Terima Kasih",
+          "id": "petualangan-bahasa-indonesia-2-1",
+          "slug": "petualangan-bahasa-indonesia-kelas-2-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Kalimat Berita & Kalimat Perintah",
+          "id": "petualangan-bahasa-indonesia-2-2",
+          "slug": "petualangan-bahasa-indonesia-kelas-2-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Membaca Dongeng Hewan (Fabel)",
+          "id": "petualangan-bahasa-indonesia-2-3",
+          "slug": "petualangan-bahasa-indonesia-kelas-2-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Menulis Cerita Pengalaman Harian",
+          "id": "petualangan-bahasa-indonesia-2-4",
+          "slug": "petualangan-bahasa-indonesia-kelas-2-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-bahasa-indonesia-3",
+      "subject": "bahasa-indonesia",
+      "name": "Bahasa Indonesia",
+      "island": "Pulau Kata",
+      "mentor": "Bobo",
+      "grade": 3,
+      "phase": "B",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Mencari Ide Pokok Paragraf",
+          "id": "petualangan-bahasa-indonesia-3-1",
+          "slug": "petualangan-bahasa-indonesia-kelas-3-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Kalimat Efektif & Kosakata Baru",
+          "id": "petualangan-bahasa-indonesia-3-2",
+          "slug": "petualangan-bahasa-indonesia-kelas-3-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Membaca Petunjuk & Denah Lokasi",
+          "id": "petualangan-bahasa-indonesia-3-3",
+          "slug": "petualangan-bahasa-indonesia-kelas-3-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Mengenal Puisi Anak",
+          "id": "petualangan-bahasa-indonesia-3-4",
+          "slug": "petualangan-bahasa-indonesia-kelas-3-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-bahasa-indonesia-4",
+      "subject": "bahasa-indonesia",
+      "name": "Bahasa Indonesia",
+      "island": "Pulau Kata",
+      "mentor": "Bobo",
+      "grade": 4,
+      "phase": "B",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Kalimat Transitif & Intransitif",
+          "id": "petualangan-bahasa-indonesia-4-1",
+          "slug": "petualangan-bahasa-indonesia-kelas-4-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Mencari Arti Kata di Kamus",
+          "id": "petualangan-bahasa-indonesia-4-2",
+          "slug": "petualangan-bahasa-indonesia-kelas-4-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Wawancara & Laporan Pengamatan",
+          "id": "petualangan-bahasa-indonesia-4-3",
+          "slug": "petualangan-bahasa-indonesia-kelas-4-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Memahami Pesan Moral Cerita Rakyat",
+          "id": "petualangan-bahasa-indonesia-4-4",
+          "slug": "petualangan-bahasa-indonesia-kelas-4-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-bahasa-indonesia-5",
+      "subject": "bahasa-indonesia",
+      "name": "Bahasa Indonesia",
+      "island": "Pulau Kata",
+      "mentor": "Bobo",
+      "grade": 5,
+      "phase": "C",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Kata Sifat, Sinonim, dan Antonim",
+          "id": "petualangan-bahasa-indonesia-5-1",
+          "slug": "petualangan-bahasa-indonesia-kelas-5-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Kalimat Langsung & Tidak Langsung",
+          "id": "petualangan-bahasa-indonesia-5-2",
+          "slug": "petualangan-bahasa-indonesia-kelas-5-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Membedakan Fakta dan Opini",
+          "id": "petualangan-bahasa-indonesia-5-3",
+          "slug": "petualangan-bahasa-indonesia-kelas-5-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Teks Eksplanasi Fenomena Alam",
+          "id": "petualangan-bahasa-indonesia-5-4",
+          "slug": "petualangan-bahasa-indonesia-kelas-5-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-bahasa-indonesia-6",
+      "subject": "bahasa-indonesia",
+      "name": "Bahasa Indonesia",
+      "island": "Pulau Kata",
+      "mentor": "Bobo",
+      "grade": 6,
+      "phase": "C",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Ide Pokok & Kesimpulan Teks Laporan",
+          "id": "petualangan-bahasa-indonesia-6-1",
+          "slug": "petualangan-bahasa-indonesia-kelas-6-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Menyusun Teks Pidato Persuasif",
+          "id": "petualangan-bahasa-indonesia-6-2",
+          "slug": "petualangan-bahasa-indonesia-kelas-6-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Membaca Infografis & Data Visual",
+          "id": "petualangan-bahasa-indonesia-6-3",
+          "slug": "petualangan-bahasa-indonesia-kelas-6-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Menulis Surat Resmi & Pribadi",
+          "id": "petualangan-bahasa-indonesia-6-4",
+          "slug": "petualangan-bahasa-indonesia-kelas-6-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-ipas-1",
+      "subject": "ipas",
+      "name": "IPA & Sains",
+      "island": "Pulau Eksplora",
+      "mentor": "Ilmuwan Tobi",
+      "grade": 1,
+      "phase": "A",
+      "enrichment": true,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Mengenal Panca Indra Kita",
+          "id": "petualangan-ipas-1-1",
+          "slug": "petualangan-ipas-kelas-1-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Merawat Tubuh & Kesehatan Gigi",
+          "id": "petualangan-ipas-1-2",
+          "slug": "petualangan-ipas-kelas-1-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Mengenal Hewan & Tumbuhan Sekitar",
+          "id": "petualangan-ipas-1-3",
+          "slug": "petualangan-ipas-kelas-1-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Benda Siang dan Malam Hari",
+          "id": "petualangan-ipas-1-4",
+          "slug": "petualangan-ipas-kelas-1-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-ipas-2",
+      "subject": "ipas",
+      "name": "IPA & Sains",
+      "island": "Pulau Eksplora",
+      "mentor": "Ilmuwan Tobi",
+      "grade": 2,
+      "phase": "A",
+      "enrichment": true,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Benda Padat, Cair, dan Gas",
+          "id": "petualangan-ipas-2-1",
+          "slug": "petualangan-ipas-kelas-2-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Bagian-Bagian Tumbuhan & Fungsinya",
+          "id": "petualangan-ipas-2-2",
+          "slug": "petualangan-ipas-kelas-2-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Tempat Hidup Hewan (Darat & Air)",
+          "id": "petualangan-ipas-2-3",
+          "slug": "petualangan-ipas-kelas-2-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Mengenal Cuaca: Cerah, Berawan, Hujan",
+          "id": "petualangan-ipas-2-4",
+          "slug": "petualangan-ipas-kelas-2-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-ipas-3",
+      "subject": "ipas",
+      "name": "IPA & Sains",
+      "island": "Pulau Eksplora",
+      "mentor": "Ilmuwan Tobi",
+      "grade": 3,
+      "phase": "B",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Ciri-Ciri Makhluk Hidup",
+          "id": "petualangan-ipas-3-1",
+          "slug": "petualangan-ipas-kelas-3-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Siklus Hidup Hewan (Metamorfosis)",
+          "id": "petualangan-ipas-3-2",
+          "slug": "petualangan-ipas-kelas-3-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Perubahan Wujud Benda: Mencair, Membeku",
+          "id": "petualangan-ipas-3-3",
+          "slug": "petualangan-ipas-kelas-3-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Sumber Energi di Sekitar Kita",
+          "id": "petualangan-ipas-3-4",
+          "slug": "petualangan-ipas-kelas-3-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-ipas-4",
+      "subject": "ipas",
+      "name": "IPA & Sains",
+      "island": "Pulau Eksplora",
+      "mentor": "Ilmuwan Tobi",
+      "grade": 4,
+      "phase": "B",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Proses Fotosintesis Tumbuhan",
+          "id": "petualangan-ipas-4-1",
+          "slug": "petualangan-ipas-kelas-4-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Gaya di Sekitar Kita: Otot, Gesek, Magnet",
+          "id": "petualangan-ipas-4-2",
+          "slug": "petualangan-ipas-kelas-4-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Perubahan Bentuk Energi",
+          "id": "petualangan-ipas-4-3",
+          "slug": "petualangan-ipas-kelas-4-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Siklus Air & Pelestarian Alam",
+          "id": "petualangan-ipas-4-4",
+          "slug": "petualangan-ipas-kelas-4-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-ipas-5",
+      "subject": "ipas",
+      "name": "IPA & Sains",
+      "island": "Pulau Eksplora",
+      "mentor": "Ilmuwan Tobi",
+      "grade": 5,
+      "phase": "C",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Cahaya dan Sifatnya & Bunyi",
+          "id": "petualangan-ipas-5-1",
+          "slug": "petualangan-ipas-kelas-5-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Rantai Makanan & Jaring Ekosistem",
+          "id": "petualangan-ipas-5-2",
+          "slug": "petualangan-ipas-kelas-5-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Organ Pernapasan & Pencernaan Manusia",
+          "id": "petualangan-ipas-5-3",
+          "slug": "petualangan-ipas-kelas-5-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Listrik, Magnet, & Teknologi Sehari-hari",
+          "id": "petualangan-ipas-5-4",
+          "slug": "petualangan-ipas-kelas-5-bab-4"
+        }
+      ]
+    },
+    {
+      "id": "petualangan-72-2026-ipas-6",
+      "subject": "ipas",
+      "name": "IPA & Sains",
+      "island": "Pulau Eksplora",
+      "mentor": "Ilmuwan Tobi",
+      "grade": 6,
+      "phase": "C",
+      "enrichment": false,
+      "chapters": [
+        {
+          "order": 1,
+          "title": "Sistem Rangka, Sendi, & Saraf Manusia",
+          "id": "petualangan-ipas-6-1",
+          "slug": "petualangan-ipas-kelas-6-bab-1"
+        },
+        {
+          "order": 2,
+          "title": "Sistem Tata Surya, Rotasi, & Revolusi Bumi",
+          "id": "petualangan-ipas-6-2",
+          "slug": "petualangan-ipas-kelas-6-bab-2"
+        },
+        {
+          "order": 3,
+          "title": "Adaptasi Makhluk Hidup: Bunglon, Kaktus, Teratai",
+          "id": "petualangan-ipas-6-3",
+          "slug": "petualangan-ipas-kelas-6-bab-3"
+        },
+        {
+          "order": 4,
+          "title": "Krisis Energi & Energi Terbarukan",
+          "id": "petualangan-ipas-6-4",
+          "slug": "petualangan-ipas-kelas-6-bab-4"
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "petualangan-matematika-1-1",
+      "database_id": "bf06d559-f1bd-53ca-8f72-bd6011ea52aa",
+      "slug": "petualangan-matematika-kelas-1-bab-1",
+      "title": "Mengenal Angka 1–20",
+      "subject": "matematika",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan satu benda, satu hitungan dengan contoh dan alasan.",
+        "Menjelaskan belasan sebagai sepuluh dan sisanya dengan contoh dan alasan.",
+        "Menjelaskan membandingkan dan mengurutkan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Satu benda, satu hitungan",
+        "Contoh bertahap 1",
+        "B. Belasan sebagai sepuluh dan sisanya",
+        "Contoh bertahap 2",
+        "C. Membandingkan dan mengurutkan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-I",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-1-2",
+      "database_id": "70642fd3-c467-5977-b7c6-d38d18f75bb7",
+      "slug": "petualangan-matematika-kelas-1-bab-2",
+      "title": "Penjumlahan & Pengurangan Benda",
+      "subject": "matematika",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan menggabungkan dua bagian dengan contoh dan alasan.",
+        "Menjelaskan mengambil dan membandingkan dengan contoh dan alasan.",
+        "Menjelaskan strategi dan pemeriksaan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Menggabungkan dua bagian",
+        "Contoh bertahap 1",
+        "B. Mengambil dan membandingkan",
+        "Contoh bertahap 2",
+        "C. Strategi dan pemeriksaan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-I",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-1-3",
+      "database_id": "37b79d92-d6b5-5022-a4c1-342a782a8e68",
+      "slug": "petualangan-matematika-kelas-1-bab-3",
+      "title": "Mengenal Bangun Datar Sederhana",
+      "subject": "matematika",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan sisi dan titik sudut dengan contoh dan alasan.",
+        "Menjelaskan segitiga, persegi, dan persegi panjang dengan contoh dan alasan.",
+        "Menjelaskan mengelompokkan dan menyusun bentuk dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Sisi dan titik sudut",
+        "Contoh bertahap 1",
+        "B. Segitiga, persegi, dan persegi panjang",
+        "Contoh bertahap 2",
+        "C. Mengelompokkan dan menyusun bentuk",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-I",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-1-4",
+      "database_id": "0227de29-f957-57db-8a46-c48d344adc7f",
+      "slug": "petualangan-matematika-kelas-1-bab-4",
+      "title": "Membandingkan Berat & Panjang",
+      "subject": "matematika",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan membandingkan panjang secara langsung dengan contoh dan alasan.",
+        "Menjelaskan membandingkan berat secara aman dengan contoh dan alasan.",
+        "Menjelaskan mengurutkan dengan satuan sama dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Membandingkan panjang secara langsung",
+        "Contoh bertahap 1",
+        "B. Membandingkan berat secara aman",
+        "Contoh bertahap 2",
+        "C. Mengurutkan dengan satuan sama",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas I",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-I",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-2-1",
+      "database_id": "71b2579e-894c-584e-a89c-e48e6b7c2a40",
+      "slug": "petualangan-matematika-kelas-2-bab-1",
+      "title": "Nilai Tempat Ratusan, Puluhan, Satuan",
+      "subject": "matematika",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan membentuk ratusan, puluhan, satuan dengan contoh dan alasan.",
+        "Menjelaskan nilai angka bergantung tempat dengan contoh dan alasan.",
+        "Menjelaskan mengurai dan membandingkan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Membentuk ratusan, puluhan, satuan",
+        "Contoh bertahap 1",
+        "B. Nilai angka bergantung tempat",
+        "Contoh bertahap 2",
+        "C. Mengurai dan membandingkan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas II",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-2-2",
+      "database_id": "a1eb3328-2a41-58ac-9d4b-10e99a90cb77",
+      "slug": "petualangan-matematika-kelas-2-bab-2",
+      "title": "Penjumlahan & Pengurangan Bersusun",
+      "subject": "matematika",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan menata kolom dan menjumlahkan dengan contoh dan alasan.",
+        "Menjelaskan mengurangi dengan pengelompokan ulang dengan contoh dan alasan.",
+        "Menjelaskan memeriksa dengan operasi kebalikan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Menata kolom dan menjumlahkan",
+        "Contoh bertahap 1",
+        "B. Mengurangi dengan pengelompokan ulang",
+        "Contoh bertahap 2",
+        "C. Memeriksa dengan operasi kebalikan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas II",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-2-3",
+      "database_id": "a156b9fe-3472-5868-a20b-a8a00356f21e",
+      "slug": "petualangan-matematika-kelas-2-bab-3",
+      "title": "Membaca Jam & Waktu",
+      "subject": "matematika",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mengenal jarum jam dengan contoh dan alasan.",
+        "Menjelaskan membaca menit dan penulisan waktu dengan contoh dan alasan.",
+        "Menjelaskan menghitung durasi sederhana dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mengenal jarum jam",
+        "Contoh bertahap 1",
+        "B. Membaca menit dan penulisan waktu",
+        "Contoh bertahap 2",
+        "C. Menghitung durasi sederhana",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas II",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-2-4",
+      "database_id": "8fd1b8fe-76bb-5085-ae13-0f80c6906754",
+      "slug": "petualangan-matematika-kelas-2-bab-4",
+      "title": "Mengenal Diagram Gambar (Piktogram)",
+      "subject": "matematika",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mengumpulkan dan mengelompokkan data dengan contoh dan alasan.",
+        "Menjelaskan menggambar piktogram dan membaca kunci dengan contoh dan alasan.",
+        "Menjelaskan membandingkan dan menyimpulkan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mengumpulkan dan mengelompokkan data",
+        "Contoh bertahap 1",
+        "B. Menggambar piktogram dan membaca kunci",
+        "Contoh bertahap 2",
+        "C. Membandingkan dan menyimpulkan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas II",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-3-1",
+      "database_id": "8270a317-52f4-5970-8aea-b265432e7022",
+      "slug": "petualangan-matematika-kelas-3-bab-1",
+      "title": "Operasi Hitung Bilangan sampai 1.000",
+      "subject": "matematika",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan membaca dan membandingkan bilangan dengan contoh dan alasan.",
+        "Menjelaskan menjumlahkan dan mengurangkan dengan contoh dan alasan.",
+        "Menjelaskan menyelesaikan masalah dua langkah dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Membaca dan membandingkan bilangan",
+        "Contoh bertahap 1",
+        "B. Menjumlahkan dan mengurangkan",
+        "Contoh bertahap 2",
+        "C. Menyelesaikan masalah dua langkah",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas III",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-iii",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-3-2",
+      "database_id": "37abccf0-b215-56bf-9cfd-f9890b54f424",
+      "slug": "petualangan-matematika-kelas-3-bab-2",
+      "title": "Konsep Perkalian Dasar",
+      "subject": "matematika",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan kelompok sama banyak dengan contoh dan alasan.",
+        "Menjelaskan susunan baris dan kolom dengan contoh dan alasan.",
+        "Menjelaskan mengurai perkalian dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Kelompok sama banyak",
+        "Contoh bertahap 1",
+        "B. Susunan baris dan kolom",
+        "Contoh bertahap 2",
+        "C. Mengurai perkalian",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas III",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-iii",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-3-3",
+      "database_id": "8ccb7c28-2227-5d95-af01-ac89702411da",
+      "slug": "petualangan-matematika-kelas-3-bab-3",
+      "title": "Konsep Pembagian Sama Rata",
+      "subject": "matematika",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan berbagi rata dengan contoh dan alasan.",
+        "Menjelaskan membuat kelompok dan menghubungkan perkalian dengan contoh dan alasan.",
+        "Menjelaskan sisa dan aturan dasar dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Berbagi rata",
+        "Contoh bertahap 1",
+        "B. Membuat kelompok dan menghubungkan perkalian",
+        "Contoh bertahap 2",
+        "C. Sisa dan aturan dasar",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas III",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-iii",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-3-4",
+      "database_id": "7ca72cf0-618c-5606-bd86-230948859261",
+      "slug": "petualangan-matematika-kelas-3-bab-4",
+      "title": "Mengenal Pecahan Sederhana",
+      "subject": "matematika",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan membagi sama besar dengan contoh dan alasan.",
+        "Menjelaskan pembilang dan penyebut dengan contoh dan alasan.",
+        "Menjelaskan membandingkan pecahan satuan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Membagi sama besar",
+        "Contoh bertahap 1",
+        "B. Pembilang dan penyebut",
+        "Contoh bertahap 2",
+        "C. Membandingkan pecahan satuan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas III",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-iii",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-4-1",
+      "database_id": "8a1af13c-a1f9-59e5-a308-560e4b552067",
+      "slug": "petualangan-matematika-kelas-4-bab-1",
+      "title": "Faktor & Kelipatan Bilangan (FPB & KPK Dasar)",
+      "subject": "matematika",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mencari faktor dan kelipatan dengan contoh dan alasan.",
+        "Menjelaskan faktor persekutuan terbesar dengan contoh dan alasan.",
+        "Menjelaskan kelipatan persekutuan terkecil dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mencari faktor dan kelipatan",
+        "Contoh bertahap 1",
+        "B. Faktor persekutuan terbesar",
+        "Contoh bertahap 2",
+        "C. Kelipatan persekutuan terkecil",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas IV",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-IV",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-4-2",
+      "database_id": "3dd55558-3d71-5014-9b56-867364f661ef",
+      "slug": "petualangan-matematika-kelas-4-bab-2",
+      "title": "Pecahan Senilai, Desimal, & Persen",
+      "subject": "matematika",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan pecahan senilai dengan contoh dan alasan.",
+        "Menjelaskan desimal persepuluhan dan perseratusan dengan contoh dan alasan.",
+        "Menjelaskan persen sebagai per seratus dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Pecahan senilai",
+        "Contoh bertahap 1",
+        "B. Desimal persepuluhan dan perseratusan",
+        "Contoh bertahap 2",
+        "C. Persen sebagai per seratus",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas IV",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-IV",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-4-3",
+      "database_id": "d667a1fa-8213-55a8-87c8-ad4066b47faf",
+      "slug": "petualangan-matematika-kelas-4-bab-3",
+      "title": "Keliling & Luas Bangun Datar",
+      "subject": "matematika",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan keliling sebagai perjalanan di tepi dengan contoh dan alasan.",
+        "Menjelaskan luas dengan petak satuan dengan contoh dan alasan.",
+        "Menjelaskan segitiga dan bangun gabungan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Keliling sebagai perjalanan di tepi",
+        "Contoh bertahap 1",
+        "B. Luas dengan petak satuan",
+        "Contoh bertahap 2",
+        "C. Segitiga dan bangun gabungan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas IV",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-IV",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-4-4",
+      "database_id": "53d82864-1fee-5115-a32f-bf1024de9e50",
+      "slug": "petualangan-matematika-kelas-4-bab-4",
+      "title": "Membaca Diagram Batang",
+      "subject": "matematika",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan dari tabel ke diagram dengan contoh dan alasan.",
+        "Menjelaskan membaca skala dengan teliti dengan contoh dan alasan.",
+        "Menjelaskan membuat kesimpulan berbukti dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Dari tabel ke diagram",
+        "Contoh bertahap 1",
+        "B. Membaca skala dengan teliti",
+        "Contoh bertahap 2",
+        "C. Membuat kesimpulan berbukti",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas IV",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-IV",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-5-1",
+      "database_id": "e1c3d093-99ff-5cd2-994d-6f9d9c011050",
+      "slug": "petualangan-matematika-kelas-5-bab-1",
+      "title": "Penjumlahan & Pengurangan Pecahan Beda Penyebut",
+      "subject": "matematika",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mencari satuan pecahan bersama dengan contoh dan alasan.",
+        "Menjelaskan menjumlah dan mengurangi pembilang dengan contoh dan alasan.",
+        "Menjelaskan pecahan campuran dan pemeriksaan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mencari satuan pecahan bersama",
+        "Contoh bertahap 1",
+        "B. Menjumlah dan mengurangi pembilang",
+        "Contoh bertahap 2",
+        "C. Pecahan campuran dan pemeriksaan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas V",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-v",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-5-2",
+      "database_id": "6e4f72e4-241e-5cad-aff6-4349402da3a7",
+      "slug": "petualangan-matematika-kelas-5-bab-2",
+      "title": "Perkalian & Pembagian Pecahan",
+      "subject": "matematika",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan sebagian dari sebagian dengan contoh dan alasan.",
+        "Menjelaskan pembagian dan kebalikan dengan contoh dan alasan.",
+        "Menjelaskan menyederhanakan dan memeriksa dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Sebagian dari sebagian",
+        "Contoh bertahap 1",
+        "B. Pembagian dan kebalikan",
+        "Contoh bertahap 2",
+        "C. Menyederhanakan dan memeriksa",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas V",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-v",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-5-3",
+      "database_id": "6cc2ce28-88d9-51c8-90b9-5dc3aa21375e",
+      "slug": "petualangan-matematika-kelas-5-bab-3",
+      "title": "Kecepatan, Jarak, dan Waktu",
+      "subject": "matematika",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan makna kecepatan rata-rata dengan contoh dan alasan.",
+        "Menjelaskan hubungan jarak, waktu, dan kecepatan dengan contoh dan alasan.",
+        "Menjelaskan konversi dan kewajaran hasil dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Makna kecepatan rata-rata",
+        "Contoh bertahap 1",
+        "B. Hubungan jarak, waktu, dan kecepatan",
+        "Contoh bertahap 2",
+        "C. Konversi dan kewajaran hasil",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas V",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-v",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-5-4",
+      "database_id": "6caaab65-b762-52ff-a5ea-aba5082fba75",
+      "slug": "petualangan-matematika-kelas-5-bab-4",
+      "title": "Volume Kubus dan Balok",
+      "subject": "matematika",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan kubus satuan dan lapisan dengan contoh dan alasan.",
+        "Menjelaskan kubus dan rusuk dengan contoh dan alasan.",
+        "Menjelaskan satuan dan ukuran yang belum diketahui dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Kubus satuan dan lapisan",
+        "Contoh bertahap 1",
+        "B. Kubus dan rusuk",
+        "Contoh bertahap 2",
+        "C. Satuan dan ukuran yang belum diketahui",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas V",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-v",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-6-1",
+      "database_id": "a99a50cd-6a45-5cc0-99dc-83c49694fa6e",
+      "slug": "petualangan-matematika-kelas-6-bab-1",
+      "title": "Operasi Hitung Bilangan Bulat (Positif & Negatif)",
+      "subject": "matematika",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan garis bilangan dan urutan dengan contoh dan alasan.",
+        "Menjelaskan penjumlahan dan pengurangan dengan contoh dan alasan.",
+        "Menjelaskan perkalian, pembagian, dan urutan operasi dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Garis bilangan dan urutan",
+        "Contoh bertahap 1",
+        "B. Penjumlahan dan pengurangan",
+        "Contoh bertahap 2",
+        "C. Perkalian, pembagian, dan urutan operasi",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas VI",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-vi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-6-2",
+      "database_id": "364c064a-8c9f-561a-9a8f-9079d6bcfc35",
+      "slug": "petualangan-matematika-kelas-6-bab-2",
+      "title": "Unsur, Keliling, & Luas Lingkaran",
+      "subject": "matematika",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan pusat, jari-jari, dan diameter dengan contoh dan alasan.",
+        "Menjelaskan keliling dan bilangan pi dengan contoh dan alasan.",
+        "Menjelaskan luas dan bagian lingkaran dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Pusat, jari-jari, dan diameter",
+        "Contoh bertahap 1",
+        "B. Keliling dan bilangan pi",
+        "Contoh bertahap 2",
+        "C. Luas dan bagian lingkaran",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas VI",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-vi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-6-3",
+      "database_id": "8a2dd75c-ad8a-5576-a3c7-f3ee370b4bb6",
+      "slug": "petualangan-matematika-kelas-6-bab-3",
+      "title": "Gabungan Bangun Ruang",
+      "subject": "matematika",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan memecah menjadi bagian tidak tumpang tindih dengan contoh dan alasan.",
+        "Menjelaskan menentukan ukuran yang belum tertulis dengan contoh dan alasan.",
+        "Menjelaskan luas permukaan dan bidang pertemuan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Memecah menjadi bagian tidak tumpang tindih",
+        "Contoh bertahap 1",
+        "B. Menentukan ukuran yang belum tertulis",
+        "Contoh bertahap 2",
+        "C. Luas permukaan dan bidang pertemuan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas VI",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-vi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-matematika-6-4",
+      "database_id": "01df5f0b-5572-5669-8008-01e7dd5cd7ac",
+      "slug": "petualangan-matematika-kelas-6-bab-4",
+      "title": "Statistika Dasar: Mean, Median, Modus",
+      "subject": "matematika",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mean atau rata-rata dengan contoh dan alasan.",
+        "Menjelaskan median atau nilai tengah dengan contoh dan alasan.",
+        "Menjelaskan modus dan pemilihan ukuran dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mean atau rata-rata",
+        "Contoh bertahap 1",
+        "B. Median atau nilai tengah",
+        "Contoh bertahap 2",
+        "C. Modus dan pemilihan ukuran",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Matematika untuk SD/MI Kelas VI",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-vi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-1-1",
+      "database_id": "e66cf113-53b6-51b1-93fb-e1e67099af61",
+      "slug": "petualangan-bahasa-indonesia-kelas-1-bab-1",
+      "title": "Bunyi Huruf & Suku Kata",
+      "subject": "bahasa-indonesia",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan bunyi dan lambang huruf dengan contoh dan alasan.",
+        "Menjelaskan merangkai suku kata dengan contoh dan alasan.",
+        "Menjelaskan membaca untuk memahami dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Bunyi dan lambang huruf",
+        "Contoh bertahap 1",
+        "B. Merangkai suku kata",
+        "Contoh bertahap 2",
+        "C. Membaca untuk memahami",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Aku Bisa! (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-aku-bisa-untuk-sd-mi-kelas-i-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-1-2",
+      "database_id": "f26101dc-a030-5a80-ba41-9f131a9b3498",
+      "slug": "petualangan-bahasa-indonesia-kelas-1-bab-2",
+      "title": "Kosakata Anggota Tubuh & Keluarga",
+      "subject": "bahasa-indonesia",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan nama anggota tubuh dan kegunaannya dengan contoh dan alasan.",
+        "Menjelaskan kosakata keluarga dan pendamping dengan contoh dan alasan.",
+        "Menjelaskan menyusun kalimat pengenalan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Nama anggota tubuh dan kegunaannya",
+        "Contoh bertahap 1",
+        "B. Kosakata keluarga dan pendamping",
+        "Contoh bertahap 2",
+        "C. Menyusun kalimat pengenalan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Aku Bisa! (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-aku-bisa-untuk-sd-mi-kelas-i-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-1-3",
+      "database_id": "ab59c6b1-aaee-5d6f-a5d3-307db035716a",
+      "slug": "petualangan-bahasa-indonesia-kelas-1-bab-3",
+      "title": "Membaca Cerita Bergambar",
+      "subject": "bahasa-indonesia",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mengamati gambar dan membaca teks dengan contoh dan alasan.",
+        "Menjelaskan mengurutkan awal, tengah, akhir dengan contoh dan alasan.",
+        "Menjelaskan menceritakan kembali dengan kata sendiri dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mengamati gambar dan membaca teks",
+        "Contoh bertahap 1",
+        "B. Mengurutkan awal, tengah, akhir",
+        "Contoh bertahap 2",
+        "C. Menceritakan kembali dengan kata sendiri",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Aku Bisa! (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-aku-bisa-untuk-sd-mi-kelas-i-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-1-4",
+      "database_id": "5290774d-c914-5402-a442-fbc48eb9f01d",
+      "slug": "petualangan-bahasa-indonesia-kelas-1-bab-4",
+      "title": "Kalimat Tanya & Tanda Baca Dasar",
+      "subject": "bahasa-indonesia",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan memilih kata tanya dengan contoh dan alasan.",
+        "Menjelaskan titik, tanda tanya, tanda seru dengan contoh dan alasan.",
+        "Menjelaskan menjawab sesuai pertanyaan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Memilih kata tanya",
+        "Contoh bertahap 1",
+        "B. Titik, tanda tanya, tanda seru",
+        "Contoh bertahap 2",
+        "C. Menjawab sesuai pertanyaan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Aku Bisa! (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-aku-bisa-untuk-sd-mi-kelas-i-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-2-1",
+      "database_id": "e680e126-7b14-5fcf-a562-a044f4660c87",
+      "slug": "petualangan-bahasa-indonesia-kelas-2-bab-1",
+      "title": "Kata Ajaib: Tolong, Maaf, Terima Kasih",
+      "subject": "bahasa-indonesia",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan meminta bantuan dengan tolong dengan contoh dan alasan.",
+        "Menjelaskan meminta maaf dan memperbaiki dengan contoh dan alasan.",
+        "Menjelaskan berterima kasih dan bergiliran dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Meminta bantuan dengan tolong",
+        "Contoh bertahap 1",
+        "B. Meminta maaf dan memperbaiki",
+        "Contoh bertahap 2",
+        "C. Berterima kasih dan bergiliran",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Keluargaku Unik (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-keluargaku-unik-untuk-sd-mi-kelas-ii-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-2-2",
+      "database_id": "6336579f-a38a-58ad-af11-584cd2d30bae",
+      "slug": "petualangan-bahasa-indonesia-kelas-2-bab-2",
+      "title": "Kalimat Berita & Kalimat Perintah",
+      "subject": "bahasa-indonesia",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan kalimat berita dengan contoh dan alasan.",
+        "Menjelaskan kalimat perintah dan larangan dengan contoh dan alasan.",
+        "Menjelaskan mengubah dan menanggapi kalimat dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Kalimat berita",
+        "Contoh bertahap 1",
+        "B. Kalimat perintah dan larangan",
+        "Contoh bertahap 2",
+        "C. Mengubah dan menanggapi kalimat",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Keluargaku Unik (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-keluargaku-unik-untuk-sd-mi-kelas-ii-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-2-3",
+      "database_id": "f120798a-13ab-5d66-ba02-d0f036ccbcc4",
+      "slug": "petualangan-bahasa-indonesia-kelas-2-bab-3",
+      "title": "Membaca Dongeng Hewan (Fabel)",
+      "subject": "bahasa-indonesia",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan tokoh, watak, dan latar dengan contoh dan alasan.",
+        "Menjelaskan masalah dan penyelesaian dengan contoh dan alasan.",
+        "Menjelaskan pesan dan bukti dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Tokoh, watak, dan latar",
+        "Contoh bertahap 1",
+        "B. Masalah dan penyelesaian",
+        "Contoh bertahap 2",
+        "C. Pesan dan bukti",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Keluargaku Unik (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-keluargaku-unik-untuk-sd-mi-kelas-ii-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-2-4",
+      "database_id": "8448a318-0991-5dad-b9a4-37c4856cf401",
+      "slug": "petualangan-bahasa-indonesia-kelas-2-bab-4",
+      "title": "Menulis Cerita Pengalaman Harian",
+      "subject": "bahasa-indonesia",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan memilih kejadian dan merencanakan dengan contoh dan alasan.",
+        "Menjelaskan menulis urutan dan perasaan dengan contoh dan alasan.",
+        "Menjelaskan membaca ulang dan memperbaiki dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Memilih kejadian dan merencanakan",
+        "Contoh bertahap 1",
+        "B. Menulis urutan dan perasaan",
+        "Contoh bertahap 2",
+        "C. Membaca ulang dan memperbaiki",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Keluargaku Unik (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-keluargaku-unik-untuk-sd-mi-kelas-ii-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-3-1",
+      "database_id": "d9c3c20f-a013-5ff3-9ddb-29f6914e8425",
+      "slug": "petualangan-bahasa-indonesia-kelas-3-bab-1",
+      "title": "Mencari Ide Pokok Paragraf",
+      "subject": "bahasa-indonesia",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan topik dan ide pokok dengan contoh dan alasan.",
+        "Menjelaskan kalimat utama dan pendukung dengan contoh dan alasan.",
+        "Menjelaskan meringkas tanpa mengubah makna dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Topik dan ide pokok",
+        "Contoh bertahap 1",
+        "B. Kalimat utama dan pendukung",
+        "Contoh bertahap 2",
+        "C. Meringkas tanpa mengubah makna",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Kawan Seiring (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-kawan-seiring-untuk-sdmi-kelas-iii-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-3-2",
+      "database_id": "c2884919-a848-515a-8cf4-616e2065b0e7",
+      "slug": "petualangan-bahasa-indonesia-kelas-3-bab-2",
+      "title": "Kalimat Efektif & Kosakata Baru",
+      "subject": "bahasa-indonesia",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan kejelasan pelaku dan tindakan dengan contoh dan alasan.",
+        "Menjelaskan hemat tanpa menghilangkan makna dengan contoh dan alasan.",
+        "Menjelaskan menemukan makna kata baru dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Kejelasan pelaku dan tindakan",
+        "Contoh bertahap 1",
+        "B. Hemat tanpa menghilangkan makna",
+        "Contoh bertahap 2",
+        "C. Menemukan makna kata baru",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Kawan Seiring (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-kawan-seiring-untuk-sdmi-kelas-iii-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-3-3",
+      "database_id": "4aae3287-9603-5a4d-a7ce-947fa0b239f2",
+      "slug": "petualangan-bahasa-indonesia-kelas-3-bab-3",
+      "title": "Membaca Petunjuk & Denah Lokasi",
+      "subject": "bahasa-indonesia",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan urutan petunjuk dan syarat dengan contoh dan alasan.",
+        "Menjelaskan legenda dan arah mata angin dengan contoh dan alasan.",
+        "Menjelaskan menjelaskan rute dengan acuan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Urutan petunjuk dan syarat",
+        "Contoh bertahap 1",
+        "B. Legenda dan arah mata angin",
+        "Contoh bertahap 2",
+        "C. Menjelaskan rute dengan acuan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Kawan Seiring (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-kawan-seiring-untuk-sdmi-kelas-iii-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-3-4",
+      "database_id": "9b4ecfc3-db9a-51b0-9bf4-a5cfe8b32028",
+      "slug": "petualangan-bahasa-indonesia-kelas-3-bab-4",
+      "title": "Mengenal Puisi Anak",
+      "subject": "bahasa-indonesia",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan baris, bait, dan suasana dengan contoh dan alasan.",
+        "Menjelaskan imaji dan bahasa kias dengan contoh dan alasan.",
+        "Menjelaskan membaca dan menulis puisi dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Baris, bait, dan suasana",
+        "Contoh bertahap 1",
+        "B. Imaji dan bahasa kias",
+        "Contoh bertahap 2",
+        "C. Membaca dan menulis puisi",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Kawan Seiring (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-kawan-seiring-untuk-sdmi-kelas-iii-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-4-1",
+      "database_id": "2ec6984d-6cc5-55ad-a793-0abeee20e12e",
+      "slug": "petualangan-bahasa-indonesia-kelas-4-bab-1",
+      "title": "Kalimat Transitif & Intransitif",
+      "subject": "bahasa-indonesia",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan pelaku, predikat, dan objek dengan contoh dan alasan.",
+        "Menjelaskan kata kerja intransitif dan keterangan dengan contoh dan alasan.",
+        "Menjelaskan uji perubahan menjadi pasif dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Pelaku, predikat, dan objek",
+        "Contoh bertahap 1",
+        "B. Kata kerja intransitif dan keterangan",
+        "Contoh bertahap 2",
+        "C. Uji perubahan menjadi pasif",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru Bahasa Indonesia: Lihat Sekitar (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-lihat-sekitar-untuk-sd-mi-kelas-iv-edisi-revisi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-4-2",
+      "database_id": "36c8bcce-a7f8-5f49-8989-d59a3141b70d",
+      "slug": "petualangan-bahasa-indonesia-kelas-4-bab-2",
+      "title": "Mencari Arti Kata di Kamus",
+      "subject": "bahasa-indonesia",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan urutan alfabet dan lema dengan contoh dan alasan.",
+        "Menjelaskan memilih arti sesuai konteks dengan contoh dan alasan.",
+        "Menjelaskan mencatat dan menggunakan kata dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Urutan alfabet dan lema",
+        "Contoh bertahap 1",
+        "B. Memilih arti sesuai konteks",
+        "Contoh bertahap 2",
+        "C. Mencatat dan menggunakan kata",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru Bahasa Indonesia: Lihat Sekitar (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-lihat-sekitar-untuk-sd-mi-kelas-iv-edisi-revisi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-4-3",
+      "database_id": "9d9a6f16-e209-5086-a6e0-d468dc2ba88e",
+      "slug": "petualangan-bahasa-indonesia-kelas-4-bab-3",
+      "title": "Wawancara & Laporan Pengamatan",
+      "subject": "bahasa-indonesia",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mempersiapkan wawancara dengan contoh dan alasan.",
+        "Menjelaskan mencatat pengamatan dan jawaban dengan contoh dan alasan.",
+        "Menjelaskan menyusun laporan runtut dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mempersiapkan wawancara",
+        "Contoh bertahap 1",
+        "B. Mencatat pengamatan dan jawaban",
+        "Contoh bertahap 2",
+        "C. Menyusun laporan runtut",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru Bahasa Indonesia: Lihat Sekitar (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-lihat-sekitar-untuk-sd-mi-kelas-iv-edisi-revisi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-4-4",
+      "database_id": "0712e670-89d7-5377-a8a6-3476620c8f37",
+      "slug": "petualangan-bahasa-indonesia-kelas-4-bab-4",
+      "title": "Memahami Pesan Moral Cerita Rakyat",
+      "subject": "bahasa-indonesia",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mengenali unsur cerita dengan contoh dan alasan.",
+        "Menjelaskan menafsirkan pesan dengan bukti dengan contoh dan alasan.",
+        "Menjelaskan membandingkan versi dan konteks dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mengenali unsur cerita",
+        "Contoh bertahap 1",
+        "B. Menafsirkan pesan dengan bukti",
+        "Contoh bertahap 2",
+        "C. Membandingkan versi dan konteks",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru Bahasa Indonesia: Lihat Sekitar (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-lihat-sekitar-untuk-sd-mi-kelas-iv-edisi-revisi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-5-1",
+      "database_id": "f2c6c4bf-5f0d-58d4-8c4c-109d16cb874e",
+      "slug": "petualangan-bahasa-indonesia-kelas-5-bab-1",
+      "title": "Kata Sifat, Sinonim, dan Antonim",
+      "subject": "bahasa-indonesia",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan kata sifat dalam deskripsi dengan contoh dan alasan.",
+        "Menjelaskan sinonim sesuai konteks dengan contoh dan alasan.",
+        "Menjelaskan antonim dan revisi pilihan kata dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Kata sifat dalam deskripsi",
+        "Contoh bertahap 1",
+        "B. Sinonim sesuai konteks",
+        "Contoh bertahap 2",
+        "C. Antonim dan revisi pilihan kata",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Bergerak Bersama (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-bergerak-bersama-untuk-sd-mi-kelas-v-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-5-2",
+      "database_id": "1739e19b-e7d8-5aa9-a02c-1410cd34dbdb",
+      "slug": "petualangan-bahasa-indonesia-kelas-5-bab-2",
+      "title": "Kalimat Langsung & Tidak Langsung",
+      "subject": "bahasa-indonesia",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan menulis ucapan langsung dengan contoh dan alasan.",
+        "Menjelaskan melaporkan isi ucapan dengan contoh dan alasan.",
+        "Menjelaskan menyesuaikan waktu dan tempat dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Menulis ucapan langsung",
+        "Contoh bertahap 1",
+        "B. Melaporkan isi ucapan",
+        "Contoh bertahap 2",
+        "C. Menyesuaikan waktu dan tempat",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Bergerak Bersama (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-bergerak-bersama-untuk-sd-mi-kelas-v-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-5-3",
+      "database_id": "5c567a0b-f994-5976-af00-1a41b9e204ce",
+      "slug": "petualangan-bahasa-indonesia-kelas-5-bab-3",
+      "title": "Membedakan Fakta dan Opini",
+      "subject": "bahasa-indonesia",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan pernyataan yang dapat diverifikasi dengan contoh dan alasan.",
+        "Menjelaskan penilaian dan selera dengan contoh dan alasan.",
+        "Menjelaskan memeriksa sumber dan memisahkan campuran dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Pernyataan yang dapat diverifikasi",
+        "Contoh bertahap 1",
+        "B. Penilaian dan selera",
+        "Contoh bertahap 2",
+        "C. Memeriksa sumber dan memisahkan campuran",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Bergerak Bersama (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-bergerak-bersama-untuk-sd-mi-kelas-v-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-5-4",
+      "database_id": "2ddd68e8-dfb3-579e-8106-08a100e3db22",
+      "slug": "petualangan-bahasa-indonesia-kelas-5-bab-4",
+      "title": "Teks Eksplanasi Fenomena Alam",
+      "subject": "bahasa-indonesia",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan pernyataan umum dan fokus fenomena dengan contoh dan alasan.",
+        "Menjelaskan urutan proses dan hubungan sebab dengan contoh dan alasan.",
+        "Menjelaskan menyusun penutup dan menyunting dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Pernyataan umum dan fokus fenomena",
+        "Contoh bertahap 1",
+        "B. Urutan proses dan hubungan sebab",
+        "Contoh bertahap 2",
+        "C. Menyusun penutup dan menyunting",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Bahasa Indonesia: Bergerak Bersama (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/bahasa-indonesia-bergerak-bersama-untuk-sd-mi-kelas-v-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-6-1",
+      "database_id": "2239e517-6a7e-5dc7-a374-fecbfd91c459",
+      "slug": "petualangan-bahasa-indonesia-kelas-6-bab-1",
+      "title": "Ide Pokok & Kesimpulan Teks Laporan",
+      "subject": "bahasa-indonesia",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan membaca tujuan dan hasil dengan contoh dan alasan.",
+        "Menjelaskan ide pokok dan rincian bukti dengan contoh dan alasan.",
+        "Menjelaskan menyusun simpulan yang terbatas dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Membaca tujuan dan hasil",
+        "Contoh bertahap 1",
+        "B. Ide pokok dan rincian bukti",
+        "Contoh bertahap 2",
+        "C. Menyusun simpulan yang terbatas",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru Bahasa Indonesia: Anak-Anak yang Mengubah Dunia",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-anak-anak-yang-mengubah-dunia-untuk-sdmi-kelas-vi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-6-2",
+      "database_id": "564ecf78-06ae-54c1-862f-848e2614ee2c",
+      "slug": "petualangan-bahasa-indonesia-kelas-6-bab-2",
+      "title": "Menyusun Teks Pidato Persuasif",
+      "subject": "bahasa-indonesia",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan tujuan, pendengar dan susunan dengan contoh dan alasan.",
+        "Menjelaskan alasan, bukti dan tanggapan dengan contoh dan alasan.",
+        "Menjelaskan penyampaian dan revisi dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Tujuan, pendengar dan susunan",
+        "Contoh bertahap 1",
+        "B. Alasan, bukti dan tanggapan",
+        "Contoh bertahap 2",
+        "C. Penyampaian dan revisi",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru Bahasa Indonesia: Anak-Anak yang Mengubah Dunia",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-anak-anak-yang-mengubah-dunia-untuk-sdmi-kelas-vi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-6-3",
+      "database_id": "d4a806a4-ae95-54eb-971f-b3accebb699f",
+      "slug": "petualangan-bahasa-indonesia-kelas-6-bab-3",
+      "title": "Membaca Infografis & Data Visual",
+      "subject": "bahasa-indonesia",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan membaca elemen visual dengan contoh dan alasan.",
+        "Menjelaskan mengecek klaim dan sumber dengan contoh dan alasan.",
+        "Menjelaskan menyampaikan temuan dengan batas dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Membaca elemen visual",
+        "Contoh bertahap 1",
+        "B. Mengecek klaim dan sumber",
+        "Contoh bertahap 2",
+        "C. Menyampaikan temuan dengan batas",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru Bahasa Indonesia: Anak-Anak yang Mengubah Dunia",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-anak-anak-yang-mengubah-dunia-untuk-sdmi-kelas-vi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-bahasa-indonesia-6-4",
+      "database_id": "0df07416-bcce-5b72-b200-fde45b6befbb",
+      "slug": "petualangan-bahasa-indonesia-kelas-6-bab-4",
+      "title": "Menulis Surat Resmi & Pribadi",
+      "subject": "bahasa-indonesia",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan tujuan, penerima dan ragam bahasa dengan contoh dan alasan.",
+        "Menjelaskan bagian surat dengan contoh dan alasan.",
+        "Menjelaskan menyunting dan mengirim dengan aman dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Tujuan, penerima dan ragam bahasa",
+        "Contoh bertahap 1",
+        "B. Bagian surat",
+        "Contoh bertahap 2",
+        "C. Menyunting dan mengirim dengan aman",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru Bahasa Indonesia: Anak-Anak yang Mengubah Dunia",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-bahasa-indonesia-anak-anak-yang-mengubah-dunia-untuk-sdmi-kelas-vi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        }
+      ],
+      "curriculum_note": "Urutan empat bab per kelas adalah pilihan aplikasi, bukan daftar isi resmi. Cakupan dan penempatan topik, termasuk ratusan, bilangan negatif, lingkaran dan statistika, menunggu pemeriksaan CP/ATP oleh guru."
+    },
+    {
+      "id": "petualangan-ipas-1-1",
+      "database_id": "31c9f4db-ff60-521e-b7ad-cb082c09b24e",
+      "slug": "petualangan-ipas-kelas-1-bab-1",
+      "title": "Mengenal Panca Indra Kita",
+      "subject": "ipas",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": true,
+      "objectives": [
+        "Menjelaskan mata dan telinga mengumpulkan informasi dengan contoh dan alasan.",
+        "Menjelaskan hidung, lidah, dan kulit dengan contoh dan alasan.",
+        "Menjelaskan mencatat hasil, bukan menebak dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mata dan telinga mengumpulkan informasi",
+        "Contoh bertahap 1",
+        "B. Hidung, lidah, dan kulit",
+        "Contoh bertahap 2",
+        "C. Mencatat hasil, bukan menebak",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Pengayaan sains kelas 1–2. Bukan klaim CP IPAS wajib Fase A. Pendamping menyesuaikan kegiatan dengan kesiapan anak."
+    },
+    {
+      "id": "petualangan-ipas-1-2",
+      "database_id": "9ba273a4-5108-596f-9c7a-b4e3173105ba",
+      "slug": "petualangan-ipas-kelas-1-bab-2",
+      "title": "Merawat Tubuh & Kesehatan Gigi",
+      "subject": "ipas",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": true,
+      "objectives": [
+        "Menjelaskan kebersihan tangan dan tubuh dengan contoh dan alasan.",
+        "Menjelaskan gigi, makanan dan perawatan dengan contoh dan alasan.",
+        "Menjelaskan kebiasaan seimbang dan meminta bantuan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Kebersihan tangan dan tubuh",
+        "Contoh bertahap 1",
+        "B. Gigi, makanan dan perawatan",
+        "Contoh bertahap 2",
+        "C. Kebiasaan seimbang dan meminta bantuan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        },
+        {
+          "title": "Kemenkes — Cara Mencegah Penyakit Gigi dan Mulut",
+          "url": "https://ayosehat.kemkes.go.id/cara-mencegah-penyakit-gigi-dan-mulut",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Pengayaan sains kelas 1–2. Bukan klaim CP IPAS wajib Fase A. Pendamping menyesuaikan kegiatan dengan kesiapan anak."
+    },
+    {
+      "id": "petualangan-ipas-1-3",
+      "database_id": "e3d22fb8-19e4-5f84-ab1f-8c5dca30fc5a",
+      "slug": "petualangan-ipas-kelas-1-bab-3",
+      "title": "Mengenal Hewan & Tumbuhan Sekitar",
+      "subject": "ipas",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": true,
+      "objectives": [
+        "Menjelaskan mengenali makhluk hidup dengan contoh dan alasan.",
+        "Menjelaskan membandingkan hewan dan tumbuhan dengan contoh dan alasan.",
+        "Menjelaskan mengamati dan merawat dengan bertanggung jawab dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mengenali makhluk hidup",
+        "Contoh bertahap 1",
+        "B. Membandingkan hewan dan tumbuhan",
+        "Contoh bertahap 2",
+        "C. Mengamati dan merawat dengan bertanggung jawab",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Pengayaan sains kelas 1–2. Bukan klaim CP IPAS wajib Fase A. Pendamping menyesuaikan kegiatan dengan kesiapan anak."
+    },
+    {
+      "id": "petualangan-ipas-1-4",
+      "database_id": "3b4b12de-c3df-53d7-a7bd-75e8837ff597",
+      "slug": "petualangan-ipas-kelas-1-bab-4",
+      "title": "Benda Siang dan Malam Hari",
+      "subject": "ipas",
+      "grade": 1,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": true,
+      "objectives": [
+        "Menjelaskan cahaya matahari dan kegiatan siang dengan contoh dan alasan.",
+        "Menjelaskan bulan, bintang, dan cahaya buatan dengan contoh dan alasan.",
+        "Menjelaskan mengapa siang dan malam berganti dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Cahaya matahari dan kegiatan siang",
+        "Contoh bertahap 1",
+        "B. Bulan, bintang, dan cahaya buatan",
+        "Contoh bertahap 2",
+        "C. Mengapa siang dan malam berganti",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Pengayaan sains kelas 1–2. Bukan klaim CP IPAS wajib Fase A. Pendamping menyesuaikan kegiatan dengan kesiapan anak."
+    },
+    {
+      "id": "petualangan-ipas-2-1",
+      "database_id": "2b3b89b8-e05a-5bab-ad72-fb4951f9ea6b",
+      "slug": "petualangan-ipas-kelas-2-bab-1",
+      "title": "Benda Padat, Cair, dan Gas",
+      "subject": "ipas",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": true,
+      "objectives": [
+        "Menjelaskan bentuk dan volume benda padat dengan contoh dan alasan.",
+        "Menjelaskan benda cair mengikuti wadah dengan contoh dan alasan.",
+        "Menjelaskan gas mengisi ruang dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Bentuk dan volume benda padat",
+        "Contoh bertahap 1",
+        "B. Benda cair mengikuti wadah",
+        "Contoh bertahap 2",
+        "C. Gas mengisi ruang",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Pengayaan sains kelas 1–2. Bukan klaim CP IPAS wajib Fase A. Pendamping menyesuaikan kegiatan dengan kesiapan anak."
+    },
+    {
+      "id": "petualangan-ipas-2-2",
+      "database_id": "0d3f4d77-acd2-5f4c-a019-0b0ff276cb79",
+      "slug": "petualangan-ipas-kelas-2-bab-2",
+      "title": "Bagian-Bagian Tumbuhan & Fungsinya",
+      "subject": "ipas",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": true,
+      "objectives": [
+        "Menjelaskan akar dan batang dengan contoh dan alasan.",
+        "Menjelaskan daun dan pembuatan makanan dengan contoh dan alasan.",
+        "Menjelaskan bunga, buah dan biji dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Akar dan batang",
+        "Contoh bertahap 1",
+        "B. Daun dan pembuatan makanan",
+        "Contoh bertahap 2",
+        "C. Bunga, buah dan biji",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Pengayaan sains kelas 1–2. Bukan klaim CP IPAS wajib Fase A. Pendamping menyesuaikan kegiatan dengan kesiapan anak."
+    },
+    {
+      "id": "petualangan-ipas-2-3",
+      "database_id": "674952c8-98cc-59b5-8c8b-ebebc0b9f043",
+      "slug": "petualangan-ipas-kelas-2-bab-3",
+      "title": "Tempat Hidup Hewan (Darat & Air)",
+      "subject": "ipas",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": true,
+      "objectives": [
+        "Menjelaskan kebutuhan dalam habitat dengan contoh dan alasan.",
+        "Menjelaskan ciri yang berkaitan dengan tempat hidup dengan contoh dan alasan.",
+        "Menjelaskan menjaga habitat dan tidak mengganggu dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Kebutuhan dalam habitat",
+        "Contoh bertahap 1",
+        "B. Ciri yang berkaitan dengan tempat hidup",
+        "Contoh bertahap 2",
+        "C. Menjaga habitat dan tidak mengganggu",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Pengayaan sains kelas 1–2. Bukan klaim CP IPAS wajib Fase A. Pendamping menyesuaikan kegiatan dengan kesiapan anak."
+    },
+    {
+      "id": "petualangan-ipas-2-4",
+      "database_id": "d7bc62ed-d744-503c-91a0-a1461bb3b6c8",
+      "slug": "petualangan-ipas-kelas-2-bab-4",
+      "title": "Mengenal Cuaca: Cerah, Berawan, Hujan",
+      "subject": "ipas",
+      "grade": 2,
+      "phase": "A",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": true,
+      "objectives": [
+        "Menjelaskan mengamati cerah, berawan dan hujan dengan contoh dan alasan.",
+        "Menjelaskan cuaca berbeda dari musim dan iklim dengan contoh dan alasan.",
+        "Menjelaskan menyesuaikan kegiatan dengan aman dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mengamati cerah, berawan dan hujan",
+        "Contoh bertahap 1",
+        "B. Cuaca berbeda dari musim dan iklim",
+        "Contoh bertahap 2",
+        "C. Menyesuaikan kegiatan dengan aman",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Pengayaan sains kelas 1–2. Bukan klaim CP IPAS wajib Fase A. Pendamping menyesuaikan kegiatan dengan kesiapan anak."
+    },
+    {
+      "id": "petualangan-ipas-3-1",
+      "database_id": "d46fb087-315c-557e-bb1e-74b2dc81e9dd",
+      "slug": "petualangan-ipas-kelas-3-bab-1",
+      "title": "Ciri-Ciri Makhluk Hidup",
+      "subject": "ipas",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan tumbuh dan membutuhkan bahan/energi dengan contoh dan alasan.",
+        "Menjelaskan bernapas, bergerak dan merespons dengan contoh dan alasan.",
+        "Menjelaskan berkembang biak dan melihat kumpulan ciri dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Tumbuh dan membutuhkan bahan/energi",
+        "Contoh bertahap 1",
+        "B. Bernapas, bergerak dan merespons",
+        "Contoh bertahap 2",
+        "C. Berkembang biak dan melihat kumpulan ciri",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru IPAS Kelas III (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-ilmu-pengetahuan-alam-dan-sosial-untuk-sdmi-kelas-iii-edisi-revisi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-3-2",
+      "database_id": "c0afab51-c37c-5155-bdf2-46ca2ad02d76",
+      "slug": "petualangan-ipas-kelas-3-bab-2",
+      "title": "Siklus Hidup Hewan (Metamorfosis)",
+      "subject": "ipas",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan metamorfosis sempurna dengan contoh dan alasan.",
+        "Menjelaskan metamorfosis tidak sempurna dengan contoh dan alasan.",
+        "Menjelaskan membandingkan siklus dan kebutuhan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Metamorfosis sempurna",
+        "Contoh bertahap 1",
+        "B. Metamorfosis tidak sempurna",
+        "Contoh bertahap 2",
+        "C. Membandingkan siklus dan kebutuhan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru IPAS Kelas III (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-ilmu-pengetahuan-alam-dan-sosial-untuk-sdmi-kelas-iii-edisi-revisi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-3-3",
+      "database_id": "c30d32b6-a80c-5e70-91f7-9da66753c336",
+      "slug": "petualangan-ipas-kelas-3-bab-3",
+      "title": "Perubahan Wujud Benda: Mencair, Membeku",
+      "subject": "ipas",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan mencair dan membeku dengan contoh dan alasan.",
+        "Menjelaskan menguap dan mengembun dengan contoh dan alasan.",
+        "Menjelaskan mencatat bukti dan mengendalikan perbandingan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Mencair dan membeku",
+        "Contoh bertahap 1",
+        "B. Menguap dan mengembun",
+        "Contoh bertahap 2",
+        "C. Mencatat bukti dan mengendalikan perbandingan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru IPAS Kelas III (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-ilmu-pengetahuan-alam-dan-sosial-untuk-sdmi-kelas-iii-edisi-revisi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-3-4",
+      "database_id": "4ba526cb-270f-5785-96ad-bc5d7766e049",
+      "slug": "petualangan-ipas-kelas-3-bab-4",
+      "title": "Sumber Energi di Sekitar Kita",
+      "subject": "ipas",
+      "grade": 3,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan matahari, makanan dan bahan bakar dengan contoh dan alasan.",
+        "Menjelaskan bentuk energi dan perpindahannya dengan contoh dan alasan.",
+        "Menjelaskan menggunakan energi secara bertanggung jawab dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Matahari, makanan dan bahan bakar",
+        "Contoh bertahap 1",
+        "B. Bentuk energi dan perpindahannya",
+        "Contoh bertahap 2",
+        "C. Menggunakan energi secara bertanggung jawab",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan Guru IPAS Kelas III (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/panduan-guru-ilmu-pengetahuan-alam-dan-sosial-untuk-sdmi-kelas-iii-edisi-revisi",
+          "audience": "teacher",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-4-1",
+      "database_id": "95409bc1-4e5d-579d-a60c-9f0258e99204",
+      "slug": "petualangan-ipas-kelas-4-bab-1",
+      "title": "Proses Fotosintesis Tumbuhan",
+      "subject": "ipas",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan bahan dan energi yang diperlukan dengan contoh dan alasan.",
+        "Menjelaskan gula, oksigen dan respirasi dengan contoh dan alasan.",
+        "Menjelaskan penyelidikan dan keterbatasan model dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Bahan dan energi yang diperlukan",
+        "Contoh bertahap 1",
+        "B. Gula, oksigen dan respirasi",
+        "Contoh bertahap 2",
+        "C. Penyelidikan dan keterbatasan model",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Buku Interaktif IPAS Kelas IV (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/buku-interaktif-ilmu-pengetahuan-alam-dan-sosial-untuk-sd-mi-kelas-iv-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-4-2",
+      "database_id": "846fb75e-71dd-57e3-9004-89a79502b282",
+      "slug": "petualangan-ipas-kelas-4-bab-2",
+      "title": "Gaya di Sekitar Kita: Otot, Gesek, Magnet",
+      "subject": "ipas",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan gaya otot dan akibat gaya dengan contoh dan alasan.",
+        "Menjelaskan gaya gesek dengan contoh dan alasan.",
+        "Menjelaskan gaya magnet dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Gaya otot dan akibat gaya",
+        "Contoh bertahap 1",
+        "B. Gaya gesek",
+        "Contoh bertahap 2",
+        "C. Gaya magnet",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Buku Interaktif IPAS Kelas IV (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/buku-interaktif-ilmu-pengetahuan-alam-dan-sosial-untuk-sd-mi-kelas-iv-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-4-3",
+      "database_id": "08856a61-e5ad-5c53-b125-258b01069725",
+      "slug": "petualangan-ipas-kelas-4-bab-3",
+      "title": "Perubahan Bentuk Energi",
+      "subject": "ipas",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan masukan dan keluaran energi dengan contoh dan alasan.",
+        "Menjelaskan perubahan bertahap dengan contoh dan alasan.",
+        "Menjelaskan efisiensi dan keputusan hemat dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Masukan dan keluaran energi",
+        "Contoh bertahap 1",
+        "B. Perubahan bertahap",
+        "Contoh bertahap 2",
+        "C. Efisiensi dan keputusan hemat",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Buku Interaktif IPAS Kelas IV (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/buku-interaktif-ilmu-pengetahuan-alam-dan-sosial-untuk-sd-mi-kelas-iv-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-4-4",
+      "database_id": "88807bad-1c67-5d80-ab27-1419e468d8e2",
+      "slug": "petualangan-ipas-kelas-4-bab-4",
+      "title": "Siklus Air & Pelestarian Alam",
+      "subject": "ipas",
+      "grade": 4,
+      "phase": "B",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan penguapan dan pembentukan awan dengan contoh dan alasan.",
+        "Menjelaskan hujan, aliran dan peresapan dengan contoh dan alasan.",
+        "Menjelaskan pelestarian dan bukti tindakan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Penguapan dan pembentukan awan",
+        "Contoh bertahap 1",
+        "B. Hujan, aliran dan peresapan",
+        "Contoh bertahap 2",
+        "C. Pelestarian dan bukti tindakan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Buku Interaktif IPAS Kelas IV (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/buku-interaktif-ilmu-pengetahuan-alam-dan-sosial-untuk-sd-mi-kelas-iv-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-5-1",
+      "database_id": "affb84ae-1218-56a7-b6ac-57fc2ff7b867",
+      "slug": "petualangan-ipas-kelas-5-bab-1",
+      "title": "Cahaya dan Sifatnya & Bunyi",
+      "subject": "ipas",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan cahaya, bayangan dan bahan dengan contoh dan alasan.",
+        "Menjelaskan pemantulan dan pembiasan dengan contoh dan alasan.",
+        "Menjelaskan bunyi dari getaran dan medium dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Cahaya, bayangan dan bahan",
+        "Contoh bertahap 1",
+        "B. Pemantulan dan pembiasan",
+        "Contoh bertahap 2",
+        "C. Bunyi dari getaran dan medium",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "IPAS Kelas V (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/ilmu-pengetahuan-alam-dan-sosial-untuk-sd-mi-kelas-v-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-5-2",
+      "database_id": "bb5478a1-0e67-58a5-a005-2aac3e0af914",
+      "slug": "petualangan-ipas-kelas-5-bab-2",
+      "title": "Rantai Makanan & Jaring Ekosistem",
+      "subject": "ipas",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan produsen, konsumen dan pengurai dengan contoh dan alasan.",
+        "Menjelaskan arah panah dan jaring makanan dengan contoh dan alasan.",
+        "Menjelaskan keseimbangan, gangguan dan bukti dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Produsen, konsumen dan pengurai",
+        "Contoh bertahap 1",
+        "B. Arah panah dan jaring makanan",
+        "Contoh bertahap 2",
+        "C. Keseimbangan, gangguan dan bukti",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "IPAS Kelas V (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/ilmu-pengetahuan-alam-dan-sosial-untuk-sd-mi-kelas-v-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-5-3",
+      "database_id": "6b8612f7-2d56-5fea-bd6f-86c9274ebf82",
+      "slug": "petualangan-ipas-kelas-5-bab-3",
+      "title": "Organ Pernapasan & Pencernaan Manusia",
+      "subject": "ipas",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan jalur udara dan pertukaran gas dengan contoh dan alasan.",
+        "Menjelaskan jalur makanan dan pengolahan dengan contoh dan alasan.",
+        "Menjelaskan keterkaitan dan kebiasaan merawat dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Jalur udara dan pertukaran gas",
+        "Contoh bertahap 1",
+        "B. Jalur makanan dan pengolahan",
+        "Contoh bertahap 2",
+        "C. Keterkaitan dan kebiasaan merawat",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "IPAS Kelas V (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/ilmu-pengetahuan-alam-dan-sosial-untuk-sd-mi-kelas-v-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-5-4",
+      "database_id": "1e5f1b47-05a6-5d4c-bc17-92906f19e589",
+      "slug": "petualangan-ipas-kelas-5-bab-4",
+      "title": "Listrik, Magnet, & Teknologi Sehari-hari",
+      "subject": "ipas",
+      "grade": 5,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan rangkaian listrik sederhana dengan contoh dan alasan.",
+        "Menjelaskan magnet dan elektromagnet dengan contoh dan alasan.",
+        "Menjelaskan teknologi, manfaat dan risiko dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Rangkaian listrik sederhana",
+        "Contoh bertahap 1",
+        "B. Magnet dan elektromagnet",
+        "Contoh bertahap 2",
+        "C. Teknologi, manfaat dan risiko",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "IPAS Kelas V (Edisi Revisi)",
+          "url": "https://buku.kemendikdasmen.go.id/katalog/ilmu-pengetahuan-alam-dan-sosial-untuk-sd-mi-kelas-v-edisi-revisi",
+          "audience": "student",
+          "usage": "Bacaan pendamping; naskah dan asesmen aplikasi ditulis orisinal, bukan salinan buku."
+        },
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-6-1",
+      "database_id": "3e50740b-fac0-5e2c-a0f6-87255602cbc1",
+      "slug": "petualangan-ipas-kelas-6-bab-1",
+      "title": "Sistem Rangka, Sendi, & Saraf Manusia",
+      "subject": "ipas",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan rangka, perlindungan dan kerja otot dengan contoh dan alasan.",
+        "Menjelaskan sendi dan kemungkinan gerak dengan contoh dan alasan.",
+        "Menjelaskan saraf, otak dan respons dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Rangka, perlindungan dan kerja otot",
+        "Contoh bertahap 1",
+        "B. Sendi dan kemungkinan gerak",
+        "Contoh bertahap 2",
+        "C. Saraf, otak dan respons",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-6-2",
+      "database_id": "8688a521-749d-512b-b244-03a5e07d673f",
+      "slug": "petualangan-ipas-kelas-6-bab-2",
+      "title": "Sistem Tata Surya, Rotasi, & Revolusi Bumi",
+      "subject": "ipas",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan matahari, planet dan satelit dengan contoh dan alasan.",
+        "Menjelaskan rotasi dan akibatnya dengan contoh dan alasan.",
+        "Menjelaskan revolusi dan kemiringan sumbu dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Matahari, planet dan satelit",
+        "Contoh bertahap 1",
+        "B. Rotasi dan akibatnya",
+        "Contoh bertahap 2",
+        "C. Revolusi dan kemiringan sumbu",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-6-3",
+      "database_id": "b6c801f1-5625-59f8-b6e1-8082b2976f9b",
+      "slug": "petualangan-ipas-kelas-6-bab-3",
+      "title": "Adaptasi Makhluk Hidup: Bunglon, Kaktus, Teratai",
+      "subject": "ipas",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan bentuk, fungsi dan perilaku dengan contoh dan alasan.",
+        "Menjelaskan kaktus dan teratai dengan contoh dan alasan.",
+        "Menjelaskan bunglon dan penilaian penjelasan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Bentuk, fungsi dan perilaku",
+        "Contoh bertahap 1",
+        "B. Kaktus dan teratai",
+        "Contoh bertahap 2",
+        "C. Bunglon dan penilaian penjelasan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    },
+    {
+      "id": "petualangan-ipas-6-4",
+      "database_id": "6c64c02c-c10d-5645-af1f-0b8b2ef00cb0",
+      "slug": "petualangan-ipas-kelas-6-bab-4",
+      "title": "Krisis Energi & Energi Terbarukan",
+      "subject": "ipas",
+      "grade": 6,
+      "phase": "C",
+      "status": "draft",
+      "review_status": "needs_teacher_review",
+      "enrichment": false,
+      "objectives": [
+        "Menjelaskan sumber terbarukan dan tak terbarukan dengan contoh dan alasan.",
+        "Menjelaskan dampak, akses dan perbandingan adil dengan contoh dan alasan.",
+        "Menjelaskan penghematan dan rencana tindakan dengan contoh dan alasan."
+      ],
+      "section_titles": [
+        "Tujuan dan bekal awal",
+        "Sebelum mulai",
+        "A. Sumber terbarukan dan tak terbarukan",
+        "Contoh bertahap 1",
+        "B. Dampak, akses dan perbandingan adil",
+        "Contoh bertahap 2",
+        "C. Penghematan dan rencana tindakan",
+        "Contoh bertahap 3",
+        "Kegiatan penerapan",
+        "Latihan mandiri",
+        "Pembahasan latihan mandiri",
+        "Rangkuman bab",
+        "Refleksi belajar",
+        "Catatan pendamping: bantuan dan pengayaan"
+      ],
+      "source_refs": [
+        {
+          "title": "Panduan mata pelajaran IPAS Fase B dan C, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33599/",
+          "audience": "teacher"
+        }
+      ],
+      "curriculum_note": "Paket ini berfokus sains; unsur sosial IPAS tetap perlu paket lain. Topik dan penempatan kelas adalah pilihan aplikasi yang menunggu pemetaan TP/ATP dan review guru."
+    }
+  ]
+}

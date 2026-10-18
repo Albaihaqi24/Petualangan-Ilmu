@@ -1,0 +1,393 @@
+﻿{
+    "dateWIB":  "2026-10-18",
+    "timezone":  "Asia/Jakarta",
+    "node":  "v24.19.0",
+    "projectVersion":  "0.2.0",
+    "note":  "Working-tree SHA256 after final test run. Not a clean release commit. Credentials and environment files excluded.",
+    "files":  [
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\App.jsx",
+                      "Hash":  "7B8A7A791FC67A07D439DC6BF6A72061A9D7E5B341D1F744C3F07A3D5A7EEC58"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\index.css",
+                      "Hash":  "4472DF3C434F23ED4FF5E35F261019E6640930BAB7DC2F082B749006AF087A16"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\main.jsx",
+                      "Hash":  "BBCB986196727EB7998818FEC2C2BA00F0831EF28AB480CEB24B5B314653D178"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\AdminOperations.jsx",
+                      "Hash":  "0803B466C134EEAB752308A7203BE793D157AC119EC0F392304FF2B8A4D0F428"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\ContentStudio.jsx",
+                      "Hash":  "DC3F6812C228E87C945E3A236C2324CBA1EF6E3653BD13F9BC0B556EFBB65C33"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\adventure\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\adventure\\AdventureMap.jsx",
+                      "Hash":  "2F8991B1F071BB8795741516CE3F769F26CF043DB47480D333172CA86118F21A"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\quiz\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\ui\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\ui\\CpReferenceDetails.jsx",
+                      "Hash":  "5DB98F7F3ACF1487411808B061C5211EABCD4E14EA70C514138BBB7B7F33A3DB"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\ui\\CpReferencePanel.jsx",
+                      "Hash":  "037E8AEC755383C8F9106BCA45AF38F24A9FD98DCC7E05B72A8C33ECB7277CE8"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\ui\\MaterialRenderer.jsx",
+                      "Hash":  "70DDBDD32677EB53225D1D5A25104C15AFEBE448F14A6A08DEE4D98F28A0352F"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\ui\\Primitives.jsx",
+                      "Hash":  "581E5ED3505BD98EC81BBDB6F47F5D01F9B0AC5D7A9415073B241A64AE604DAD"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\ui\\ProtectedRoute.jsx",
+                      "Hash":  "0650CA01F5BB6DCDACE19F420C1F49860D9411728BD6722638E27C47ADF81899"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\components\\ui\\SubmissionFile.jsx",
+                      "Hash":  "207CB1F49E7098D7887FBF2FA69D0E1427A208B15BEBED7D5944F0CCDBC64D2D"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\arts.js",
+                      "Hash":  "CE7C1B0678BB0B35818ADF6C7D2FAAC9A689D3F263D29DA3D905141EF5B48D1F"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\civics.js",
+                      "Hash":  "82D87E3D6699A2C49F3FC8651415E9D67F7BEFF8ADBDCF1FCF651A7F64198573"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\curriculumDraft.js",
+                      "Hash":  "264490B5FE425604F2737E0B86F02BC678C25B60975008906ADC8DA225FB63FF"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\english.js",
+                      "Hash":  "C487D02ACD89451D6AEDBF923983251A3F570F4A826F94369F0A38C12BD6AC82"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\indonesian.js",
+                      "Hash":  "DA880EC5984E0865A7C51AE51621592F425122AE7CBEBE74D6C50A8DB851282D"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\lessonFactory.js",
+                      "Hash":  "91E8863A86E1456F934D56E5B1A99F10E433DAC21B9091FFAC1AE146601957F9"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\math.js",
+                      "Hash":  "7B708437C9131B54AE11DBF9C82EE20D984275D915A67C9272FB5CF82975A6C3"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\mathGuidance.js",
+                      "Hash":  "6DFE7DF23EE24D03F33D3938F237F4554A16F310AA1FBD6FFC7C4CEA8D0B8FED"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\science.js",
+                      "Hash":  "44CC5A0FBEDD57375ED6CBAB4F256D0C44CD3322881B063C679A3CDD2FC36219"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\content\\books\\mathGrade1.js",
+                      "Hash":  "A1B493F530AF2CDEBE0D17481847742C1476D31F588DF469618DE68A77A99FC1"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\context\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\context\\AppProvider.jsx",
+                      "Hash":  "63F08B20DB867B94FBE5217A6507454B3FB6134BC8A84DB668978DC75CB382EF"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\context\\DemoContext.jsx",
+                      "Hash":  "AE9CBF8C94FE7F1886D828967CAF1F67BDFCBD77EB93EFA29DB53B6152D85215"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\context\\LearningContext.jsx",
+                      "Hash":  "2122BBE8C3A74C4EDA13F928768A0A9ACD975E2AA85A22DDF27AAFFE8BD5B8AB"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\context\\SupabaseProvider.jsx",
+                      "Hash":  "C3F7CBA294874B1D995087AD5E8CD2BF657DC71E2184F00136A388C00AEC8E0F"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\layouts\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\layouts\\AppLayout.jsx",
+                      "Hash":  "2CBAA5094A507C0CB15EA886E8CEA0500FF2987BB91CD804DF20C5D64A88F4AA"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\catalog.js",
+                      "Hash":  "70156BAA835336B85B5A44488506C4FD6B18FEC8C285953DA60461741E31B297"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\config.js",
+                      "Hash":  "211D933930EFA3052069E3A1C6641C96E6D5E68AD5B97D3C047EF2537E67296D"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\cpReference.js",
+                      "Hash":  "006692621BF1BC1588D0E1168143FE5E05DF1CB014E3426B65A2B65845376BC7"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\demoCatalog.js",
+                      "Hash":  "B04FB23A62B4ED9D25644D907635401863E4B5209FFDEF341CB7E2CB634B71F1"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\dummyData.js",
+                      "Hash":  "F823B236CBD3F994BEECBD2388C5D44E18F0BC8545BB7414854C6BA786DEB128"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\governmentCurriculum.js",
+                      "Hash":  "70A0878CE032FC980EEB5BC7CE9AE03A37526ECCB5054D5C9010EAC5D0032A61"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\learning.js",
+                      "Hash":  "C4A42708935931C9B2FEB5CB76C961BAD4BE40C6A7DE289045DBC1A190C65C7D"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\learningResources.js",
+                      "Hash":  "A73E34DA726AE81692078E8EF5901690481F515BC74CECB4245452675C7AFE90"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\supabaseClient.js",
+                      "Hash":  "D723B0D29EE5DB725FF55D804E5B9942F2C8718411C750E3759F68F772CAE830"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\lib\\textbooks.js",
+                      "Hash":  "FB237663FDB0A5A85F5DD7E72F4473D0894C33D67BBB139CE8A86EBFAB9DE9C1"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\AccountPage.jsx",
+                      "Hash":  "C0BB03112D4C3BAFE2E4334DA6C7982F21727FE5CC631FDEC75B77893332F5B2"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\LandingPage.jsx",
+                      "Hash":  "2E7EA80F94916968A03552038078D6ACA89C4467CEC18D70936B6083BB23E599"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\ResourceLibraryPage.jsx",
+                      "Hash":  "6686EB0723159E26C1CD4659A1B03AA37A8A25207FE20C97198203276F08C4E9"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\admin\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\admin\\AdminPage.jsx",
+                      "Hash":  "1344D06D40A0994CE158AB32A0341B2024920AD232BCFB301C0E4AC8494F1198"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\auth\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\auth\\AuthPage.jsx",
+                      "Hash":  "DB004F5339C5EBC114BDF3D351EF31FF5AA87C542911E41D4264716DDA6D5D20"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\auth\\SupabaseAuthPage.jsx",
+                      "Hash":  "344B75847A1107F55BFA5A13C1FA01CE13B7529C2054A56654AF8335E42CAA1C"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\student\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\student\\ClassesPage.jsx",
+                      "Hash":  "C389A62EDDBB1EAEBAE7771F4C6EDD73D3F1395E1488F7C2C07EFF36CA1F407C"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\student\\DashboardPage.jsx",
+                      "Hash":  "22652F5BDC47CBA8D475323682F6EABF758A37AA5B702FB6D8B01E92B447CE05"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\student\\LessonPage.jsx",
+                      "Hash":  "B27E0F0671FE955B49035D53A47E9BEC163555C164E8424BDF3A2B92445ADDA8"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\student\\ProfilePage.jsx",
+                      "Hash":  "6A60704A5CBC3F445D7A64D20E59695DA943484F00EE8986B04536485E39633A"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\student\\ProgressPage.jsx",
+                      "Hash":  "A7B6CE5D7B5F96C9956DE579ADFEE8728AC97130349E4FEB43CE42A31919F9D6"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\student\\QuizPage.jsx",
+                      "Hash":  "488690F71A4AA9FE8AE0C4F3CD93B466E68ABF382FFBA12B087D8E15D615D6BA"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\tutor\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\pages\\tutor\\TutorPage.jsx",
+                      "Hash":  "EA7C1A93C65B7F7B3310D0E6619B774B05024749A7F60F6CFA59F89957F84ADD"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\services\\.gitkeep",
+                      "Hash":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\services\\importService.js",
+                      "Hash":  "165C9E8C81F9ABF3879A977BC24A46EEEFFF161A7294766DCE70F69017529FC3"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\src\\services\\supabaseService.js",
+                      "Hash":  "A9F2B086C9FA16D168C68631D9E8DF629D443DA08BBAFB92E315F349FE4D000F"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\app.test.mjs",
+                      "Hash":  "CA03A6C249C6C06D90FBEBD6365B248533D8C1E5C47D9EEB0FA933DF654732AA"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\cloud-ui.test.mjs",
+                      "Hash":  "738178B7CFB506134A56D1FC02C8B32E9627A9E2CB651BC85ED353B7073FC4FB"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\cp-reference.test.mjs",
+                      "Hash":  "6B7C7FC3CEC4A212365987C67D6D05132C7F16DD12E973EE9E1D856B52F6C6CA"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\curriculum.test.mjs",
+                      "Hash":  "E5551E99768CDF0071F51B8551738AB9267EB1A4712849DABE334086508196EE"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\database.test.mjs",
+                      "Hash":  "D6C2D678005653F066D37438329266D8535988592D243FD9F4641B1538D30BF5"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\learning.test.mjs",
+                      "Hash":  "C024CD23F85C21097B2C47B17379CD42CAD25B36553C9995578D33AEB11595E0"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\platform-database.test.mjs",
+                      "Hash":  "BEBAD146A26C2274F7DFE6BAA4BF9093B341541CF936B94659F94F1035EE34E8"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\production-build.test.mjs",
+                      "Hash":  "5230501D2503447760B8FE25560B74A60E4652D8CAD501CBF6A1461DD63B6BFD"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\qa-boundaries.test.mjs",
+                      "Hash":  "9E24C9E510510CB387B8957DC452DEDB52315B0ACDA78F82E1CDFE8285C2C97B"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\resources.test.mjs",
+                      "Hash":  "DB85D1DC95573E7BBD1747329C6F47C75BEC55324C4F52FD2F4818483675C9AA"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\tests\\textbooks.test.mjs",
+                      "Hash":  "1A898A695A9FCB22F4B8ED0E81053635A79024803F558A1EF5896BF9B0B7702D"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\build-production.mjs",
+                      "Hash":  "660B4F9E95259B64C632B06F599A8516EF9B5169889559D417AB7C4A58EC8F38"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\export-cp-review.mjs",
+                      "Hash":  "E0D5C633EC057590BEF9A1E21BC3109427E04161FE4FF3AB1704779247C6CCFE"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\export-government-curriculum.mjs",
+                      "Hash":  "AEB28C2A1304FAF645018D8BD9718BF1668EEAA3DA53F79F908AE63445F673D4"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\export-learning-resources.mjs",
+                      "Hash":  "F6D34C0C7A334E70823835F2AAC4311CA4CEF0F761C77B58BFC647D780AEFB8E"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\export-textbooks.mjs",
+                      "Hash":  "959E0E275F2822583095E6DA5BD4CF02968E9156998D433566744BFF9069A07A"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\generate-curriculum-draft.mjs",
+                      "Hash":  "90FD4384B5FCAFCFB4170D474AED6EB4316AD34841392AB113EEE37D8BD13B14"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\generate-database-seed.mjs",
+                      "Hash":  "4FEB7933E6D8A90F2463CEAEAE2BE2CA37D8F79EF7C78D1360064F78E3E93EC4"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\import-cp-reference.mjs",
+                      "Hash":  "D68979E2797782ABED483F67EBDF0398D341C06BD258D47DF09A7EC6BF92F1F2"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\process-account-deletion.mjs",
+                      "Hash":  "8AC396DCBAFD21531DD3FF380DC25CE855441D569D8A18AF49B87F37882B0AC2"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\refresh-cp-reference.mjs",
+                      "Hash":  "4894363F8C6967EA921EFA47F88A8821D05E3247B3AE166F60F95B84FEA382CA"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\verify-cloud.mjs",
+                      "Hash":  "6031A81A539F75A5EBE98C8680CACF2AE11B4023679D6954D4D7A5CBB8A6E522"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\verify-production.mjs",
+                      "Hash":  "D75D2A6F904A51DDBE1847A91D6195A51E508510C57A56169AA95F69D27FAB99"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\scripts\\verify-stage1.mjs",
+                      "Hash":  "942CFAC640C8AA28DE8FB83B5AB0635F16503B127E3DACE7BB98D3858E2B3389"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\supabase\\migrations\\202610160001_initial_schema.sql",
+                      "Hash":  "B861643CF50C8FF0F537032C5F6F146C4486EEEE60136C075F3411163CAE957B"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\supabase\\migrations\\202610160002_platform_features.sql",
+                      "Hash":  "E60B70E4B58F38DE67F4A4D1F437294F6DC4165E56AA5FB5B3A9276AA2348758"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\supabase\\migrations\\202610160003_private_storage.sql",
+                      "Hash":  "0FB830A4AFC608E2F9491C393CB19DA6CFF6CDF5B2AB8F7FF62A419EC812A8A2"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\supabase\\migrations\\202610160004_editor_questions.sql",
+                      "Hash":  "3FA5326C80AF61F023409D4282E02E71439E81F339ECED77C42700BDDF16A6A9"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\docs\\qa\\BLACKBOX.md",
+                      "Hash":  "15968635380753980DE34204E724DA82831268EE5D781802C1EF4BAB8EBA43EA"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\docs\\qa\\LAPORAN-2026-10-18.md",
+                      "Hash":  "AD7552809D629FCE169EFD09046CD9A4A35606469C8E6FF28791E3B2B65F1297"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\docs\\qa\\README.md",
+                      "Hash":  "721BD38FE40CDB25FD22E1D3C9757BFF0BD989B594AA591CD98DB791B2BB6453"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\docs\\qa\\TEMPLATE-EKSEKUSI-DAN-BUG.md",
+                      "Hash":  "907102B6FA51706CE6E0D94856B2EF7D05C56C1A56DC209E8183BE639226CB47"
+                  },
+                  {
+                      "Path":  "C:\\Users\\J2ACER NITRO\\Documents\\Codex\\2026-10-16\\bu\\outputs\\petualangan-ilmu\\docs\\qa\\WHITEBOX.md",
+                      "Hash":  "D22C0FE24BDC70345FB8E92B4F9F784772B5C502AE867FECFCC40075135EE130"
+                  }
+              ]
+}

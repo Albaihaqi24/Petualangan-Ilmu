@@ -1,0 +1,51 @@
+// Contoh belajar terpisah dari soal latihan; pendamping dapat memvariasikan bilangannya.
+export const mathGuidance = [
+  [
+    'Tunjuk setiap benda sekali sambil menyebut satu bilangan. Pada dua kelompok berisi 2 dan 2 benda, urutan hitungnya 1, 2, 3, 4. Bilangan terakhir menyatakan jumlah seluruhnya: empat.',
+    'Pasangkan benda dari dua kelompok satu-satu. Jika kelompok pertama masih memiliki benda yang belum mendapat pasangan, kelompok itu lebih banyak. Pada 4 dan 6 benda, empat pasangan terbentuk dan dua benda tersisa di kelompok enam, sehingga 4 lebih kecil daripada 6.',
+    'Penjumlahan menggabungkan dua kelompok. Untuk 4 + 3, mulai dari empat lalu maju tiga langkah: lima, enam, tujuh. Hasilnya tujuh; periksa dengan menghitung semua benda.',
+    'Pengurangan dapat diperagakan dengan mengambil benda. Dari 6 benda, ambil 2. Benda yang tetap tinggal berjumlah 4, sehingga 6 − 2 = 4. Jangan menghitung benda yang sudah diambil sebagai sisa.',
+    'Cari bagian pola yang berulang, bukan hanya warna paling akhir. Pada pola kuning-hijau-kuning-hijau, satu bagiannya kuning-hijau. Bangun juga dapat dikenali dari sisinya: segitiga memiliki tiga sisi lurus, sedangkan persegi memiliki empat sisi sama panjang dan empat sudut siku-siku.',
+    'Pengukuran panjang harus dimulai dari titik yang sama, dengan satuan sama besar tanpa celah atau tumpang tindih. Bila satu pita sepanjang 4 balok dan pita lain 6 balok, pita kedua lebih panjang dua balok. Urutan waktu dijelaskan dengan sebelum, sesudah, dan selama.',
+  ],
+  [
+    'Setiap sepuluh satuan dapat dikelompokkan menjadi satu puluhan. Bilangan 36 terdiri dari 3 puluhan dan 6 satuan: 30 + 6. Untuk membandingkan dua bilangan dua angka, bandingkan puluhannya dahulu, lalu satuannya jika puluhan sama.',
+    'Gunakan nilai tempat ketika menjumlah atau mengurang. Pada 28 + 15, 8 satuan ditambah 5 satuan menjadi 13 satuan, yaitu 1 puluhan dan 3 satuan. Jumlah akhirnya 4 puluhan dan 3 satuan, yaitu 43. Pengurangan dapat diperiksa dengan penjumlahan kebalikannya.',
+    'Perkalian menyatakan kelompok sama banyak. Tiga piring masing-masing berisi dua buah dapat ditulis 2 + 2 + 2 = 6 atau 3 × 2 = 6. Jumlah kelompok dan isi setiap kelompok harus disebut agar cerita jelas.',
+    'Pembagian rata memberi isi sama banyak kepada setiap penerima. Pada 9 benda untuk 3 penerima, bagikan satu-satu sampai habis. Setiap penerima mendapat 3; periksa dengan 3 × 3 = 9. Pembagian juga dapat digunakan mencari banyak kelompok.',
+    'Panjang diukur dengan penggaris mulai tanda nol, bukan ujung penggaris yang belum tentu nol. Satu meter sama dengan 100 sentimeter; satu jam sama dengan 60 menit. Massa dibandingkan dengan neraca atau diukur dengan timbangan yang sesuai, bukan ditentukan hanya dari ukuran benda.',
+    'Kenali bangun dari cirinya, bukan posisinya pada kertas. Persegi yang diputar tetap persegi. Pada data gambar, periksa arti satu gambar dahulu: jika satu gambar mewakili satu orang, tiga gambar berarti tiga orang. Kesimpulan pilihan terbanyak harus mengikuti jumlahnya.',
+  ],
+  [
+    'Bilangan 426 terdiri dari empat ratusan, dua puluhan, dan enam satuan: 400 + 20 + 6. Angka sama dapat mempunyai nilai berbeda; angka 2 pada 426 bernilai 20. Bandingkan ratusan sebelum puluhan dan satuan.',
+    'Cerita menentukan operasi yang digunakan. Persediaan 140 buku bertambah 25 menjadi 165; jika 20 kemudian dipinjam, sisanya 145. Tulis setiap langkah beserta satuannya dan periksa apakah hasilnya masuk akal.',
+    'Perkalian dan pembagian berhubungan sebagai operasi kebalikan. Dua kelompok masing-masing sembilan benda berjumlah 18. Karena 2 × 9 = 18, maka 18 ÷ 2 = 9 dan 18 ÷ 9 = 2. Jelaskan apakah pembagian mencari isi kelompok atau banyak kelompok.',
+    'Pecahan memakai keseluruhan yang dibagi sama besar. Pada 2/6, penyebut 6 menyatakan banyak bagian sama besar dan pembilang 2 menyatakan bagian yang dipilih. Dua dari enam bagian sama dengan satu dari tiga bagian. Saat membandingkan, pastikan keseluruhannya sama.',
+    'Samakan satuan sebelum menghitung ukuran. Contohnya 1 m 20 cm = 100 cm + 20 cm = 120 cm. Satu kilogram sama dengan 1.000 gram, dan satu jam sama dengan 60 menit. Tulis satuan pada hasil agar ukuran dapat dipahami.',
+    'Keliling adalah panjang batas bangun, sehingga semua sisi pembatas dijumlahkan. Persegi dengan sisi 3 cm memiliki keliling 12 cm. Pada tabel, label menjelaskan apa yang dihitung; jumlah dua kelompok berisi 6 dan 2 benda adalah 8, dan selisihnya 4.',
+  ],
+  [
+    'Bilangan 7.318 terdiri dari 7.000 + 300 + 10 + 8. Nilai angka bergantung tempatnya. Jika ribuan dua bilangan sama, bandingkan ratusan, lalu puluhan dan satuan; jangan membandingkan dari angka terakhir saja.',
+    'Faktor membagi suatu bilangan tanpa sisa. Faktor 10 adalah 1, 2, 5, dan 10 karena dapat dipasangkan menjadi 1 × 10 dan 2 × 5. Kelipatan diperoleh dari perkalian berulang; kelipatan positif 5 dimulai 5, 10, 15, 20.',
+    'Pecahan senilai diperoleh dengan mengalikan atau membagi pembilang dan penyebut dengan bilangan sama yang bukan nol. Contohnya 3/6 = 1/2 karena keduanya dibagi 3. Untuk penyebut sama, bandingkan pembilang; 2/7 lebih kecil daripada 6/7.',
+    'Desimal menunjukkan bagian persepuluhan atau perseratusan: 0,4 = 4/10. Persen berarti per seratus, sehingga 20% = 20/100 = 1/5. Untuk mencari 20% dari 50, hitung 50 ÷ 5 = 10. Gunakan keseluruhan yang jelas ketika membicarakan persen.',
+    'Luas persegi panjang adalah panjang × lebar karena dapat dihitung sebagai baris petak satuan. Bangun 6 cm × 2 cm memiliki luas 12 cm², tetapi kelilingnya 2 × (6 + 2) = 16 cm. Luas memakai satuan persegi; sudut siku-siku berukuran 90 derajat.',
+    'Pada diagram batang, baca nama kategori dan skala sebelum membandingkan tinggi. Jika tiap petak berarti tiga orang, batang setinggi empat petak berarti 12 orang. Jangan menganggap satu petak selalu mewakili satu orang; kesimpulan hanya berlaku untuk data yang dicatat.',
+  ],
+  [
+    'Utamakan makna cerita dan nilai tempat. Sebanyak 1.600 barang bertambah 250 menjadi 1.850. Jika dibagi dalam lima kelompok sama banyak, setiap kelompok berisi 370. Periksa hasil pembagian dengan perkalian dan gunakan perkiraan untuk mendeteksi kekeliruan.',
+    'FPB mencari faktor bersama paling besar; KPK mencari kelipatan positif bersama paling kecil. Faktor bersama 10 dan 15 adalah 1 serta 5, maka FPB-nya 5. Kelipatan positif bersama 2 dan 7 pertama kali bertemu pada 14, maka KPK-nya 14. Pilih sesuai masalah, bukan hanya menghafal singkatan.',
+    'Untuk menjumlah pecahan, samakan penyebut agar ukuran bagian sama. Contohnya 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2. Pada desimal, sejajarkan nilai tempat, misalnya 0,3 + 0,4 = 0,7. Untuk mencari bagian dari kumpulan, bagi dengan penyebut lalu kalikan pembilang.',
+    'Luas segitiga adalah setengah luas persegi panjang yang alas dan tingginya sama. Alas 8 cm dan tinggi tegak lurus 5 cm memberi luas 1/2 × 8 × 5 = 20 cm². Satuan luas juga dikuadratkan: karena 1 m = 100 cm, maka 1 m² = 100 × 100 cm².',
+    'Volume balok dapat dihitung dari banyak kubus per lapis dikali jumlah lapis. Balok 3 cm × 2 cm × 2 cm memuat 12 kubus berukuran 1 cm³. Rumusnya panjang × lebar × tinggi. Kubus mempunyai tiga ukuran rusuk sama, sehingga volumenya rusuk × rusuk × rusuk.',
+    'Rata-rata dihitung dengan menjumlah semua nilai lalu membaginya dengan banyak data; rata-rata 2, 4, 9 adalah 15 ÷ 3 = 5. Jangkauan adalah nilai terbesar dikurangi terkecil. Peluang sederhana membandingkan kemungkinan: warna lebih banyak lebih mungkin terambil secara acak, tetapi bukan berarti pasti.',
+  ],
+  [
+    'Pada hitung campuran, kerjakan kurung dahulu. Setelah itu perkalian dan pembagian setara dikerjakan dari kiri, lalu penjumlahan dan pengurangan dari kiri. Contohnya 20 − 2 × (3 + 1) = 20 − 8 = 12. Tuliskan tahap agar alasan tiap perubahan terlihat.',
+    'Pecahan, desimal, dan persen dapat menyatakan nilai sama: 3/5 = 0,6 = 60%. Persen dari suatu jumlah dihitung sebagai pecahan per seratus dikali jumlah. Contohnya 15% dari 200 = 15/100 × 200 = 30. Potongan harga dikurangkan dari harga awal, bukan menjadi harga akhirnya.',
+    'Rasio menyatakan perbandingan dengan urutan jelas. Jika kuning:biru = 3:2 dan jumlah benda 25, ada lima bagian rasio. Satu bagian bernilai 25 ÷ 5 = 5; kuning 15 dan biru 10. Rasio senilai diperoleh dengan mengalikan kedua bagian dengan bilangan sama.',
+    'Samakan satuan ukuran sebelum menghitung. Luas memakai satuan persegi, volume memakai satuan kubik. Balok 2 m × 3 m × 4 m bervolume 24 m³. Untuk kapasitas, 1 liter = 1.000 mililiter. Angka sama dengan satuan berbeda tidak selalu menyatakan ukuran sama.',
+    'Kubus dibatasi enam sisi persegi, memiliki 12 rusuk dan 8 titik sudut. Jaring-jaring perlu dapat dilipat menjadi bangun tanpa menumpuk sisi; enam persegi dengan susunan sembarang belum tentu membentuk kubus. Tampak depan, samping, dan atas dapat memperlihatkan informasi berbeda.',
+    'Modus adalah nilai yang muncul paling sering; pada 1, 2, 2, 6 modusnya 2. Rata-rata adalah jumlah dibagi banyak data dan jangkauan adalah terbesar dikurangi terkecil. Kejadian pasti selalu terjadi pada kondisi yang ditentukan, sedangkan kejadian mustahil tidak dapat terjadi pada kondisi itu. Kesimpulan tidak boleh melampaui data.',
+  ],
+]
