@@ -4,7 +4,7 @@ Dokumen ini adalah prosedur yang harus dijalankan pemilik proyek. Penyediaan pro
 
 ## Pemasangan dan akses pertama
 
-1. Buat proyek Supabase baru. Jalankan empat migration sesuai urutan nama, kemudian `seed.sql`, `verify-setup.sql`, dan `verify-platform.sql`. Jika proyek sudah memiliki skema lama, buat migration konversi terpisah. Jangan menimpa tabel.
+1. Buat proyek Supabase baru. Jalankan empat migration sesuai urutan nama, lalu pilih paket seed. Untuk pemasangan ringan, gunakan `seed_materi_lengkap.sql` sesuai [panduan seed ringan](../supabase/README-seed-materi-lengkap.md); `seed.sql` adalah paket awal alternatif, tidak wajib dipasang bersamaan. Lanjutkan dengan `verify-setup.sql` dan `verify-platform.sql`. Jika proyek sudah memiliki skema lama, buat migration konversi terpisah. Jangan menimpa tabel.
 2. Aktifkan Email/Password dan konfirmasi email. Atur Site URL serta Redirect URLs `/auth/callback` dan `/reset-password` untuk origin lokal dan domain rilis. Aplikasi memakai PKCE; tautan email perlu dibuka pada browser/origin yang menyimpan verifier. Jika perangkat berbeda, kembali ke browser awal atau minta tautan baru.
 3. Siapkan SMTP untuk email produksi, aturan kata sandi, dan batas permintaan Auth. Uji email konfirmasi dan pemulihan benar-benar sampai. Rujukan: [password Auth](https://supabase.com/docs/guides/auth/passwords), [redirect URLs](https://supabase.com/docs/guides/auth/redirect-urls), [rate limits](https://supabase.com/docs/guides/auth/rate-limits).
 4. Daftarkan akun pemilik melalui UI. Pemilik database mengangkat **akun miliknya yang sudah diverifikasi** melalui SQL Editor, menggunakan UUID Auth yang benar:
@@ -24,7 +24,7 @@ Mulai dari [peta kurikulum pemerintah](PETA-KURIKULUM-PEMERINTAH.md) dan [roadma
 
 Paket tambahan tersedia di `supabase/curriculum-draft.sql`. Pasang setelah keempat migration dan `seed.sql` bila ingin memasukkan 216 materi dan 1.080 soal baru; semua tetap draf. Pada database baru dengan kedua paket, totalnya 252 materi dan 1.265 soal. Ikuti [daftar materi dan checklist review](MATERI-SIAP-REVIEW.md). IPAS dan Bahasa Inggris kelas 1–2 diperlakukan sebagai pengayaan; pilihan cabang seni mengikuti sekolah. Paket ini belum membuktikan seluruh CP nasional tercakup.
 
-Semua 36 materi dan 185 soal seed berstatus draf. Guru/peninjau perlu mencatat nama peninjau, tanggal, ID materi, tingkat kelas, ketepatan konsep, bahasa, kunci/pembahasan, hak penggunaan media, serta hasil revisi. Dokumen ini belum mengklaim kesesuaian kurikulum resmi; tinjau khusus IPAS kelas 1–2.
+Paket awal `seed.sql` memuat 36 materi dan 185 soal draf. Paket ringan `seed_materi_lengkap.sql` memuat 36 materi dan 216 soal published, dengan metadata review guru yang masih diperlukan. Guru/peninjau perlu mencatat nama peninjau, tanggal, ID materi, tingkat kelas, ketepatan konsep, bahasa, kunci/pembahasan, hak penggunaan media, serta hasil revisi. Dokumen ini belum mengklaim kesesuaian kurikulum resmi; tinjau khusus sains kelas 1–2.
 
 Tutor membuat materi dan soal draf. Admin memeriksa seluruh soal melalui studio, memastikan minimal lima soal lengkap, lalu menandai konfirmasi review dan memublikasikan materi. Publikasi menerbitkan **seluruh soal** milik materi tersebut. Impor tidak langsung menerbitkan soal. Menyunting materi terbit melalui admin mengembalikannya menjadi draf. Gunakan penarikan publikasi untuk koreksi; sesi kuis yang sudah dimulai tetap memakai snapshot lama.
 
