@@ -2,6 +2,8 @@
 
 Aplikasi belajar interaktif untuk siswa SD kelas 1–6. Anak dapat membaca materi, mengerjakan kuis, mengumpulkan XP, dan mengikuti kelas bersama tutor.
 
+**Demo publik:** [Buka Petualangan Ilmu](https://petualangan-ilmu-belajar-sd.russethen2.chatgpt.site). Progres demo tersimpan di browser masing-masing pengunjung.
+
 **Mulai cepat:** jalankan demo tanpa database. Untuk akun dan progres antarpengguna, aktifkan mode Supabase.
 
 ## Daftar isi
@@ -39,8 +41,8 @@ Framer Motion menangani pulau mengapung, perpindahan adegan komik, confetti dan 
 Siapkan **Git** dan **Node.js 22.12 atau lebih baru**, beserta npm. Instalasi proyek telah diuji memakai Node.js 24.19.0.
 
 ```sh
-git clone https://github.com/Albaihaqi24/Petualangan-Ilmu.git
-cd Petualangan-Ilmu
+git clone https://github.com/Albaihaqi24/Petualangan-Ilmu.git petualangan-ilmu
+cd petualangan-ilmu
 npm ci
 npm run dev
 ```
@@ -78,7 +80,7 @@ Atur Email/Password Auth serta Site URL dan Redirect URLs untuk `/auth/callback`
 
 ## Pasang database ringan
 
-Paket utama: **[supabase/seed_materi_lengkap.sql](supabase/seed_materi_lengkap.sql)**.
+Paket utama: **[database/seed_materi_lengkap.sql](database/seed_materi_lengkap.sql)**.
 
 | Isi                  |                               Jumlah |
 | -------------------- | -----------------------------------: |
@@ -92,13 +94,13 @@ Paket utama: **[supabase/seed_materi_lengkap.sql](supabase/seed_materi_lengkap.s
 
 Jalankan melalui SQL Editor sebagai pemilik database:
 
-1. [Migration 001 — skema awal](supabase/migrations/202610160001_initial_schema.sql).
-2. [Migration 002 — fitur platform](supabase/migrations/202610160002_platform_features.sql).
-3. [Migration 003 — penyimpanan privat](supabase/migrations/202610160003_private_storage.sql).
-4. [Migration 004 — editor soal](supabase/migrations/202610160004_editor_questions.sql).
-5. [Migration 005 — avatar Kiki, Momo dan Piko](supabase/migrations/202610180005_adventure_avatars.sql).
-6. [Seed materi lengkap](supabase/seed_materi_lengkap.sql).
-7. [Verifikasi skema](supabase/verify-setup.sql) dan [fitur platform](supabase/verify-platform.sql).
+1. [Migration 001 — skema awal](database/migrations/202610160001_initial_schema.sql).
+2. [Migration 002 — fitur platform](database/migrations/202610160002_platform_features.sql).
+3. [Migration 003 — penyimpanan privat](database/migrations/202610160003_private_storage.sql).
+4. [Migration 004 — editor soal](database/migrations/202610160004_editor_questions.sql).
+5. [Migration 005 — avatar Kiki, Momo dan Piko](database/migrations/202610180005_adventure_avatars.sql).
+6. [Seed materi lengkap](database/seed_materi_lengkap.sql).
+7. [Verifikasi skema](database/verify-setup.sql) dan [fitur platform](database/verify-platform.sql).
 
 Jika migration sudah terpasang, lanjutkan dengan seed; migration awal ditujukan untuk database baru. Untuk pemasangan ringan, paket ini sudah cukup. `seed.sql`, `paket-72-bab.sql`, `curriculum-draft.sql`, dan seed buku adalah pilihan paket lain yang tidak perlu dijalankan bersamaan.
 
@@ -116,7 +118,7 @@ File SQL berukuran sekitar **285 KB**, turun dari 580 KB. Ukuran JSON materi tur
 
 Seed menerbitkan materi dan soal sebagai `published`. Metadata tetap mencatat bahwa review guru diperlukan. Bank soal bertingkat tersedia; pemilihan adaptif berdasarkan performa siswa belum diimplementasikan.
 
-Baca [panduan seed lengkap](supabase/README-seed-materi-lengkap.md) untuk cakupan, kompatibilitas dan hasil pengukuran.
+Baca [panduan seed lengkap](database/README-seed-materi-lengkap.md) untuk cakupan, kompatibilitas dan hasil pengukuran.
 
 ## Perintah pengembangan
 
@@ -154,37 +156,41 @@ Hasil build berada di `dist/`. Konfigurasi `vercel.json` sudah menyediakan fallb
 ## Struktur proyek
 
 ```text
-Petualangan-Ilmu/
-├── src/
-│   ├── components/     Komponen materi, kelas, kuis, dan studio
-│   ├── pages/          Halaman siswa, tutor, admin, dan autentikasi
-│   ├── context/        State demo dan integrasi Supabase
-│   ├── services/       Akses layanan dan impor soal
-│   ├── lib/            Katalog, validasi dan utilitas
-│   └── content/        Naskah paket materi demo
-├── supabase/           Migration, seed dan verifikasi SQL
-├── scripts/            Generator konten, build dan pemeriksaan
-├── tests/              Tes aplikasi, database dan batas input
-├── public/             Aset statis
-├── content/            Manifest dan referensi pembelajaran
-└── docs/               Panduan materi, operasional dan QA
+petualangan-ilmu/
+├── frontend/          React, halaman, komponen, CSS, dan aset browser
+│   ├── src/           Kode antarmuka dan naskah demo
+│   ├── public/        Aset statis
+│   └── index.html     Halaman masuk Vite
+├── backend/           Alat administrasi server Supabase
+├── database/          Migration, seed, fungsi RPC, dan kebijakan RLS
+├── docs/              Arsitektur, operasional, materi, dan QA
+├── content/           Manifest dan referensi pembelajaran
+├── scripts/           Generator konten, build, dan pemeriksaan
+├── tests/             Tes aplikasi dan database lokal
+├── dist/              Hasil build otomatis
+├── package.json       Perintah dan dependensi bersama
+└── JALANKAN-LOKAL.cmd  Peluncur Windows
 ```
+
+Backend utama berjalan di Supabase. Fungsi server dan kebijakan akses didefinisikan dalam `database/migrations/`; `backend/` berisi alat administrasi privat. Semua perintah npm dan file `.env.local` tetap menggunakan folder utama proyek.
+
+Baca [penjelasan frontend](frontend/README.md), [backend](backend/README.md), [database](database/README.md), serta [struktur dan alur aplikasi](docs/STRUKTUR-PROYEK.md). Dokumentasi lainnya tersedia di [indeks docs](docs/README.md).
 
 ## Status dan dokumentasi
 
-Hasil pemeriksaan lokal **18 Oktober 2026: 112 tes lulus**, termasuk kompatibilitas seed, rerun tanpa duplikat atau perubahan row identik, pembaca/editor scenes, penilaian kuis, akses kunci dan audit bundle produksi.
+Hasil pemeriksaan lokal **22 Oktober 2026: 112 tes lulus**, termasuk kompatibilitas seed, rerun tanpa duplikat atau perubahan row identik, pembaca/editor scenes, penilaian kuis, akses kunci dan audit bundle produksi.
 
 Pemasangan dan pengujian Supabase cloud serta QA visual perangkat nyata belum dinyatakan selesai. Isi materi masih memerlukan review guru; paket ini tidak diklaim mencakup seluruh kurikulum nasional. Sains kelas 1–2 diperlakukan sebagai pengayaan.
 
-| Panduan                                                                     | Isi                                                       |
-| --------------------------------------------------------------------------- | --------------------------------------------------------- |
-| [Database ringan](supabase/README-seed-materi-lengkap.md)                   | Instalasi, penghematan dan kompatibilitas seed            |
-| [QA black-box dan white-box](docs/qa/README.md)                             | Skenario, pengujian, bug dan laporan                      |
-| [Hasil regresi terbaru](docs/qa/evidence/2026-10-18-clay-ui-regression.txt) | Bukti 112 tes lulus                                       |
-| [Operasional](docs/OPERASIONAL.md)                                          | Auth, admin pertama, pengujian cloud dan pengelolaan data |
-| [Paket tambahan 72 bab](docs/materi/paket-72-bab/README.md)                 | Materi dan kuis tambahan untuk review                     |
-| [Roadmap pendidikan](docs/ROADMAP-PENDIDIKAN.md)                            | Rencana pengembangan bahan ajar                           |
-| [Arsip panduan teknis](PANDUAN-TEKNIS-ARSIP.md)                             | PRD dan catatan implementasi terdahulu                    |
+| Panduan                                                                      | Isi                                                       |
+| ---------------------------------------------------------------------------- | --------------------------------------------------------- |
+| [Database ringan](database/README-seed-materi-lengkap.md)                    | Instalasi, penghematan dan kompatibilitas seed            |
+| [QA black-box dan white-box](docs/qa/README.md)                              | Skenario, pengujian, bug dan laporan                      |
+| [Hasil regresi terbaru](docs/qa/evidence/2026-10-22-folder-layout-tests.txt) | Bukti 112 tes lulus                                       |
+| [Operasional](docs/OPERASIONAL.md)                                           | Auth, admin pertama, pengujian cloud dan pengelolaan data |
+| [Paket tambahan 72 bab](docs/materi/paket-72-bab/README.md)                  | Materi dan kuis tambahan untuk review                     |
+| [Roadmap pendidikan](docs/ROADMAP-PENDIDIKAN.md)                             | Rencana pengembangan bahan ajar                           |
+| [Arsip panduan teknis](docs/PANDUAN-TEKNIS-ARSIP.md)                         | PRD dan catatan implementasi terdahulu                    |
 
 Arsip mencatat kondisi versi sebelumnya. Untuk instalasi saat ini, ikuti README ini dan panduan database ringan.
 

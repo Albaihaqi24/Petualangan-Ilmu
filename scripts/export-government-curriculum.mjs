@@ -1,13 +1,13 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { cpReference } from '../src/lib/cpReference.js'
+import { cpReference } from '../frontend/src/lib/cpReference.js'
 import {
   curriculumPlan,
   curriculumSources,
   learningResources,
   resourceSubjects,
-} from '../src/lib/learningResources.js'
+} from '../frontend/src/lib/learningResources.js'
 import {
   governmentCheckedAt,
   governmentScopes,
@@ -17,7 +17,7 @@ import {
   officialMaterialsIndex,
   englishTransitionUrl,
   unitAlignmentNotes,
-} from '../src/lib/governmentCurriculum.js'
+} from '../frontend/src/lib/governmentCurriculum.js'
 
 const name = (id) => resourceSubjects.find((s) => s.id === id)?.name || id
 const cell = (value) => String(value).replaceAll('|', '\\|').replaceAll('\n', ' ')

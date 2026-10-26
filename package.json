@@ -20,8 +20,8 @@
     "content:adventure": "node scripts/export-adventure-package.mjs",
     "content:cp": "node scripts/refresh-cp-reference.mjs",
     "content:generate": "node scripts/generate-curriculum-draft.mjs",
-    "format": "prettier --write src tests scripts index.html package.json vite.config.js vercel.json",
-    "format:check": "prettier --check src tests scripts index.html package.json vite.config.js vercel.json"
+    "format": "prettier --write frontend backend tests scripts vite.config.js package.json vercel.json",
+    "format:check": "prettier --check frontend backend tests scripts vite.config.js package.json vercel.json"
   },
   "dependencies": {
     "@supabase/supabase-js": "latest",

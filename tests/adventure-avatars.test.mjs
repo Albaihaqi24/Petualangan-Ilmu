@@ -13,14 +13,14 @@ test('Migration avatar: profil lama tetap, Kiki/Momo/Piko tersimpan, registrasi 
     grant usage on schema public,auth to anon,authenticated;`)
   await db.exec(
     await readFile(
-      new URL('../supabase/migrations/202610160001_initial_schema.sql', import.meta.url),
+      new URL('../database/migrations/202610160001_initial_schema.sql', import.meta.url),
       'utf8',
     ),
   )
   const original = randomUUID()
   await db.query('insert into auth.users(id) values($1)', [original])
   const migration = await readFile(
-    new URL('../supabase/migrations/202610180005_adventure_avatars.sql', import.meta.url),
+    new URL('../database/migrations/202610180005_adventure_avatars.sql', import.meta.url),
     'utf8',
   )
   await db.exec(migration)

@@ -1,14 +1,14 @@
 # Petualangan Ilmu
 
-Paket pengujian: [QA black-box, white-box, dan laporan hasil](docs/qa/README.md).
+Paket pengujian: [QA black-box, white-box, dan laporan hasil](../docs/qa/README.md).
 
-**Tambahan 18 Oktober 2026:** [paket 72 bab kelas 1–6](docs/materi/paket-72-bab/README.md) untuk Matematika, Bahasa Indonesia, serta IPA & Sains: 216 subbab, 216 latihan mandiri berpembahasan dan 360 soal kuis. Buka [perpustakaan paket](http://127.0.0.1:5173/sumber-belajar?grade=1#paket-72-bab), pilih kelas/pelajaran dan masuk demo siswa. Total demo menjadi **332 materi/1660 soal**. Ini bahan ajar draf pilihan aplikasi, bukan daftar bab resmi; guru masih perlu meninjau isi/kunci dan CP/ATP. Sains kelas 1–2 adalah pengayaan; paket ini belum mencakup seluruh aspek sosial IPAS.
+**Tambahan 18 Oktober 2026:** [paket 72 bab kelas 1–6](../docs/materi/paket-72-bab/README.md) untuk Matematika, Bahasa Indonesia, serta IPA & Sains: 216 subbab, 216 latihan mandiri berpembahasan dan 360 soal kuis. Buka [perpustakaan paket](http://127.0.0.1:5173/sumber-belajar?grade=1#paket-72-bab), pilih kelas/pelajaran dan masuk demo siswa. Total demo menjadi **332 materi/1660 soal**. Ini bahan ajar draf pilihan aplikasi, bukan daftar bab resmi; guru masih perlu meninjau isi/kunci dan CP/ATP. Sains kelas 1–2 adalah pengayaan; paket ini belum mencakup seluruh aspek sosial IPAS.
 
-Generator: `npm run content:adventure`. Paket cloud: `supabase/paket-72-bab.sql`, dipasang sesudah empat migration dan seed awal; semua draf dan tidak otomatis diterbitkan. [Panduan kuis pendamping](docs/materi/paket-72-bab/KUIS-PENDAMPING.md) menyimpan soal, kunci dan alasan untuk review. Rincian status 17 Oktober di bawah merupakan catatan sebelum tambahan paket ini.
+Generator: `npm run content:adventure`. Paket cloud: `database/paket-72-bab.sql`, dipasang sesudah empat migration dan seed awal; semua draf dan tidak otomatis diterbitkan. [Panduan kuis pendamping](../docs/materi/paket-72-bab/KUIS-PENDAMPING.md) menyimpan soal, kunci dan alasan untuk review. Rincian status 17 Oktober di bawah merupakan catatan sebelum tambahan paket ini.
 
 Bimbel digital gratis dan petualangan belajar untuk SD kelas 1–6. Dokumen ini memuat **Master PRD, cara menjalankan, delapan fase implementasi, kontrak server, dan checklist rilis**.
 
-**Mulai dari [roadmap ringkas](docs/ROADMAP-PENDIDIKAN.md).** Cakupan materi tetap enam pelajaran proyek. Fokus paket sekarang: [delapan bab Matematika kelas 1](docs/materi/matematika/kelas-1/README.md); kelompok lain dilengkapi satu per satu.
+**Mulai dari [roadmap ringkas](../docs/ROADMAP-PENDIDIKAN.md).** Cakupan materi tetap enam pelajaran proyek. Fokus paket sekarang: [delapan bab Matematika kelas 1](../docs/materi/matematika/kelas-1/README.md); kelompok lain dilengkapi satu per satu.
 
 **Status 17 Oktober 2026:** kode MVP Tahap 1–8 tersedia untuk mode demo dan integrasi Supabase. **71 tes lokal lulus**, build demo dan build Supabase untuk pemeriksaan offline lulus. Acuan pemerintah, register 216 ringkasan awal dan roadmap pendidikan tersedia. Paket pertama bahan ajar Matematika kelas 1 telah ditulis dalam delapan bab/25 subbab dengan 40 kuis tambahan. Anda belum membuat proyek Supabase dan meminta kode dilanjutkan dahulu. Karena itu, pemasangan cloud, pengiriman email, pengujian lintas perangkat, review guru, dan deployment belum dinyatakan selesai.
 
@@ -75,7 +75,7 @@ Buka **http://127.0.0.1:5174**. Port berbeda berarti origin berbeda; progres dem
 Perintah standar jika Node/npm tersedia pada PATH:
 
 ```powershell
-cd "C:\Users\J2ACER NITRO\Documents\Codex\2026-10-16\bu\outputs\petualangan-ilmu"
+cd "C:\Users\J2ACER NITRO\Documents\Codex\petualangan-ilmu"
 npm ci
 npm run dev
 ```
@@ -144,24 +144,24 @@ Data demo hanya dibagikan antarmode pada browser/origin yang sama. Kode kelas de
 
 Permintaan materi diperjelas menjadi bahan ajar utuh dengan urutan bab/subbab. **Paket pertama Matematika kelas 1 telah ditulis dalam 8 bab dan 25 subbab**, mengikuti daftar isi buku siswa pemerintah 2022. Teks, cerita, contoh, kegiatan serta soal aplikasi ditulis orisinal. Penulisan ini belum menyatakan persetujuan guru atau pemenuhan seluruh CP Fase A.
 
-Tidak perlu membuat panduan ajar dari nol. Buku siswa dan panduan guru resmi yang tersedia menjadi acuan; CP terbaru dan ATP sekolah digunakan untuk memeriksa tujuan serta urutan belajar. [Panduan bahan ajar](docs/PANDUAN-BAHAN-AJAR.md) menjelaskan prasyarat, pendampingan, asesmen, bantuan dan pengayaan.
+Tidak perlu membuat panduan ajar dari nol. Buku siswa dan panduan guru resmi yang tersedia menjadi acuan; CP terbaru dan ATP sekolah digunakan untuk memeriksa tujuan serta urutan belajar. [Panduan bahan ajar](../docs/PANDUAN-BAHAN-AJAR.md) menjelaskan prasyarat, pendampingan, asesmen, bantuan dan pengayaan.
 
 | Bab | Bahan ajar | Subbab |
 | --- | --- | --- |
-| 1 | [Bilangan 0–10](docs/materi/matematika/kelas-1/bab-01.md) | Menghitung/menulis, membandingkan, urutan, pasangan bilangan |
-| 2 | [Penjumlahan hingga 10](docs/materi/matematika/kelas-1/bab-02.md) | Cerita, strategi, soal cerita |
-| 3 | [Pengurangan hingga 10](docs/materi/matematika/kelas-1/bab-03.md) | Sisa, strategi, hubungan operasi, soal cerita |
-| 4 | [Bentuk di sekitar](docs/materi/matematika/kelas-1/bab-04.md) | Ciri bentuk, pengelompokan, susun/urai |
-| 5 | [Bilangan 11–20](docs/materi/matematika/kelas-1/bab-05.md) | Membilang, urutan, puluhan/satuan, perbandingan |
-| 6 | [Tambah dan kurang hingga 20](docs/materi/matematika/kelas-1/bab-06.md) | Selisih, penjumlahan, pengurangan |
-| 7 | [Mengukur panjang](docs/materi/matematika/kelas-1/bab-07.md) | Perbandingan/urutan panjang, satuan tidak baku |
-| 8 | [Data dan diagram gambar](docs/materi/matematika/kelas-1/bab-08.md) | Pengelompokan data, diagram gambar |
+| 1 | [Bilangan 0–10](../docs/materi/matematika/kelas-1/bab-01.md) | Menghitung/menulis, membandingkan, urutan, pasangan bilangan |
+| 2 | [Penjumlahan hingga 10](../docs/materi/matematika/kelas-1/bab-02.md) | Cerita, strategi, soal cerita |
+| 3 | [Pengurangan hingga 10](../docs/materi/matematika/kelas-1/bab-03.md) | Sisa, strategi, hubungan operasi, soal cerita |
+| 4 | [Bentuk di sekitar](../docs/materi/matematika/kelas-1/bab-04.md) | Ciri bentuk, pengelompokan, susun/urai |
+| 5 | [Bilangan 11–20](../docs/materi/matematika/kelas-1/bab-05.md) | Membilang, urutan, puluhan/satuan, perbandingan |
+| 6 | [Tambah dan kurang hingga 20](../docs/materi/matematika/kelas-1/bab-06.md) | Selisih, penjumlahan, pengurangan |
+| 7 | [Mengukur panjang](../docs/materi/matematika/kelas-1/bab-07.md) | Perbandingan/urutan panjang, satuan tidak baku |
+| 8 | [Data dan diagram gambar](../docs/materi/matematika/kelas-1/bab-08.md) | Pengelompokan data, diagram gambar |
 
 Setiap bab memiliki tujuan, pengantar, penjelasan per subbab, contoh bertahap, kegiatan, rangkuman, latihan mandiri/pembahasan, refleksi dan catatan pendamping. **40 soal kuis** ditambahkan terpisah. Pembahasan latihan mandiri dapat dibuka setelah mencoba. Kuis tidak menggantikan pengamatan praktik oleh pendamping.
 
-**Coba:** buka [bahan ajar per bab](http://127.0.0.1:5174/sumber-belajar?grade=1&subject=matematika#buku-per-bab), masuk sebagai siswa, lalu pilih bab. Navigasi delapan bab dan daftar isi subbab tersedia pada pembaca. [Daftar seluruh bab](docs/materi/matematika/kelas-1/README.md) juga dapat dibaca sebagai dokumen.
+**Coba:** buka [bahan ajar per bab](http://127.0.0.1:5174/sumber-belajar?grade=1&subject=matematika#buku-per-bab), masuk sebagai siswa, lalu pilih bab. Navigasi delapan bab dan daftar isi subbab tersedia pada pembaca. [Daftar seluruh bab](../docs/materi/matematika/kelas-1/README.md) juga dapat dibaca sebagai dokumen.
 
-Paket SQL terpisah [matematika-kelas-1-2022.sql](supabase/books/matematika-kelas-1-2022.sql) dipasang setelah keempat migration dan seed awal. Semua bab/soal tetap draf. Manifest [textbook-manifest.json](content/textbook-manifest.json) tidak memuat bank/kunci kuis. Jalankan `npm run content:books` setelah mengubah isi atau metadata buku.
+Paket SQL terpisah [matematika-kelas-1-2022.sql](../database/books/matematika-kelas-1-2022.sql) dipasang setelah keempat migration dan seed awal. Semua bab/soal tetap draf. Manifest [textbook-manifest.json](../content/textbook-manifest.json) tidak memuat bank/kunci kuis. Jalankan `npm run content:books` setelah mengubah isi atau metadata buku.
 
 - [x] Identitas dan daftar isi sumber buku dipilih/diperiksa.
 - [x] Delapan bab/25 subbab, latihan/pembahasan dan 40 kuis ditulis.
@@ -198,16 +198,16 @@ Demo mempertahankan 36 materi/180 soal lama, 216 ringkasan awal/1.080 soal, dan 
 
 ### Paket database dan review
 
-Setelah migration aktif, pasang [curriculum-draft.sql](supabase/curriculum-draft.sql). SQL ini menambah 216 materi dan 1.080 soal sebagai draf, dengan ID deterministik dan pemasangan ulang yang tidak menimpa suntingan. Jika dipasang bersama seed awal 36 materi/185 soal, total database awal **252 materi/1.265 soal**; lima soal tambahan hanya ada pada seed database awal. Materi draf tidak terlihat oleh siswa cloud sampai dipublikasikan admin setelah review.
+Setelah migration aktif, pasang [curriculum-draft.sql](../database/curriculum-draft.sql). SQL ini menambah 216 materi dan 1.080 soal sebagai draf, dengan ID deterministik dan pemasangan ulang yang tidak menimpa suntingan. Jika dipasang bersama seed awal 36 materi/185 soal, total database awal **252 materi/1.265 soal**; lima soal tambahan hanya ada pada seed database awal. Materi draf tidak terlihat oleh siswa cloud sampai dipublikasikan admin setelah review.
 
 - [x] Isi 216 unit dan 1.080 soal orisinal tersedia.
 - [x] Navigasi bacaan → kuis → pembahasan/XP demo diuji untuk unit baru.
 - [x] Paket SQL diuji lokal: status draf, format konten valid, idempoten, tidak terlihat oleh siswa sebelum publikasi.
-- [x] Build Supabase diperiksa agar src/content dan bank demo tidak ikut bundle.
+- [x] Build Supabase diperiksa agar frontend/src/content dan bank demo tidak ikut bundle.
 - [ ] Guru menyelesaikan review konsep, bahasa, aktivitas, kunci, pengecoh, diferensiasi, dan kecocokan CP/ATP per unit.
 - [ ] Paket dipasang, diuji, dan dipublikasikan secara terkontrol pada Supabase nyata.
 
-Panduan [MATERI-SIAP-REVIEW.md](docs/MATERI-SIAP-REVIEW.md) menyediakan checklist per unit; [SUMBER-MATERI.md](docs/SUMBER-MATERI.md) mencatat rujukan dan batas cakupan. [curriculum-manifest.json](content/curriculum-manifest.json) berisi daftar materi tanpa kunci. Jalankan npm run content:generate setelah mengubah src/content; generator juga memperbarui daftar sumber dan urutan editorial.
+Panduan [MATERI-SIAP-REVIEW.md](../docs/MATERI-SIAP-REVIEW.md) menyediakan checklist per unit; [SUMBER-MATERI.md](../docs/SUMBER-MATERI.md) mencatat rujukan dan batas cakupan. [curriculum-manifest.json](../content/curriculum-manifest.json) berisi daftar materi tanpa kunci. Jalankan npm run content:generate setelah mengubah frontend/src/content; generator juga memperbarui daftar sumber dan urutan editorial.
 
 IPAS dan pengenalan Inggris kelas 1–2 tetap pengayaan. Pilihan cabang seni disesuaikan sekolah. **Selesai mengisi 216 topik pilihan aplikasi tidak berarti seluruh CP nasional telah dipetakan atau disahkan guru.** PJOK, agama, dan muatan lokal berada di luar paket enam pelajaran ini.
 
@@ -221,7 +221,7 @@ IPAS dan Bahasa Inggris kelas 1–2 berlabel pengayaan. Seni mengikuti satu caba
 - [x] Acuan yang relevan dipilih dan ditautkan ke register materi serta delapan bab Matematika kelas 1.
 - [ ] Guru menyetujui tujuan pembelajaran, urutan dan asesmen sebelum materi diterbitkan.
 
-Bila perlu memeriksa sumber, buka [ringkasan penerapan CP](docs/KAJIAN-JSON-CP-2025.md). Untuk pengerjaan sehari-hari, cukup ikuti roadmap di bawah.
+Bila perlu memeriksa sumber, buka [ringkasan penerapan CP](../docs/KAJIAN-JSON-CP-2025.md). Untuk pengerjaan sehari-hari, cukup ikuti roadmap di bawah.
 <!-- cp-json:end -->
 
 <!-- government-curriculum:start -->
@@ -240,11 +240,11 @@ Materi disusun per bab dari buku siswa/panduan guru pemerintah, lalu dicocokkan 
 
 **Pencarian referensi buku berikutnya:** gunakan [katalog SIBI Kemendikdasmen](https://buku.kemendikdasmen.go.id/katalog). Pilih buku siswa/panduan guru sesuai kelas dan pelajaran; catat judul, edisi/tahun, bab/halaman serta URL detail buku. Jika belum ditemukan di katalog, tandai rujukan yang perlu dilengkapi.
 
-**Fokus sekarang:** tuntaskan peninjauan [delapan bab Matematika kelas 1](docs/materi/matematika/kelas-1/README.md), lalu lanjutkan kelompok kelas–pelajaran berikutnya. Sebanyak 216 unit lama masih ringkasan awal; jumlah bab mengikuti buku yang dipilih.
+**Fokus sekarang:** tuntaskan peninjauan [delapan bab Matematika kelas 1](../docs/materi/matematika/kelas-1/README.md), lalu lanjutkan kelompok kelas–pelajaran berikutnya. Sebanyak 216 unit lama masih ringkasan awal; jumlah bab mengikuti buku yang dipilih.
 
-Ikuti [roadmap pendidikan](docs/ROADMAP-PENDIDIKAN.md) untuk urutan sumber → tujuan → penulisan bab → asesmen → review → uji coba → publikasi. Aktifkan Supabase dan deployment setelah layanan tersedia serta pemeriksaan teknis selesai.
+Ikuti [roadmap pendidikan](../docs/ROADMAP-PENDIDIKAN.md) untuk urutan sumber → tujuan → penulisan bab → asesmen → review → uji coba → publikasi. Aktifkan Supabase dan deployment setelah layanan tersedia serta pemeriksaan teknis selesai.
 
-Rincian seluruh kelas/semester dan tautan sumber tetap tersedia pada [peta kurikulum](docs/PETA-KURIKULUM-PEMERINTAH.md) bila diperlukan.
+Rincian seluruh kelas/semester dan tautan sumber tetap tersedia pada [peta kurikulum](../docs/PETA-KURIKULUM-PEMERINTAH.md) bila diperlukan.
 <!-- government-curriculum:end -->
 
 ## Visi dan kebutuhan produk
@@ -290,7 +290,7 @@ petualangan-ilmu/
 ├── JALANKAN-LOKAL.cmd
 ├── .openai/hosting.json           # konfigurasi lama dipertahankan
 ├── public/assets/                # SVG/aset publik
-├── src/
+├── frontend/src/
 │   ├── main.jsx / App.jsx / index.css
 │   ├── components/               # peta, UI, studio, pengelolaan admin
 │   ├── context/
@@ -304,7 +304,7 @@ petualangan-ilmu/
 │   ├── pages/                    # publik, auth, akun, student/tutor/admin
 │   └── services/                 # adapter Supabase dan validasi impor
 ├── content/                      # manifest/urutan/alignment editorial tanpa kunci
-├── supabase/
+├── database/
 │   ├── migrations/
 │   │   ├── 202610160001_initial_schema.sql
 │   │   ├── 202610160002_platform_features.sql
@@ -419,11 +419,11 @@ Hasil memuat `score`, `correct_count`, `total_questions`, `details`, `xp_earned`
 | Pengelolaan/audit | promote_tutor, save_subject, get_audit_log |
 | Penghapusan | request_account_deletion |
 
-Parameter dan penanganan error berada di [supabaseService.js](src/services/supabaseService.js); implementasi aturan ada pada migration. Kode kelas enam karakter alfanumerik, dibuat server dengan pemeriksaan tabrakan. Maksimal 10 upaya gabung/jam/siswa; gagal menebak tetap dihitung. Tenggat/keanggotaan/role dipastikan server.
+Parameter dan penanganan error berada di [supabaseService.js](../frontend/src/services/supabaseService.js); implementasi aturan ada pada migration. Kode kelas enam karakter alfanumerik, dibuat server dengan pemeriksaan tabrakan. Maksimal 10 upaya gabung/jam/siswa; gagal menebak tetap dihitung. Tenggat/keanggotaan/role dipastikan server.
 
 Impor maksimal 200 soal/500 KB, transaksi satu batch, ID batch untuk retry idempoten. Soal/kunci disimpan terpisah dan selalu draf. Tutor hanya mengakses kunci editorial materi miliknya. Akun siswa tidak memakai API editorial.
 
-Storage memeriksa path milik siswa dan tugas, keanggotaan, tenggat, serta status belum dinilai untuk unggah/hapus. Tidak ada overwrite; tautan baca dibuat 60 detik. Izin isi file berdasarkan MIME/ukuran tidak menggantikan review berkas pengelola. Alur pemulihan/pembersihan berkas dijelaskan dalam [operasional](docs/OPERASIONAL.md).
+Storage memeriksa path milik siswa dan tugas, keanggotaan, tenggat, serta status belum dinilai untuk unggah/hapus. Tidak ada overwrite; tautan baca dibuat 60 detik. Izin isi file berdasarkan MIME/ukuran tidak menggantikan review berkas pengelola. Alur pemulihan/pembersihan berkas dijelaskan dalam [operasional](../docs/OPERASIONAL.md).
 
 ## Delapan fase pengerjaan
 
@@ -454,16 +454,16 @@ Fase berikut memisahkan hasil kode lokal dari tindakan cloud. Estimasi sumber ad
 
 1. Buat proyek baru pada [dashboard Supabase](https://supabase.com/dashboard). Simpan password database secara pribadi.
 2. Pada SQL Editor, jalankan satu per satu sesuai urutan:
-   - [001 — schema dan kuis/XP](supabase/migrations/202610160001_initial_schema.sql)
-   - [002 — kelas, editorial, audit](supabase/migrations/202610160002_platform_features.sql)
-   - [003 — Storage privat](supabase/migrations/202610160003_private_storage.sql)
-   - [004 — soal draf tutor/admin](supabase/migrations/202610160004_editor_questions.sql)
+   - [001 — schema dan kuis/XP](../database/migrations/202610160001_initial_schema.sql)
+   - [002 — kelas, editorial, audit](../database/migrations/202610160002_platform_features.sql)
+   - [003 — Storage privat](../database/migrations/202610160003_private_storage.sql)
+   - [004 — soal draf tutor/admin](../database/migrations/202610160004_editor_questions.sql)
 3. Pastikan setiap query selesai tanpa error sebelum lanjut. Migration awal khusus database baru dan sengaja menolak pemasangan ulang. Jika proyek sudah memakai skema lama, susun migration konversi terpisah.
-4. Jalankan [seed.sql](supabase/seed.sql): target awal 6 pelajaran, 36 materi, 185 soal **draf**. Seed idempoten dan tidak menimpa perubahan editorial.
-5. Jalankan [verify-setup.sql](supabase/verify-setup.sql) dan [verify-platform.sql](supabase/verify-platform.sql). Hasil yang diharapkan: struktur/izin dasar dan platform/bucket privat lulus. Jumlah berubah setelah editor menambahkan konten.
+4. Jalankan [seed.sql](../database/seed.sql): target awal 6 pelajaran, 36 materi, 185 soal **draf**. Seed idempoten dan tidak menimpa perubahan editorial.
+5. Jalankan [verify-setup.sql](../database/verify-setup.sql) dan [verify-platform.sql](../database/verify-platform.sql). Hasil yang diharapkan: struktur/izin dasar dan platform/bucket privat lulus. Jumlah berubah setelah editor menambahkan konten.
 6. Pastikan schema private tidak diekspos Data API.
 7. Isi konfigurasi publik dan mode Supabase pada `.env.local`. Gunakan [quickstart React resmi](https://supabase.com/docs/guides/getting-started/quickstarts/reactjs) untuk menemukan konfigurasi proyek.
-8. Simpan tanggal/hasil pemasangan. SQL sumber historis dan `supabase/legacy/` tidak dijalankan bersama migration aktif.
+8. Simpan tanggal/hasil pemasangan. SQL sumber historis dan `database/legacy/` tidak dijalankan bersama migration aktif.
 
 - [x] Empat migration, seed, verifikasi dan tes SQL lokal.
 - [x] RLS/grant, profil student, sesi/snapshot, penilaian, XP/replay, kelas, editorial, dan bucket diuji di PGlite.
@@ -473,7 +473,7 @@ Fase berikut memisahkan hasil kode lokal dari tindakan cloud. Estimasi sumber ad
 ### Tahap 4 — Auth, RLS, dan peran
 
 1. Atur Email/Password, konfirmasi, SMTP, Site URL, serta redirect callback/reset.
-2. Daftarkan akun pemilik dan tetapkan admin pertama secara terkontrol; lihat [operasional](docs/OPERASIONAL.md).
+2. Daftarkan akun pemilik dan tetapkan admin pertama secara terkontrol; lihat [operasional](../docs/OPERASIONAL.md).
 3. Daftarkan siswa/tutor uji. Verifikasi calon tutor lalu angkat lewat admin.
 4. Uji login, refresh, logout, email, URL terlarang, API langsung, dan pergantian akun.
 
@@ -565,7 +565,7 @@ Tes SQL mencakup role/profil/XP, privasi kunci, snapshot/kedaluwarsa/rate limit 
 
 ## Batas rilis dan operasional
 
-Panduan rinci tersedia pada [docs/OPERASIONAL.md](docs/OPERASIONAL.md): konfigurasi Auth, review guru, uji lintas akun, uji konkurensi cloud, penghapusan, backup/restore, insiden dan gerbang rilis. Skrip cloud/penghapusan disiapkan tetapi **belum dijalankan terhadap layanan nyata**.
+Panduan rinci tersedia pada [docs/OPERASIONAL.md](../docs/OPERASIONAL.md): konfigurasi Auth, review guru, uji lintas akun, uji konkurensi cloud, penghapusan, backup/restore, insiden dan gerbang rilis. Skrip cloud/penghapusan disiapkan tetapi **belum dijalankan terhadap layanan nyata**.
 
 QA visual masih harus memeriksa landing, peta, materi, kuis/hasil, profil, kelas, tutor dan admin pada 375/412 px/desktop; teks/tombol, fokus/keyboard, gulir horizontal, refresh rute, error console, SVG, serta video nyata. Sesi pengerjaan belum memiliki browser yang dapat dikendalikan untuk menyatakan pemeriksaan tersebut lulus.
 
@@ -573,7 +573,7 @@ Rencana urutan sumber tetap: hari 1–2 fondasi/UI; 3–4 database/Auth; 5–7 b
 
 ## Sumber lengkap
 
-Naskah terbaru dipertahankan di [`docs/source/MASTER-PRD-ASLI.txt`](docs/source/MASTER-PRD-ASLI.txt). Dokumen awal proyek disimpan di [`docs/source/PRD-ASLI-SEBELUMNYA.txt`](docs/source/PRD-ASLI-SEBELUMNYA.txt). Arsip README/checkpoint ada di `docs/archive/`; demo lama tetap di `legacy/`.
+Naskah terbaru dipertahankan di [`docs/source/MASTER-PRD-ASLI.txt`](../docs/source/MASTER-PRD-ASLI.txt). Dokumen awal proyek disimpan di [`docs/source/PRD-ASLI-SEBELUMNYA.txt`](../docs/source/PRD-ASLI-SEBELUMNYA.txt). Arsip README/checkpoint ada di `docs/archive/`; demo lama tetap di `legacy/`.
 
 Lampiran di bawah mempertahankan seluruh naskah terbaru, termasuk SQL, perintah, prompt tambahan, checklist, estimasi. SQL sumber adalah referensi historis; baca perbedaan kontrak dan perbaikan keamanan di atas sebelum mengeksekusi.
 
@@ -593,8 +593,8 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
 })
-Buka file src/index.css dan ganti isinya menjadi satu baris ini:CSS@import "tailwindcss";
-Buat struktur folder kosong di dalam folder src/ agar OpenCode bekerja dengan rapi:Plaintextsrc/
+Buka file frontend/src/index.css dan ganti isinya menjadi satu baris ini:CSS@import "tailwindcss";
+Buat struktur folder kosong di dalam folder frontend/src/ agar OpenCode bekerja dengan rapi:Plaintextsrc/
 ├── components/
 │   ├── ui/
 │   ├── adventure/
@@ -608,8 +608,8 @@ Buat struktur folder kosong di dalam folder src/ agar OpenCode bekerja dengan ra
 │   ├── tutor/
 │   └── admin/
 └── services/
-Jalankan npm run dev di terminal dan buka http://localhost:5173.Checklist Selesai Tahap 1:[ ] Server lokal berjalan di http://localhost:5173 tanpa pesan error merah.[ ] Tailwind CSS berfungsi (uji dengan memberi class bg-sky-100 text-sky-900 pada teks di App.jsx).[ ] Struktur folder di dalam src/ sudah lengkap.TAHAP 2: Membangun UI/UX Ramah Anak & Navigasi Dummy (Estimasi: 6–8 Jam)Tujuan: Membuat seluruh halaman dan tampilan peta petualangan menggunakan data contoh (dummyData.js) sebelum menyentuh database.Langkah Demi Langkah:Buka OpenCode di folder proyek petualangan-ilmu.Salin dan jalankan Prompt Tahap 1 (yang ada di rencana awalmu) ke OpenCode, lalu tambahkan instruksi spesifik ini agar struktur datanya langsung cocok dengan database nanti:PlaintextTambahan penting untuk Tahap 1:
-Buat file src/lib/dummyData.js yang memiliki struktur data persis seperti tabel database kita nanti:
+Jalankan npm run dev di terminal dan buka http://localhost:5173.Checklist Selesai Tahap 1:[ ] Server lokal berjalan di http://localhost:5173 tanpa pesan error merah.[ ] Tailwind CSS berfungsi (uji dengan memberi class bg-sky-100 text-sky-900 pada teks di App.jsx).[ ] Struktur folder di dalam frontend/src/ sudah lengkap.TAHAP 2: Membangun UI/UX Ramah Anak & Navigasi Dummy (Estimasi: 6–8 Jam)Tujuan: Membuat seluruh halaman dan tampilan peta petualangan menggunakan data contoh (dummyData.js) sebelum menyentuh database.Langkah Demi Langkah:Buka OpenCode di folder proyek petualangan-ilmu.Salin dan jalankan Prompt Tahap 1 (yang ada di rencana awalmu) ke OpenCode, lalu tambahkan instruksi spesifik ini agar struktur datanya langsung cocok dengan database nanti:PlaintextTambahan penting untuk Tahap 1:
+Buat file frontend/src/lib/dummyData.js yang memiliki struktur data persis seperti tabel database kita nanti:
 - subjects: [{ id, name, slug, description }]
 - lessons: [{ id, subject_id, title, slug, grade, phase, difficulty, status, content: { summary, video_url, blocks: [{ type: 'text'|'image'|'tip', body, url, caption }] } }]
 - questions: [{ id, lesson_id, prompt, options: ["A", "B", "C", "D"], correct_option: 1, explanation, difficulty }]
@@ -779,7 +779,7 @@ create policy "Update profil sendiri" on public.profiles for update
     and role = (select role from public.profiles where id = auth.uid())
     and total_xp = (select total_xp from public.profiles where id = auth.uid())
   );
-Jalankan Prompt Tahap 2 di OpenCode untuk membuat src/lib/supabaseClient.js, AuthContext.jsx, dan ProtectedRoute.jsx.Uji daftar 2 akun baru lewat halaman /register di webmu:Akun 1: siswa1@test.com (biarkan sebagai student).Akun 2: tutor1@test.com (buka menu Table Editor → profiles di Supabase, ubah kolom role milik tutor1 secara manual menjadi tutor).Checklist Selesai Tahap 4:[ ] Daftar akun baru di /register otomatis membuat baris baru di tabel profiles dengan role student.[ ] Login dengan siswa1@test.com mengarahkan pengguna ke /student dan menolak akses jika URL diganti ke /tutor atau /admin.[ ] Login dengan tutor1@test.com berhasil membuka halaman /tutor.TAHAP 5: Menghubungkan Materi, Bank Soal, & Kuis Server-Side (Estimasi: 6–8 Jam)Tujuan: Mengganti data dummy dengan data asli dari database Supabase serta menjalankan kuis aman menggunakan RPC get_lesson_quiz dan submit_quiz_answers.Langkah Demi Langkah:Masukkan minimal 6 mata pelajaran (matematika, bahasa-indonesia, ipas, pancasila, bahasa-inggris, seni-budaya) ke tabel subjects, serta 1 materi contoh beserta 10 soal menggunakan SQL (seperti contoh SQL materi di pembahasan kita sebelumnya).Jalankan Prompt Tahap 3 di OpenCode dengan catatan teknis berikut:PlaintextSaat mengambil daftar soal di halaman kuis, JANGAN memanggil supabase.from('questions').select('*').
+Jalankan Prompt Tahap 2 di OpenCode untuk membuat frontend/src/lib/supabaseClient.js, AuthContext.jsx, dan ProtectedRoute.jsx.Uji daftar 2 akun baru lewat halaman /register di webmu:Akun 1: siswa1@test.com (biarkan sebagai student).Akun 2: tutor1@test.com (buka menu Table Editor → profiles di Supabase, ubah kolom role milik tutor1 secara manual menjadi tutor).Checklist Selesai Tahap 4:[ ] Daftar akun baru di /register otomatis membuat baris baru di tabel profiles dengan role student.[ ] Login dengan siswa1@test.com mengarahkan pengguna ke /student dan menolak akses jika URL diganti ke /tutor atau /admin.[ ] Login dengan tutor1@test.com berhasil membuka halaman /tutor.TAHAP 5: Menghubungkan Materi, Bank Soal, & Kuis Server-Side (Estimasi: 6–8 Jam)Tujuan: Mengganti data dummy dengan data asli dari database Supabase serta menjalankan kuis aman menggunakan RPC get_lesson_quiz dan submit_quiz_answers.Langkah Demi Langkah:Masukkan minimal 6 mata pelajaran (matematika, bahasa-indonesia, ipas, pancasila, bahasa-inggris, seni-budaya) ke tabel subjects, serta 1 materi contoh beserta 10 soal menggunakan SQL (seperti contoh SQL materi di pembahasan kita sebelumnya).Jalankan Prompt Tahap 3 di OpenCode dengan catatan teknis berikut:PlaintextSaat mengambil daftar soal di halaman kuis, JANGAN memanggil supabase.from('questions').select('*').
 Gunakan supabase.rpc('get_lesson_quiz', { p_lesson_id: lessonId, p_limit: 10 }).
 Saat siswa menekan tombol Kumpulkan Kuis, kirim jawaban ke supabase.rpc('submit_quiz_answers', { p_lesson_id: lessonId, p_answers: formattedAnswers }) dan tampilkan skor, XP yang didapat, serta pembahasan tiap soal dari respons RPC tersebut.
 Uji coba mengerjakan kuis dari akun siswa1@test.com.Checklist Selesai Tahap 5:[ ] Daftar pulau mata pelajaran dan bab materi di web sudah diambil langsung dari database Supabase.[ ] Saat membuka tab Network di Inspect Element browser ketika kuis berlangsung, tidak ada kolom correct_option yang bocor.[ ] Setelah klik "Selesai Kuis", nilai (0–100), jumlah benar, tambahan XP, dan pembahasan tiap soal tampil dengan benar.TAHAP 6: Gamifikasi Lengkap (XP Materi, Level Bar, & Anti-Exploit) (Estimasi: 4–5 Jam)Tujuan: Menghubungkan total_xp dari database ke XPBar dan LevelBadge di layar siswa, serta memberi +5 XP saat siswa selesai membaca materi.Langkah Demi Langkah:Tambahkan fungsi RPC singkat di SQL Editor Supabase untuk klaim +5 XP saat siswa menuntaskan baca materi (otomatis menolak klaim ganda berkat constraint unique (student_id, event_type, reference_id) di tabel xp_events):SQLcreate or replace function public.complete_lesson_reading(p_lesson_id uuid)

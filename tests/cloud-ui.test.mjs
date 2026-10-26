@@ -4,8 +4,8 @@ import { after, afterEach, test } from 'node:test'
 import React, { act } from 'react'
 import { Window } from 'happy-dom'
 import { createServer } from 'vite'
-import { readConfig } from '../src/lib/config.js'
-import { createSupabaseService } from '../src/services/supabaseService.js'
+import { readConfig } from '../frontend/src/lib/config.js'
+import { createSupabaseService } from '../frontend/src/services/supabaseService.js'
 import { completeSeedData } from '../scripts/generate-seed-materi-lengkap.mjs'
 
 const dom = new Window({

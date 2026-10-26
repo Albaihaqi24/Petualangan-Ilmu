@@ -4,7 +4,7 @@ Dokumen ini adalah prosedur yang harus dijalankan pemilik proyek. Penyediaan pro
 
 ## Pemasangan dan akses pertama
 
-1. Buat proyek Supabase baru. Jalankan migration 001–005 sesuai urutan nama, lalu pilih paket seed. Migration 005 menambah avatar Kiki/Momo/Piko; pada proyek yang sudah memakai 001–004, cukup jalankan migration tambahan itu. Untuk pemasangan ringan, gunakan `seed_materi_lengkap.sql` sesuai [panduan seed ringan](../supabase/README-seed-materi-lengkap.md); `seed.sql` adalah paket awal alternatif, tidak wajib dipasang bersamaan. Lanjutkan dengan `verify-setup.sql` dan `verify-platform.sql`. Jika proyek sudah memiliki skema lama, buat migration konversi terpisah. Jangan menimpa tabel.
+1. Buat proyek Supabase baru. Jalankan migration 001–005 sesuai urutan nama, lalu pilih paket seed. Migration 005 menambah avatar Kiki/Momo/Piko; pada proyek yang sudah memakai 001–004, cukup jalankan migration tambahan itu. Untuk pemasangan ringan, gunakan `seed_materi_lengkap.sql` sesuai [panduan seed ringan](../database/README-seed-materi-lengkap.md); `seed.sql` adalah paket awal alternatif, tidak wajib dipasang bersamaan. Lanjutkan dengan `verify-setup.sql` dan `verify-platform.sql`. Jika proyek sudah memiliki skema lama, buat migration konversi terpisah. Jangan menimpa tabel.
 2. Aktifkan Email/Password dan konfirmasi email. Atur Site URL serta Redirect URLs `/auth/callback` dan `/reset-password` untuk origin lokal dan domain rilis. Aplikasi memakai PKCE; tautan email perlu dibuka pada browser/origin yang menyimpan verifier. Jika perangkat berbeda, kembali ke browser awal atau minta tautan baru.
 3. Siapkan SMTP untuk email produksi, aturan kata sandi, dan batas permintaan Auth. Uji email konfirmasi dan pemulihan benar-benar sampai. Rujukan: [password Auth](https://supabase.com/docs/guides/auth/passwords), [redirect URLs](https://supabase.com/docs/guides/auth/redirect-urls), [rate limits](https://supabase.com/docs/guides/auth/rate-limits).
 4. Daftarkan akun pemilik melalui UI. Pemilik database mengangkat **akun miliknya yang sudah diverifikasi** melalui SQL Editor, menggunakan UUID Auth yang benar:
@@ -18,11 +18,11 @@ update public.profiles set role='admin' where id='UUID_AKUN_PEMILIK';
 
 ## Review pembelajaran
 
-Paket bahan ajar per bab Matematika kelas 1 tersedia di `supabase/books/matematika-kelas-1-2022.sql`: 8 bab/40 kuis draf, dipasang setelah keempat migration dan seed awal. Jika seluruh paket awal, ringkasan dan buku dipasang, total database baru menjadi 260 materi/1.305 soal. Ikuti [panduan bahan ajar](PANDUAN-BAHAN-AJAR.md) dan [daftar bab](materi/matematika/kelas-1/README.md); penulisan tersedia belum berarti review guru selesai.
+Paket bahan ajar per bab Matematika kelas 1 tersedia di `database/books/matematika-kelas-1-2022.sql`: 8 bab/40 kuis draf, dipasang setelah keempat migration dan seed awal. Jika seluruh paket awal, ringkasan dan buku dipasang, total database baru menjadi 260 materi/1.305 soal. Ikuti [panduan bahan ajar](PANDUAN-BAHAN-AJAR.md) dan [daftar bab](materi/matematika/kelas-1/README.md); penulisan tersedia belum berarti review guru selesai.
 
 Mulai dari [peta kurikulum pemerintah](PETA-KURIKULUM-PEMERINTAH.md) dan [roadmap pendidikan](ROADMAP-PENDIDIKAN.md). Kunci CP/TP/ATP, edisi/bab sumber serta bukti asesmen sebelum menyetujui publikasi. Register pemetaan masih usulan; metadata sumber tidak menggantikan review isi.
 
-Paket tambahan tersedia di `supabase/curriculum-draft.sql`. Pasang setelah keempat migration dan `seed.sql` bila ingin memasukkan 216 materi dan 1.080 soal baru; semua tetap draf. Pada database baru dengan kedua paket, totalnya 252 materi dan 1.265 soal. Ikuti [daftar materi dan checklist review](MATERI-SIAP-REVIEW.md). IPAS dan Bahasa Inggris kelas 1–2 diperlakukan sebagai pengayaan; pilihan cabang seni mengikuti sekolah. Paket ini belum membuktikan seluruh CP nasional tercakup.
+Paket tambahan tersedia di `database/curriculum-draft.sql`. Pasang setelah keempat migration dan `seed.sql` bila ingin memasukkan 216 materi dan 1.080 soal baru; semua tetap draf. Pada database baru dengan kedua paket, totalnya 252 materi dan 1.265 soal. Ikuti [daftar materi dan checklist review](MATERI-SIAP-REVIEW.md). IPAS dan Bahasa Inggris kelas 1–2 diperlakukan sebagai pengayaan; pilihan cabang seni mengikuti sekolah. Paket ini belum membuktikan seluruh CP nasional tercakup.
 
 Paket awal `seed.sql` memuat 36 materi dan 185 soal draf. Paket ringan `seed_materi_lengkap.sql` memuat 36 materi dan 216 soal published, dengan metadata review guru yang masih diperlukan. Guru/peninjau perlu mencatat nama peninjau, tanggal, ID materi, tingkat kelas, ketepatan konsep, bahasa, kunci/pembahasan, hak penggunaan media, serta hasil revisi. Dokumen ini belum mengklaim kesesuaian kurikulum resmi; tinjau khusus sains kelas 1–2.
 
@@ -63,14 +63,14 @@ Siswa/staf dapat mengajukan permintaan melalui `/account`. Permintaan ini belum 
 2. Jalankan pemeriksaan baca-saja:
 
 ```sh
-node scripts/process-account-deletion.mjs --request UUID_PEMOHON
+node backend/process-account-deletion.mjs --request UUID_PEMOHON
 ```
 
 3. Periksa ID pemohon dan jumlah berkas. Alat menolak akun admin dan tutor yang masih memiliki kelas; alihkan pendampingan secara terkontrol sebelum menghapus tutor.
 4. Setelah verifikasi dan persetujuan pemohon, eksekusi permanen:
 
 ```sh
-node scripts/process-account-deletion.mjs --request UUID_PEMOHON --confirm-delete UUID_PEMOHON
+node backend/process-account-deletion.mjs --request UUID_PEMOHON --confirm-delete UUID_PEMOHON
 ```
 
 Alat menghapus berkas melalui Storage API sebelum menghapus Auth user; data profil/progres ikut cascade. Audit editorial mempertahankan aksi/UUID target, dengan pelaku menjadi null saat profil dihapus. Permintaan ikut cascade dan bukan arsip identitas permanen. Catat hasil minimum pada catatan operasional dengan masa simpan yang disepakati. [Admin deleteUser](https://supabase.com/docs/reference/javascript/auth-admin-deleteuser).

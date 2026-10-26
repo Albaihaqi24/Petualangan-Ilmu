@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto'
 import { writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { subjects, lessons, questions, editorialNotice } from '../src/lib/dummyData.js'
+import { subjects, lessons, questions, editorialNotice } from '../frontend/src/lib/dummyData.js'
 
 // UUID deterministik: regenerasi seed tidak menciptakan duplikat baru.
 export function seedId(value) {
@@ -59,7 +59,7 @@ export function generateSeed() {
 
 // Impor modul ini dalam tes tidak menulis berkas.
 if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) {
-  await writeFile(new URL('../supabase/seed.sql', import.meta.url), generateSeed(), 'utf8')
+  await writeFile(new URL('../database/seed.sql', import.meta.url), generateSeed(), 'utf8')
   console.log(
     'Seed DRAFT dibuat: 6 mata pelajaran, 36 materi, 185 soal. Tidak ada koneksi ke database/cloud.',
   )

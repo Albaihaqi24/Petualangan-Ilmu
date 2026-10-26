@@ -1,14 +1,17 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFile } from 'node:fs/promises'
-import { curriculumLessons, curriculumQuestions } from '../src/content/curriculumDraft.js'
-import { curriculumPlan } from '../src/lib/learningResources.js'
-import { lessons as demoLessons, questions as demoQuestions } from '../src/lib/demoCatalog.js'
+import { curriculumLessons, curriculumQuestions } from '../frontend/src/content/curriculumDraft.js'
+import { curriculumPlan } from '../frontend/src/lib/learningResources.js'
+import {
+  lessons as demoLessons,
+  questions as demoQuestions,
+} from '../frontend/src/lib/demoCatalog.js'
 import {
   generateCurriculumSeed,
   curriculumManifest,
 } from '../scripts/generate-curriculum-draft.mjs'
-import { scoreDemoQuiz } from '../src/lib/learning.js'
+import { scoreDemoQuiz } from '../frontend/src/lib/learning.js'
 
 test('Seluruh 216 topik berisi materi, aktivitas, sumber, dan tepat lima soal draf', () => {
   assert.equal(curriculumLessons.length, 216)
@@ -75,7 +78,7 @@ test('Contoh matematika pecahan, satuan, FPB, rasio dan volume mempunyai hasil y
 })
 test('SQL dan manifest sesuai draf; manifest tidak membawa kunci atau opsi bank soal', async () => {
   assert.equal(
-    await readFile(new URL('../supabase/curriculum-draft.sql', import.meta.url), 'utf8'),
+    await readFile(new URL('../database/curriculum-draft.sql', import.meta.url), 'utf8'),
     generateCurriculumSeed(),
   )
   const manifest = JSON.parse(

@@ -17,7 +17,7 @@ Mulai dengan mengingat contoh sehari-hari yang berkaitan. Bila belum mengenal ka
 
 Cerita bergambar memakai tulisan dan gambar untuk membantu menyampaikan kejadian. Kita akan membaca kisah orisinal pendek: Nia membawa biji. Ia menanamnya di pot. Setiap pagi Nia menyiram secukupnya. Beberapa hari kemudian muncul tunas.
 
-![Cerita Nia: menanam biji, merawat, lalu muncul tunas setelah beberapa hari.](../../../../../public/assets/petualangan-cerita-nia.svg)
+![Cerita Nia: menanam biji, merawat, lalu muncul tunas setelah beberapa hari.](../../../../../frontend/public/assets/petualangan-cerita-nia.svg)
 
 ## A. Mengamati gambar dan membaca teks
 

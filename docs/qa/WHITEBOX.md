@@ -16,7 +16,7 @@ Semua lokasi kode relatif terhadap root aplikasi. Tes tambahan berada di `tests/
 
 | ID | Target implementasi | Input/jalur dan expected result | Bukti lokal / pekerjaan lanjutan |
 | --- | --- | --- | --- |
-| WB-01 | `src/lib/config.js::readConfig` | Demo default; mode asing; kosong/placeholder; HTTPS sah/HTTP/rusak; publishable/secret; legacy anon/service-role. Konfigurasi salah menghasilkan error dan tidak fallback demo. | Lokal: `cloud-ui.test.mjs` konfigurasi + QA-WB-01. JWT hanya diperiksa format/role lokal; tanda tangan diverifikasi layanan Auth. |
+| WB-01 | `frontend/src/lib/config.js::readConfig` | Demo default; mode asing; kosong/placeholder; HTTPS sah/HTTP/rusak; publishable/secret; legacy anon/service-role. Konfigurasi salah menghasilkan error dan tidak fallback demo. | Lokal: `cloud-ui.test.mjs` konfigurasi + QA-WB-01. JWT hanya diperiksa format/role lokal; tanda tangan diverifikasi layanan Auth. |
 | WB-02 | `ProtectedRoute.jsx` | `session=null` → login; role beda → penolakan; role cocok → Outlet; `/account` menerima sesi sah. | Lokal: `app.test.mjs` proteksi dan render halaman. Lanjutan: repeat dengan sesi cloud nyata. |
 | WB-03 | `learning.js::safeImageUrl/youtubeEmbedUrl`, `MaterialRenderer.jsx` | HTTPS/aset sah diterima; tipe non-string, skema berbahaya, traversal, host tiruan/ID salah ditolak; iframe baru setelah klik. | Lokal: QA-WB-07/08; `app.test.mjs` renderer video. Visual/media jaringan: BB-033–035. |
 | WB-04 | `learning.js::levelFromXp` | Nilai negatif/NaN-like dinormalisasi; floor desimal; batas 99/100/199/200; level dan progress benar. | Lokal: QA-WB-02 dan `learning.test.mjs`. Input Infinity di luar fixture XP database integer belum menjadi kontrak uji. |

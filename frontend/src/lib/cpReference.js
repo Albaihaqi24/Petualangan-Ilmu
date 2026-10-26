@@ -1,4 +1,4 @@
-import reference from '../../content/cp-sd-2025.json' with { type: 'json' }
+import reference from '../../../content/cp-sd-2025.json' with { type: 'json' }
 
 export const cpReference = reference
 export const findCpScope = (id) => reference.scopes.find((scope) => scope.id === id)

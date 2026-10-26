@@ -1,10 +1,10 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { textbookCatalog } from '../src/lib/textbooks.js'
-import { textbookLessons, textbookQuestions } from '../src/content/books/mathGrade1.js'
+import { textbookCatalog } from '../frontend/src/lib/textbooks.js'
+import { textbookLessons, textbookQuestions } from '../frontend/src/content/books/mathGrade1.js'
 import { seedId } from './generate-database-seed.mjs'
-import { cpReference, findCpElement } from '../src/lib/cpReference.js'
+import { cpReference, findCpElement } from '../frontend/src/lib/cpReference.js'
 
 const quote = (value) => `'${String(value).replaceAll("'", "''")}'`
 const json = (value) => `${quote(JSON.stringify(value))}::jsonb`
@@ -79,7 +79,7 @@ export async function exportTextbooks() {
     '',
     '## Pemasangan database',
     '',
-    'Jalankan `supabase/books/matematika-kelas-1-2022.sql` setelah keempat migration aktif dan `seed.sql`. Paket berisi 8 bab/40 soal draf. ID deterministik dan ON CONFLICT DO NOTHING menjaga pemasangan ulang tidak menimpa suntingan. Paket tidak memublikasikan bab. Kunci kuis disimpan di schema private; pembahasan latihan belajar memang bagian bacaan, berbeda dari kunci kuis server.',
+    'Jalankan `database/books/matematika-kelas-1-2022.sql` setelah keempat migration aktif dan `seed.sql`. Paket berisi 8 bab/40 soal draf. ID deterministik dan ON CONFLICT DO NOTHING menjaga pemasangan ulang tidak menimpa suntingan. Paket tidak memublikasikan bab. Kunci kuis disimpan di schema private; pembahasan latihan belajar memang bagian bacaan, berbeda dari kunci kuis server.',
     '',
     '## Status keseluruhan',
     '',
@@ -87,7 +87,7 @@ export async function exportTextbooks() {
     '',
     'Kelompok kelas/pelajaran lainnya masih memerlukan pemilihan buku/edisi, pemeriksaan daftar isi, penulisan per bab serta review. IPAS/Inggris kelas 1–2 tetap pengayaan, dan seni mengikuti cabang sekolah. Jangan menyebut 216 ringkasan sebelumnya sebagai buku lengkap.',
     '',
-    'Jalankan `npm run content:books` setelah menyunting `src/content/books/mathGrade1.js` atau metadata buku. Generator memperbarui delapan dokumen, SQL dan manifest tanpa mengubah cloud.',
+    'Jalankan `npm run content:books` setelah menyunting `frontend/src/content/books/mathGrade1.js` atau metadata buku. Generator memperbarui delapan dokumen, SQL dan manifest tanpa mengubah cloud.',
     '',
   ]
   await writeFile(new URL('README.md', base), index.join('\n'), 'utf8')
@@ -129,9 +129,9 @@ export async function exportTextbooks() {
       'utf8',
     )
   }
-  await mkdir(new URL('../supabase/books/', import.meta.url), { recursive: true })
+  await mkdir(new URL('../database/books/', import.meta.url), { recursive: true })
   await writeFile(
-    new URL('../supabase/books/matematika-kelas-1-2022.sql', import.meta.url),
+    new URL('../database/books/matematika-kelas-1-2022.sql', import.meta.url),
     generateTextbookSeed(),
     'utf8',
   )

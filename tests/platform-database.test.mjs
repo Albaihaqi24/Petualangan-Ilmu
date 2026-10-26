@@ -34,7 +34,7 @@ test(
     ]) {
       try {
         await db.exec(
-          await readFile(new URL(`../supabase/migrations/${file}`, import.meta.url), 'utf8'),
+          await readFile(new URL(`../database/migrations/${file}`, import.meta.url), 'utf8'),
         )
       } catch (error) {
         await db.exec('rollback')
@@ -382,7 +382,7 @@ test(
     )
     await t.test('Query verifikasi platform memeriksa seluruh RPC dan bucket privat', async () => {
       await db.exec(
-        await readFile(new URL('../supabase/verify-platform.sql', import.meta.url), 'utf8'),
+        await readFile(new URL('../database/verify-platform.sql', import.meta.url), 'utf8'),
       )
     })
     await t.test(

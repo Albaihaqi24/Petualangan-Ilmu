@@ -3,7 +3,7 @@ import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { adaptiveSeedUnits } from './seed-materi-adaptif.mjs'
 import { userExampleRevisions } from './seed-materi-contoh-pengguna.mjs'
-import { adventureDrafts } from '../src/content/adventure/index.js'
+import { adventureDrafts } from '../frontend/src/content/adventure/index.js'
 import { seedId } from './generate-database-seed.mjs'
 
 const subjects = [
@@ -261,7 +261,7 @@ export function generateCompleteSeedSql() {
 }
 if (process.argv[1] && pathToFileURL(resolve(process.argv[1])).href === import.meta.url) {
   await writeFile(
-    new URL('../supabase/seed_materi_lengkap.sql', import.meta.url),
+    new URL('../database/seed_materi_lengkap.sql', import.meta.url),
     generateCompleteSeedSql(),
     'utf8',
   )

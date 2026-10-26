@@ -23,7 +23,7 @@ Buka [perpustakaan per bab](http://127.0.0.1:5174/sumber-belajar?grade=1&subject
 
 ## Pemasangan database
 
-Jalankan `supabase/books/matematika-kelas-1-2022.sql` setelah keempat migration aktif dan `seed.sql`. Paket berisi 8 bab/40 soal draf. ID deterministik dan ON CONFLICT DO NOTHING menjaga pemasangan ulang tidak menimpa suntingan. Paket tidak memublikasikan bab. Kunci kuis disimpan di schema private; pembahasan latihan belajar memang bagian bacaan, berbeda dari kunci kuis server.
+Jalankan `database/books/matematika-kelas-1-2022.sql` setelah keempat migration aktif dan `seed.sql`. Paket berisi 8 bab/40 soal draf. ID deterministik dan ON CONFLICT DO NOTHING menjaga pemasangan ulang tidak menimpa suntingan. Paket tidak memublikasikan bab. Kunci kuis disimpan di schema private; pembahasan latihan belajar memang bagian bacaan, berbeda dari kunci kuis server.
 
 ## Status keseluruhan
 
@@ -31,4 +31,4 @@ Paket ini melengkapi ringkasan yang sudah ada. Total demo sekarang 260 materi/1.
 
 Kelompok kelas/pelajaran lainnya masih memerlukan pemilihan buku/edisi, pemeriksaan daftar isi, penulisan per bab serta review. IPAS/Inggris kelas 1–2 tetap pengayaan, dan seni mengikuti cabang sekolah. Jangan menyebut 216 ringkasan sebelumnya sebagai buku lengkap.
 
-Jalankan `npm run content:books` setelah menyunting `src/content/books/mathGrade1.js` atau metadata buku. Generator memperbarui delapan dokumen, SQL dan manifest tanpa mengubah cloud.
+Jalankan `npm run content:books` setelah menyunting `frontend/src/content/books/mathGrade1.js` atau metadata buku. Generator memperbarui delapan dokumen, SQL dan manifest tanpa mengubah cloud.

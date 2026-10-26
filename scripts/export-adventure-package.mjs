@@ -5,12 +5,12 @@ import {
   adventureCourses,
   adventurePackageNotice,
   adventurePackageId,
-} from '../src/lib/adventureCourseCatalog.js'
+} from '../frontend/src/lib/adventureCourseCatalog.js'
 import {
   adventureDrafts,
   adventureLessons,
   adventureQuestions,
-} from '../src/content/adventure/index.js'
+} from '../frontend/src/content/adventure/index.js'
 import { seedId } from './generate-database-seed.mjs'
 
 const quote = (value) => `'${String(value).replaceAll("'", "''")}'`
@@ -118,7 +118,7 @@ export async function exportAdventurePackage() {
     '',
     '[Panduan kuis dan kunci pendamping](KUIS-PENDAMPING.md) memuat 360 soal, opsi dan pembahasan; bukan manifest publik. Rubrik praktik terdapat dalam tiap bab. Nilai kuis bukan satu-satunya bukti keterampilan bahasa, penyelidikan sains atau pemodelan matematika.',
     '',
-    'Jalankan `npm run content:adventure` setelah mengubah naskah/metadata. Hasil: 72 dokumen bab, panduan kuis, manifest aman dan `supabase/paket-72-bab.sql`. Pasang SQL sesudah empat migration dan seed awal. Seluruh status draf, ID deterministik, `ON CONFLICT DO NOTHING` menjaga suntingan; menjalankan generator tidak mengubah layanan cloud.',
+    'Jalankan `npm run content:adventure` setelah mengubah naskah/metadata. Hasil: 72 dokumen bab, panduan kuis, manifest aman dan `database/paket-72-bab.sql`. Pasang SQL sesudah empat migration dan seed awal. Seluruh status draf, ID deterministik, `ON CONFLICT DO NOTHING` menjaga suntingan; menjalankan generator tidak mengubah layanan cloud.',
     '',
     '## Register review guru',
     '',
@@ -151,7 +151,7 @@ export async function exportAdventurePackage() {
       '',
       ...lesson.content.blocks.flatMap((block) =>
         block.type === 'image'
-          ? [`![${block.caption}](../../../../../public${block.url})`, '']
+          ? [`![${block.caption}](../../../../../frontend/public${block.url})`, '']
           : [`## ${block.heading}`, '', block.body, ''],
       ),
       '## Kuis akhir bab',
@@ -201,7 +201,7 @@ export async function exportAdventurePackage() {
     'utf8',
   )
   await writeFile(
-    new URL('../supabase/paket-72-bab.sql', import.meta.url),
+    new URL('../database/paket-72-bab.sql', import.meta.url),
     generateAdventureSeed(),
     'utf8',
   )

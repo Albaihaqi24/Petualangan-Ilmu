@@ -5,8 +5,8 @@ import {
   curriculumLessons,
   curriculumQuestions,
   reviewNotice,
-} from '../src/content/curriculumDraft.js'
-import { subjects } from '../src/lib/dummyData.js'
+} from '../frontend/src/content/curriculumDraft.js'
+import { subjects } from '../frontend/src/lib/dummyData.js'
 import { seedId } from './generate-database-seed.mjs'
 const q = (value) => `'${String(value).replaceAll("'", "''")}'`
 const json = (value) => `${q(JSON.stringify(value))}::jsonb`
@@ -64,7 +64,7 @@ export function curriculumManifest() {
 async function exportFiles() {
   await mkdir(new URL('../content/', import.meta.url), { recursive: true })
   await writeFile(
-    new URL('../supabase/curriculum-draft.sql', import.meta.url),
+    new URL('../database/curriculum-draft.sql', import.meta.url),
     generateCurriculumSeed(),
     'utf8',
   )
@@ -94,7 +94,7 @@ async function exportFiles() {
     '',
     '## Memasang di Supabase nanti',
     '',
-    'Jalankan supabase/curriculum-draft.sql setelah migration aktif. Paket boleh dipasang setelah seed awal. ID deterministik dan ON CONFLICT DO NOTHING menjaga pemasangan ulang tidak menggandakan atau menimpa suntingan editor. Paket ini tidak memublikasikan materi. Setelah seed awal dan paket ini, database awal memiliki 252 materi dan 1.265 soal draf. Paket buku Matematika kelas 1 opsional menambah 8 bab/40 soal, menjadi 260 materi/1.305 soal. Demo memuat ketiganya: 260 materi/1.300 soal karena lima soal ekstra hanya ada pada seed awal. Jumlah dapat bertambah setelah impor/editorial.',
+    'Jalankan database/curriculum-draft.sql setelah migration aktif. Paket boleh dipasang setelah seed awal. ID deterministik dan ON CONFLICT DO NOTHING menjaga pemasangan ulang tidak menggandakan atau menimpa suntingan editor. Paket ini tidak memublikasikan materi. Setelah seed awal dan paket ini, database awal memiliki 252 materi dan 1.265 soal draf. Paket buku Matematika kelas 1 opsional menambah 8 bab/40 soal, menjadi 260 materi/1.305 soal. Demo memuat ketiganya: 260 materi/1.300 soal karena lima soal ekstra hanya ada pada seed awal. Jumlah dapat bertambah setelah impor/editorial.',
     '',
     '## Gerbang review per unit',
     '',
@@ -111,13 +111,13 @@ async function exportFiles() {
     '',
     '## Berkas dan regenerasi',
     '',
-    '- src/content/: penulisan orisinal per pelajaran dan penghasil struktur materi/soal.',
-    '- src/lib/demoCatalog.js: menggabungkan contoh lama dengan paket draf pada mode demo.',
-    '- supabase/curriculum-draft.sql: paket pemasangan database, bukan berkas publik web.',
+    '- frontend/src/content/: penulisan orisinal per pelajaran dan penghasil struktur materi/soal.',
+    '- frontend/src/lib/demoCatalog.js: menggabungkan contoh lama dengan paket draf pada mode demo.',
+    '- database/curriculum-draft.sql: paket pemasangan database, bukan berkas publik web.',
     '- content/curriculum-manifest.json: daftar aman tanpa kunci jawaban, untuk pencatatan editorial.',
     '- Jalankan npm run content:generate setelah mengubah materi, lalu tes dan build ulang.',
     '',
-    'Materi/soal draf hanya masuk bundle demo. Build Supabase mengambil konten yang diizinkan database, dan tes build memeriksa bahwa modul src/content serta demoCatalog tidak ikut bundle tersebut.',
+    'Materi/soal draf hanya masuk bundle demo. Build Supabase mengambil konten yang diizinkan database, dan tes build memeriksa bahwa modul frontend/src/content serta demoCatalog tidak ikut bundle tersebut.',
     '',
   ]
   await writeFile(

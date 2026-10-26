@@ -5,14 +5,14 @@ import {
   governmentMaterials,
   governmentScopes,
   getGovernmentScope,
-} from '../src/lib/governmentCurriculum.js'
+} from '../frontend/src/lib/governmentCurriculum.js'
 import { curriculumAlignmentManifest } from '../scripts/export-government-curriculum.mjs'
 import {
   curriculumPlan,
   curriculumSources,
   learningResources,
   resourceSubjects,
-} from '../src/lib/learningResources.js'
+} from '../frontend/src/lib/learningResources.js'
 
 test('Perpustakaan menyimpan rujukan resmi unik dengan jenis pembaca yang jelas', () => {
   assert.equal(learningResources.length, 34)

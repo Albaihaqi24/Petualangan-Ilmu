@@ -197,7 +197,7 @@ Pulau Eksplora · Ilmuwan Tobi · Fase C
 
 [Panduan kuis dan kunci pendamping](KUIS-PENDAMPING.md) memuat 360 soal, opsi dan pembahasan; bukan manifest publik. Rubrik praktik terdapat dalam tiap bab. Nilai kuis bukan satu-satunya bukti keterampilan bahasa, penyelidikan sains atau pemodelan matematika.
 
-Jalankan `npm run content:adventure` setelah mengubah naskah/metadata. Hasil: 72 dokumen bab, panduan kuis, manifest aman dan `supabase/paket-72-bab.sql`. Pasang SQL sesudah empat migration dan seed awal. Seluruh status draf, ID deterministik, `ON CONFLICT DO NOTHING` menjaga suntingan; menjalankan generator tidak mengubah layanan cloud.
+Jalankan `npm run content:adventure` setelah mengubah naskah/metadata. Hasil: 72 dokumen bab, panduan kuis, manifest aman dan `database/paket-72-bab.sql`. Pasang SQL sesudah empat migration dan seed awal. Seluruh status draf, ID deterministik, `ON CONFLICT DO NOTHING` menjaga suntingan; menjalankan generator tidak mengubah layanan cloud.
 
 ## Register review guru
 

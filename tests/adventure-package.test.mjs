@@ -1,14 +1,14 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFile } from 'node:fs/promises'
-import { adventureCourses } from '../src/lib/adventureCourseCatalog.js'
+import { adventureCourses } from '../frontend/src/lib/adventureCourseCatalog.js'
 import {
   adventureDrafts,
   adventureLessons,
   adventureQuestions,
-} from '../src/content/adventure/index.js'
-import { lessons, questions } from '../src/lib/demoCatalog.js'
-import { scoreDemoQuiz } from '../src/lib/learning.js'
+} from '../frontend/src/content/adventure/index.js'
+import { lessons, questions } from '../frontend/src/lib/demoCatalog.js'
+import { scoreDemoQuiz } from '../frontend/src/lib/learning.js'
 import { adventureManifest, generateAdventureSeed } from '../scripts/export-adventure-package.mjs'
 
 test('Paket 72 bab memiliki 18 urutan kelas/pelajaran, subbab, praktik dan penanda review', () => {
@@ -114,7 +114,7 @@ test('Ekspor 72 dokumen dan panduan 360 kuis konsisten; gambar lokal tersedia', 
     assert.ok(markdown.includes('## Pembahasan latihan mandiri'))
     assert.doesNotMatch(markdown, /## undefined/)
     for (const block of lesson.content.blocks.filter((b) => b.type === 'image')) {
-      const svg = await readFile(new URL(`../public${block.url}`, import.meta.url), 'utf8')
+      const svg = await readFile(new URL(`../frontend/public${block.url}`, import.meta.url), 'utf8')
       assert.match(svg, /<svg/)
       assert.ok(block.caption.length > 20)
     }
@@ -133,7 +133,7 @@ test('Manifest publik bebas bank/kunci dan SQL draf sesuai sumber generator', as
     JSON.stringify(manifest),
     /correct_option|selected_option|explanation|distractors|"options"|"quiz"/,
   )
-  const sql = await readFile(new URL('../supabase/paket-72-bab.sql', import.meta.url), 'utf8')
+  const sql = await readFile(new URL('../database/paket-72-bab.sql', import.meta.url), 'utf8')
   assert.equal(sql, generateAdventureSeed())
   assert.equal((sql.match(/insert into public\.lessons/g) || []).length, 72)
   assert.equal((sql.match(/insert into public\.questions/g) || []).length, 360)

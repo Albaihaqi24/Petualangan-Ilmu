@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { readConfig } from '../src/lib/config.js'
+import { readConfig } from '../frontend/src/lib/config.js'
 import {
   jakartaDate,
   levelFromXp,
@@ -9,8 +9,8 @@ import {
   scoreDemoQuiz,
   shuffled,
   youtubeEmbedUrl,
-} from '../src/lib/learning.js'
-import { validateImport } from '../src/services/importService.js'
+} from '../frontend/src/lib/learning.js'
+import { validateImport } from '../frontend/src/services/importService.js'
 
 const lessonId = 'qa-lesson'
 const makeItem = (overrides = {}) => ({

@@ -27,7 +27,7 @@ Kebenaran pedagogis, kelengkapan CP/ATP, email nyata, performa cloud, dan backup
 
 | ID  | Kebutuhan                              | Rujukan kode/dokumen                                                 | Kasus utama                  |
 | --- | -------------------------------------- | -------------------------------------------------------------------- | ---------------------------- |
-| R01 | Server dan navigasi dapat dipulihkan   | `JALANKAN-LOKAL.cmd`, `src/App.jsx`                                  | BB-001–008; WB-01            |
+| R01 | Server dan navigasi dapat dipulihkan   | `JALANKAN-LOKAL.cmd`, `frontend/src/App.jsx`                                  | BB-001–008; WB-01            |
 | R02 | Autentikasi dan proteksi peran         | `ProtectedRoute.jsx`, `SupabaseAuthPage.jsx`, `SupabaseProvider.jsx` | BB-009–025; WB-02, 14–17, 21 |
 | R03 | Katalog, sumber, dan bahan ajar        | `DashboardPage.jsx`, `ResourceLibraryPage.jsx`, `LessonPage.jsx`     | BB-026–039; WB-03, 33–35     |
 | R04 | Kuis, skor, hasil, dan XP konsisten    | `learning.js`, `QuizPage.jsx`, migration 001                         | BB-040–056; WB-04–08, 22–25  |

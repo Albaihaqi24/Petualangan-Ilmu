@@ -1,5 +1,5 @@
 import { build, loadEnv } from 'vite'
-import { readConfig } from '../src/lib/config.js'
+import { readConfig } from '../frontend/src/lib/config.js'
 import { verifyProduction } from './verify-production.mjs'
 
 const env = {

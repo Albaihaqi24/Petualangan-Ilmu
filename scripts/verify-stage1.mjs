@@ -16,8 +16,9 @@ const folders = [
   'pages/admin',
   'services',
 ]
-for (const folder of folders) assert(existsSync(`src/${folder}`), `Missing folder: ${folder}`)
-assert.match(readFileSync('src/index.css', 'utf8'), /@import\s+(['"])tailwindcss\1\s*;/)
+for (const folder of folders)
+  assert(existsSync(`frontend/src/${folder}`), `Missing folder: ${folder}`)
+assert.match(readFileSync('frontend/src/index.css', 'utf8'), /@import\s+(['"])tailwindcss\1\s*;/)
 const portArgument = process.argv.find((argument) => argument.startsWith('--port='))
 const port = portArgument ? Number(portArgument.split('=')[1]) : 5173
 assert(Number.isInteger(port) && port >= 0 && port <= 65535, 'Port tidak valid')

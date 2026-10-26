@@ -6,12 +6,12 @@ import { PGlite } from '@electric-sql/pglite'
 import { generateSeed, seedId } from '../scripts/generate-database-seed.mjs'
 
 const migration = await readFile(
-  new URL('../supabase/migrations/202610160001_initial_schema.sql', import.meta.url),
+  new URL('../database/migrations/202610160001_initial_schema.sql', import.meta.url),
   'utf8',
 )
 const lessonId = seedId('matematika-3')
 const secondLessonId = seedId('bahasa-indonesia-3')
-const checkedInSeed = await readFile(new URL('../supabase/seed.sql', import.meta.url), 'utf8')
+const checkedInSeed = await readFile(new URL('../database/seed.sql', import.meta.url), 'utf8')
 assert.equal(
   checkedInSeed,
   generateSeed(),
@@ -42,7 +42,7 @@ test('Tahap 3: migration dan perilaku akses PostgreSQL lokal', { timeout: 120000
     throw error
   }
   await db.exec(generateSeed())
-  const verifySql = await readFile(new URL('../supabase/verify-setup.sql', import.meta.url), 'utf8')
+  const verifySql = await readFile(new URL('../database/verify-setup.sql', import.meta.url), 'utf8')
   await db.exec(verifySql)
 
   async function asRole(userId, task, role = 'authenticated') {

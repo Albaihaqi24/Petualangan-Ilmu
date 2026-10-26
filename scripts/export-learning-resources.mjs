@@ -5,7 +5,7 @@ import {
   curriculumSources,
   resourceSubjects,
   resourceCheckedAt,
-} from '../src/lib/learningResources.js'
+} from '../frontend/src/lib/learningResources.js'
 
 const name = (id) => resourceSubjects.find((s) => s.id === id)?.name || id
 const lines = [
@@ -73,8 +73,8 @@ lines.push(
   '',
   '## Berkas data',
   '',
-  '- `src/lib/learningResources.js`: sumber metadata perpustakaan dan kerangka usulan, tanpa bank soal.',
-  '- `content/learning-outline.json`: ekspor urutan terstruktur; status setiap unit `draft` dan `needs_teacher_review`. Isi ada pada `src/content/` dan paket SQL.',
+  '- `frontend/src/lib/learningResources.js`: sumber metadata perpustakaan dan kerangka usulan, tanpa bank soal.',
+  '- `content/learning-outline.json`: ekspor urutan terstruktur; status setiap unit `draft` dan `needs_teacher_review`. Isi ada pada `frontend/src/content/` dan paket SQL.',
   '- `scripts/export-learning-resources.mjs`: menghasilkan ulang dokumen ini dan ekspor JSON.',
   '',
   'Tidak ada data Supabase yang diubah oleh penghasil dokumen. Pemasangan cloud tetap mengikuti README utama. Naskah PRD asli tetap dipertahankan.',

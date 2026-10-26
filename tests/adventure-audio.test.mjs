@@ -5,7 +5,7 @@ import {
   setSoundEnabled,
   soundState,
   subscribeSound,
-} from '../src/lib/adventureSound.js'
+} from '../frontend/src/lib/adventureSound.js'
 
 test('Web Audio opt-in: satu context, nada terbatas, mute dan fallback tanpa dukungan audio', async (t) => {
   const previous = globalThis.AudioContext

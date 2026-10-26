@@ -17,7 +17,7 @@ Mulai dengan mengingat contoh sehari-hari yang berkaitan. Bila belum mengenal ka
 
 Pecahan menyatakan bagian dari keseluruhan yang dibagi sama besar. Keseluruhannya harus jelas: setengah satu pita tidak dapat dibandingkan langsung dengan setengah pita lain yang panjangnya berbeda.
 
-![Dua pita sama panjang membandingkan setengah dengan seperempat.](../../../../../public/assets/petualangan-pecahan.svg)
+![Dua pita sama panjang membandingkan setengah dengan seperempat.](../../../../../frontend/public/assets/petualangan-pecahan.svg)
 
 ## A. Membagi sama besar
 

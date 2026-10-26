@@ -17,7 +17,7 @@ Mulai dengan mengingat contoh sehari-hari yang berkaitan. Bila belum mengenal ka
 
 Petunjuk membantu melakukan langkah; denah menunjukkan letak. Baca seluruh informasi sebelum bergerak. Gunakan denah tempat rekaan untuk belajar dan tetap minta pendamping saat bepergian sungguhan.
 
-![Denah rekaan: utara di atas; gerbang di selatan taman dan perpustakaan di timur taman. Tidak berskala.](../../../../../public/assets/petualangan-denah.svg)
+![Denah rekaan: utara di atas; gerbang di selatan taman dan perpustakaan di timur taman. Tidak berskala.](../../../../../frontend/public/assets/petualangan-denah.svg)
 
 ## A. Urutan petunjuk dan syarat
 

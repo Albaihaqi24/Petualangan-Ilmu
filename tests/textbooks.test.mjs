@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { readFile } from 'node:fs/promises'
-import { textbookCatalog } from '../src/lib/textbooks.js'
-import { textbookLessons, textbookQuestions } from '../src/content/books/mathGrade1.js'
+import { textbookCatalog } from '../frontend/src/lib/textbooks.js'
+import { textbookLessons, textbookQuestions } from '../frontend/src/content/books/mathGrade1.js'
 import { generateTextbookSeed, textbookManifest } from '../scripts/export-textbooks.mjs'
 
 test('Bahan ajar kelas 1 mencakup delapan bab dan 25 subbab pada urutan buku yang dipilih', () => {
@@ -68,7 +68,7 @@ test('Bahan ajar kelas 1 mencakup delapan bab dan 25 subbab pada urutan buku yan
 test('Paket SQL dan ekspor buku sesuai sumber; manifest tidak membawa bank atau kunci kuis', async () => {
   assert.equal(
     await readFile(
-      new URL('../supabase/books/matematika-kelas-1-2022.sql', import.meta.url),
+      new URL('../database/books/matematika-kelas-1-2022.sql', import.meta.url),
       'utf8',
     ),
     generateTextbookSeed(),

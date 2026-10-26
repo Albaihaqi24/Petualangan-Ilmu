@@ -1,6 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { build } from 'vite'
+import { fileURLToPath } from 'node:url'
 import { verifyProduction } from '../scripts/verify-production.mjs'
 
 test(
@@ -11,7 +12,10 @@ test(
     let cpLoadedSeparately = false
     await build({
       logLevel: 'error',
-      build: { outDir: '.verification-build', emptyOutDir: false },
+      build: {
+        outDir: fileURLToPath(new URL('../.verification-build', import.meta.url)),
+        emptyOutDir: false,
+      },
       define: {
         'import.meta.env.VITE_APP_MODE': JSON.stringify('supabase'),
         'import.meta.env.VITE_SUPABASE_URL': JSON.stringify('https://offline-test.supabase.co'),

@@ -17,7 +17,7 @@ Mulai dengan mengingat contoh sehari-hari yang berkaitan. Bila belum mengenal ka
 
 Air bergerak melalui udara, permukaan dan tanah dalam siklus. Matahari memberi energi bagi penguapan dan gravitasi membantu air bergerak turun. Menjaga air berarti menjaga jumlah yang tersedia serta kualitas dan tempat peresapannya.
 
-![Model beberapa jalur air: penguapan, pengembunan, hujan, aliran dan peresapan.](../../../../../public/assets/petualangan-siklus-air.svg)
+![Model beberapa jalur air: penguapan, pengembunan, hujan, aliran dan peresapan.](../../../../../frontend/public/assets/petualangan-siklus-air.svg)
 
 ## A. Penguapan dan pembentukan awan
 

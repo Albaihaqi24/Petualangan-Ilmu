@@ -8,7 +8,7 @@ import {
   generateCompleteSeedSql,
 } from '../scripts/generate-seed-materi-lengkap.mjs'
 import { generateSeed, seedId } from '../scripts/generate-database-seed.mjs'
-import { materialBlocks } from '../src/lib/materialBlocks.js'
+import { materialBlocks } from '../frontend/src/lib/materialBlocks.js'
 
 test('Seed komik: 3 mapel ×6 kelas ×2 bab, scenes CRA dan 2 easy/2 medium/2 hard', () => {
   const data = completeSeedData()
@@ -72,7 +72,7 @@ test('Seed komik: 3 mapel ×6 kelas ×2 bab, scenes CRA dan 2 easy/2 medium/2 ha
 
 test('File SQL sesuai generator dan memakai target conflict tiga kolom yang diminta', async () => {
   const sql = await readFile(
-    new URL('../supabase/seed_materi_lengkap.sql', import.meta.url),
+    new URL('../database/seed_materi_lengkap.sql', import.meta.url),
     'utf8',
   )
   assert.equal(sql, generateCompleteSeedSql())
@@ -162,7 +162,7 @@ test(
       '202610160004_editor_questions.sql',
     ])
       await db.exec(
-        await readFile(new URL(`../supabase/migrations/${file}`, import.meta.url), 'utf8'),
+        await readFile(new URL(`../database/migrations/${file}`, import.meta.url), 'utf8'),
       )
     await db.exec(generateSeed())
     const existingIpa = randomUUID(),

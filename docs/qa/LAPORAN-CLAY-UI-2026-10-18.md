@@ -38,6 +38,6 @@ QA browser dapat diulang dengan `scripts/verify-adventure-browser.mjs` setelah m
 - Peta [desktop](evidence/2026-10-18-clay-map-desktop.png) dan [HP](evidence/2026-10-18-clay-map-mobile.png).
 - [Komik HP](evidence/2026-10-18-clay-reader-mobile.png), [kuis HP](evidence/2026-10-18-clay-quiz-mobile.png), [hasil HP](evidence/2026-10-18-clay-result-mobile.png), [pembahasan ramah](evidence/2026-10-18-clay-feedback-mobile.png).
 
-Avatar Supabase baru memerlukan [migration 005](../../supabase/migrations/202610180005_adventure_avatars.sql); belum diterapkan ke Supabase pengguna.
+Avatar Supabase baru memerlukan [migration 005](../../database/migrations/202610180005_adventure_avatars.sql); belum diterapkan ke Supabase pengguna.
 
 Referensi: [Motion lazy loading](https://motion.dev/docs/react-reduce-bundle-size), [reduced motion](https://motion.dev/docs/react-use-reduced-motion), [MDN Web Audio](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Best_practices).

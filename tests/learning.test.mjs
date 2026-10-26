@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { lessons, questions, subjects } from '../src/lib/dummyData.js'
+import { lessons, questions, subjects } from '../frontend/src/lib/dummyData.js'
 import {
   jakartaDate,
   levelFromXp,
@@ -9,8 +9,8 @@ import {
   scoreDemoQuiz,
   shuffled,
   youtubeEmbedUrl,
-} from '../src/lib/learning.js'
-import { csvExample, jsonExample, validateImport } from '../src/services/importService.js'
+} from '../frontend/src/lib/learning.js'
+import { csvExample, jsonExample, validateImport } from '../frontend/src/services/importService.js'
 
 test('Setiap kelas memiliki enam materi dan lima soal valid per materi', () => {
   assert.equal(lessons.length, 36)

@@ -1,9 +1,9 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { cpReference, findCpElement } from '../src/lib/cpReference.js'
-import { textbookCatalog } from '../src/lib/textbooks.js'
-import { resourceSubjects } from '../src/lib/learningResources.js'
+import { cpReference, findCpElement } from '../frontend/src/lib/cpReference.js'
+import { textbookCatalog } from '../frontend/src/lib/textbooks.js'
+import { resourceSubjects } from '../frontend/src/lib/learningResources.js'
 
 const cell = (value) => String(value).replaceAll('|', '\\|').replaceAll('\n', ' ')
 const firstMarker = '<!-- cp-json:start -->'

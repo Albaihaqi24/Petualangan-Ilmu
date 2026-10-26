@@ -1,7 +1,7 @@
 // Mutasi terbatas akun/proyek UJI; tidak berjalan sebagai bagian npm test.
 import assert from 'node:assert/strict'
 import { createClient } from '@supabase/supabase-js'
-import { readConfig } from '../src/lib/config.js'
+import { readConfig } from '../frontend/src/lib/config.js'
 if (process.env.CLOUD_TEST_CONFIRM !== 'petualangan-ilmu-test')
   throw new Error(
     'Khusus proyek uji: set CLOUD_TEST_CONFIRM=petualangan-ilmu-test setelah meninjau skrip.',

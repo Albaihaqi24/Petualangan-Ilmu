@@ -30,10 +30,10 @@
 | SQL pada PGlite | 72 bab/360 soal valid/draf; siswa tak melihat draf; pemasangan ulang menjaga revisi; publish uji memberi 5 soal tanpa kunci; unpublish lulus | Subtes paket di `tests/platform-database.test.mjs` |
 | Ekspor | Markdown dan panduan kuis tersedia; manifest tanpa opsi/kunci; SQL identik generator lulus | Tes artefak paket |
 | Build demo | 1983 modul; selesai 3.02 detik | [Log build](evidence/2026-10-18-paket-72-build.txt) |
-| Build Supabase | Naskah/bank `src/content` serta modul demo tidak masuk bundle; audit lulus | Tes `production-build.test.mjs` |
+| Build Supabase | Naskah/bank `frontend/src/content` serta modul demo tidak masuk bundle; audit lulus | Tes `production-build.test.mjs` |
 | Format | Prettier check seluruh file yang berubah lulus | Perintah pemeriksaan format dijalankan setelah perubahan akhir |
 
-Coverage Node untuk berkas terinstrumentasi: line **95.43%**, branch **93.86%**, function **78.92%**. `src/content/adventure/index.js`: 100% line, 94.29% branch, 100% function. Angka global dipengaruhi data statis; JSX hasil transform dan SQL tidak dilaporkan sebagai coverage sumber lengkap. Direct coverage `supabaseService.js` tetap 41.15% line/26.67% function dan tidak ditingkatkan oleh naskah baru.
+Coverage Node untuk berkas terinstrumentasi: line **95.43%**, branch **93.86%**, function **78.92%**. `frontend/src/content/adventure/index.js`: 100% line, 94.29% branch, 100% function. Angka global dipengaruhi data statis; JSX hasil transform dan SQL tidak dilaporkan sebagai coverage sumber lengkap. Direct coverage `supabaseService.js` tetap 41.15% line/26.67% function dan tidak ditingkatkan oleh naskah baru.
 
 ## Batas hasil
 
